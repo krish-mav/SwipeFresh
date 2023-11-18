@@ -10,6 +10,8 @@ import Foundation
 class SwipeViewModel: ObservableObject {
     init(recipeStack: [Recipe]) {
         self.recipeStack = recipeStack
+        self.savedRecipes = [Recipe]()
     }
     @Published var recipeStack: [Recipe]
+    @Published var savedRecipes: [Recipe]
 }
