@@ -100,11 +100,13 @@ struct RecipeSmallView: View {
                 viewModel.lastRecipe = index
                 viewModel.currentRecipe = index - 1
                 viewModel.dislikeRecipe(index: index)
+                viewModel.learn(card: viewModel.getRecipeCard(index: index))
             case 150...(500):
                 viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: 500, height: 0))
                 viewModel.lastRecipe = index
                 viewModel.currentRecipe = index - 1
                 viewModel.likeRecipe(index: index)
+                viewModel.learner.learn(card: viewModel.getRecipeCard(index: index))
             default:
                 viewModel.setRecipeCardOffset(index: index, offset: .zero)
         }

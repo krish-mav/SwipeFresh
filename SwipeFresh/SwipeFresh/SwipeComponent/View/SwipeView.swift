@@ -14,9 +14,7 @@ struct SwipeView: View {
             ZStack {
                 ForEach(0..<viewModel.recipeStack.count, content: { index in
                     if viewModel.isShowingBottomSheet {
-                        Rectangle()
-                            .foregroundColor(.white)
-                            .ignoresSafeArea()
+
                             
                             RecipeBigView(viewModel: viewModel, index: index)
                                 
@@ -25,6 +23,9 @@ struct SwipeView: View {
                         RecipeSmallView(viewModel: viewModel, index: index)
                     }
                 })
+            }
+            .onChange(of: viewModel.currentRecipe) { oldValue, newValue in
+                    print(viewModel.learner.data)
             }
             SwipeButtonsView(viewModel: viewModel)
             

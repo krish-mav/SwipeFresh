@@ -9,14 +9,21 @@ import Foundation
 import SwiftUI
 
 class SwipeViewModel: ObservableObject {
-    init(recipeStack: [RecipeCard]) {
+    init(recipeStack: [RecipeCard], learner: LearningAlgorithm) {
         self.recipeStack = recipeStack
         self.currentRecipe = recipeStack.count - 1
+        self.learner = learner
 
     }
     @Published var isShowingBottomSheet: Bool = false
     
     @Published var recipeStack: [RecipeCard]
+    
+    @Published var learner: LearningAlgorithm
+    
+    func learn(card: RecipeCard) {
+        learner.learn(card: card)
+    }
     
     var lastRecipe: Int?
     
