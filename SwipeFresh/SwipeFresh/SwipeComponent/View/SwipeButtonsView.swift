@@ -11,20 +11,30 @@ struct SwipeButtonsView: View {
     @ObservedObject var viewModel: SwipeViewModel
     var body: some View {
         HStack (alignment: .center) {
-            Button(action: {}, label: {
+            Button(action: {
+                if let recipe = viewModel.lastRecipe {
+                    viewModel.resetRecipe(index: recipe)
+                    viewModel.currentRecipe = recipe
+                    viewModel.lastRecipe = nil
+                }
+            }, label: {
                 Image(systemName: "arrowshape.turn.up.left.fill")
                     .font(.system(size: 30))
                     .foregroundColor(.yellow)
             })
             Spacer()
-            Button(action: {}, label: {
+            Button(action: {
+                viewModel.dislikeRecipe(index: viewModel.currentRecipe)
+            }, label: {
                 Image(systemName: "xmark")
                     .font(.system(size: 60))
                     .bold()
                     .foregroundColor(.red)
             })
             Spacer()
-            Button(action: {}, label: {
+            Button(action: {
+                viewModel.likeRecipe(index: viewModel.currentRecipe)
+            }, label: {
                 Image(systemName: "heart.fill")
                     .font(.system(size: 60))
                     .bold()
