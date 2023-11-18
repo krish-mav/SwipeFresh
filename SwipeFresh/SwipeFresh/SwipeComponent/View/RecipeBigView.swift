@@ -9,7 +9,14 @@ import SwiftUI
 
 struct RecipeBigView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+//        Image with url
+//        Name
+//        Ingredients
+//        Tags
+//        Prep time
+//        Instructions
+//        ...Time
+        Text("")
     }
 }
 
