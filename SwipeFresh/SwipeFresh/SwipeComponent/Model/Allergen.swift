@@ -6,8 +6,3 @@
 //
 
 import Foundation
-
-struct Allergen: Identifiable {
-    var id = UUID()
-    var name: String
-}
