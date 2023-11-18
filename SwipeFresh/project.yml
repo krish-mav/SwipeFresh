@@ -1,6 +1,6 @@
 name: SwipeFresh
 targets:
-  HallOfFame:
+  SwipeFresh:
     type: application
     platform: iOS
     deploymentTarget:
@@ -8,6 +8,6 @@ targets:
     sources: [SwipeFresh]
     settings:
       TARGETED_DEVICE_FAMILY: 1
+      INFOPLIST_FILE: SwipeFresh/Supporting/Info.plist
       PRODUCT_NAME: SwipeFresh
-      INFOPLIST_FILE: HallOfFame/Supporting/Info.plist
 
