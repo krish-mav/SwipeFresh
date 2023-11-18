@@ -18,6 +18,7 @@ struct RecipeBigView: View {
     @ObservedObject var viewModel: SwipeViewModel
     var index: Int
     @State var photoSpacer: CGFloat = 700
+    @State var initPadding: CGFloat = 10
     var body: some View {
         ZStack {
             ScrollView {
@@ -26,11 +27,11 @@ struct RecipeBigView: View {
                     VStack {
                         Image("Placeholder")
                             .resizable()
-                        
                             .scaledToFit()
                         Spacer()
                             .frame(height: photoSpacer)
                     }
+
                     
                     VStack {
                         Spacer()
@@ -49,9 +50,13 @@ struct RecipeBigView: View {
                                         .fontWeight(.bold)
                                     Spacer()
                                     Button(action: {
+                                        withAnimation {
+                                            self.initPadding = 10
+                                        }
                                         withAnimation(Animation.linear(duration: 0.5)) {
                                             photoSpacer = 700
                                         }
+
                                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                                             viewModel.isShowingBottomSheet.toggle()
                                         }
@@ -96,7 +101,16 @@ struct RecipeBigView: View {
                                     viewModel.lastRecipe = index
                                     viewModel.isShowingBottomSheet = false
                                 }
-                                
+
+                            } else if newValue == 3 {
+                                withAnimation(Animation.snappy(duration: 2.0)) {
+                                    viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: 0, height: -6000))
+                                    changeColor(width: viewModel.getRecipeCard(index: index).offset.width)
+                                    viewModel.currentRecipe = index + 1
+                                    viewModel.lastRecipe = index
+                                    viewModel.isShowingBottomSheet = false
+                                }
+
                             } else if newValue == -1 {
                                 withAnimation(Animation.easeInOut(duration: 1.0)) {
                                     viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: -500, height: 0))
@@ -120,6 +134,9 @@ struct RecipeBigView: View {
                     
                 }
                 .onAppear(perform: {
+                    withAnimation {
+                        self.initPadding = 0
+                    }
                     if viewModel.getRecipeCard(index: index).liked == 0 {
                         withAnimation(Animation.linear(duration: 0.5)) {
                             photoSpacer = 100

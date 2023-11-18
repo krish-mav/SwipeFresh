@@ -17,6 +17,7 @@ struct Recipe: Identifiable {
     var prepTime: TimeInterval
     var allergens: [Allergen]
     var instructions: [String]
+    var superLiked: Bool?
 
 
 

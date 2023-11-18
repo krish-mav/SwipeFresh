@@ -26,7 +26,9 @@ struct RecipeSmallView: View {
                             .font(.largeTitle)
                             .fontWeight(.bold)
                         Spacer()
-                        Button(action: {viewModel.isShowingBottomSheet.toggle()}, label: {
+                        Button(action: {
+                                viewModel.isShowingBottomSheet.toggle()
+                        }, label: {
                             Image(systemName: "info.circle.fill")
                                 .foregroundColor(.white)
                                 .font(.largeTitle)
@@ -57,6 +59,14 @@ struct RecipeSmallView: View {
                     viewModel.lastRecipe = index
                 }
 
+            } else if newValue == 3 {
+                withAnimation(Animation.snappy(duration: 2.0)) {
+                    viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: 0, height: -6000))
+                    changeColor(width: viewModel.getRecipeCard(index: index).offset.width)
+                    viewModel.currentRecipe = index + 1
+                    viewModel.lastRecipe = index
+                }
+
             } else if newValue == -1 {
                 withAnimation(Animation.easeInOut(duration: 1.0)) {
                     viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: -500, height: 0))
@@ -76,7 +86,7 @@ struct RecipeSmallView: View {
         })
     .cornerRadius(15)
     .padding()
-    .offset(x: viewModel.getRecipeCard(index: index).offset.width, y: viewModel.getRecipeCard(index: index).offset.height * 0.4)
+    .offset(x: viewModel.getRecipeCard(index: index).offset.width, y: viewModel.getRecipeCard(index: index).offset.height * 0.2)
     .rotationEffect(.degrees(Double(viewModel.getRecipeCard(index: index).offset.width / 40)))
         .gesture(
             DragGesture()
