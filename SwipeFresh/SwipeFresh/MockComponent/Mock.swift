@@ -11,5 +11,5 @@ class Mock {
     
     static var recipe: Recipe = Recipe(title: "Test")
     
-    static var recipeStack: [Recipe] = [recipe, recipe]
+    static var recipeStack: [Recipe] = [recipe, recipe, recipe, recipe, recipe, recipe, recipe, recipe, recipe, recipe, recipe, recipe]
 }

@@ -11,12 +11,18 @@ struct SwipeView: View {
     @ObservedObject var viewModel: SwipeViewModel
     var body: some View {
         VStack {
-            RecipeSmallView()
-                .padding(40)
+            ZStack {
+                ForEach(0..<viewModel.recipeStack.count, content: { index in
+                    RecipeSmallView()
+                        .padding(40)
+                })
+            }
             SwipeButtonsView()
             
         }
     }
+    
+
 }
 
 
