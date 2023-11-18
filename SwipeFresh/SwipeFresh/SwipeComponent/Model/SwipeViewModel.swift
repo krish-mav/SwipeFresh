@@ -11,6 +11,8 @@ import SwiftUI
 class SwipeViewModel: ObservableObject {
     init(recipeStack: [RecipeCard]) {
         self.recipeStack = recipeStack
+    }
+    @Published var isShowingBottomSheet: Bool = false
         self.currentRecipe = recipeStack.count - 1
     }
     

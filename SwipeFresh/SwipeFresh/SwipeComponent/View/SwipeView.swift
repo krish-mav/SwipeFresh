@@ -13,8 +13,17 @@ struct SwipeView: View {
         VStack {
             ZStack {
                 ForEach(0..<viewModel.recipeStack.count, content: { index in
-                    RecipeSmallView(viewModel: viewModel, index: index)
-                    
+                    if viewModel.isShowingBottomSheet {
+                        Rectangle()
+                            .foregroundColor(.white)
+                            .ignoresSafeArea()
+                            
+                            RecipeBigView(viewModel: viewModel, index: index)
+                                
+                                
+                    } else {
+                        RecipeSmallView(viewModel: viewModel, index: index)
+                    }
                 })
             }
             SwipeButtonsView(viewModel: viewModel)

@@ -8,30 +8,41 @@
 import SwiftUI
 
 struct RecipeSmallView: View {
+    @State private var offset = CGSize.zero
+    
     @State private var color: Color = .white.opacity(0)
     @ObservedObject var viewModel: SwipeViewModel
     var index: Int
     var body: some View {
-        ZStack(alignment: .leading) {
-                    Image("Placeholder")
-                        .resizable()
-        VStack(alignment: .leading) {
-            Spacer()
-            HStack(alignment: .bottom) {
-                Text("Recipe name \(index)")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                Spacer()
-                Button(action: {}, label: {
-                    Image(systemName: "info.circle.fill")
-                        .foregroundColor(.white)
-                        .font(.largeTitle)
-                })
-            }
-            Text("Tags")
+        VStack {
+            ZStack(alignment: .leading) {
+                Image("Placeholder")
+                    .resizable()
+                    
+                VStack(alignment: .leading) {
+                    Spacer()
+                    HStack(alignment: .bottom) {
+                        Text("Recipe name")
+                            .font(.largeTitle)
+                            .fontWeight(.bold)
+                        Spacer()
+                        Button(action: {viewModel.isShowingBottomSheet.toggle()}, label: {
+                            Image(systemName: "info.circle.fill")
+                                .foregroundColor(.white)
+                                .font(.largeTitle)
+                        })
+                    }
+                    HStack {
+                        TagView()
+                        TagView()
+                        TagView()
+                        
+                    }
+                    
+                }
+                .padding()
                 
-        }
-        .padding()
+            }
     }
         .overlay(content: {
             Rectangle()
