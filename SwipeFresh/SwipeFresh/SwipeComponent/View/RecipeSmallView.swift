@@ -16,14 +16,15 @@ struct RecipeSmallView: View {
                         .resizable()
         VStack(alignment: .leading) {
             Spacer()
-            HStack {
+            HStack(alignment: .bottom) {
                 Text("Recipe name")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                 Spacer()
                 Button(action: {}, label: {
                     Image(systemName: "info.circle.fill")
-                        .foregroundColor(Color("primary"))
+                        .foregroundColor(.white)
+                        .font(.largeTitle)
                 })
             }
             Text("Tags")
