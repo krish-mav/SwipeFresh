@@ -11,25 +11,27 @@ struct SwipeView: View {
     @ObservedObject var viewModel: SwipeViewModel
     var body: some View {
         VStack {
-            RecipeSmallView()
-                .padding(40)
-            SwipeButtonsView()
-            ContentView()
-                .badge(2)
-                .tabItem {
-                    Label("Received", systemImage: "tray.and.arrow.down.fill")
-                }
-            ContentView()
-                .tabItem {
-                    Label("Sent", systemImage: "tray.and.arrow.up.fill")
-                }
-            ContentView()
-                .badge("!")
-                .tabItem {
-                    Label("Account", systemImage: "person.crop.circle.fill")
-                }
+            ZStack {
+                ForEach(0..<viewModel.recipeStack.count, content: { index in
+                    if viewModel.isShowingBottomSheet {
+                        Rectangle()
+                            .foregroundColor(.white)
+                            .ignoresSafeArea()
+                            
+                            RecipeBigView(viewModel: viewModel, index: index)
+                                
+                                
+                    } else {
+                        RecipeSmallView(viewModel: viewModel, index: index)
+                    }
+                })
+            }
+            SwipeButtonsView(viewModel: viewModel)
+            
         }
     }
+    
+
 }
 
 

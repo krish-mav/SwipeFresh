@@ -10,21 +10,13 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         TabView {
-            ContentView()
-                .badge(2)
+            SwipeView(viewModel: Mock.swipeViewModel)
                 .tabItem {
-                    Label("Received", systemImage: "tray.and.arrow.down.fill")
-                }
-            ContentView()
-                .tabItem {
-                    Label("Sent", systemImage: "tray.and.arrow.up.fill")
-                }
-            ContentView()
-                .badge("!")
-                .tabItem {
-                    Label("Account", systemImage: "person.crop.circle.fill")
+                    Image(systemName: "heart.fill")
                 }
         }
+        .accentColor(Color("primary_dark"))
+
     }
 }
 
