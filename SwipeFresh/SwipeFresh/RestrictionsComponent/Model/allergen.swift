@@ -7,7 +7,11 @@
 
 import Foundation
 
-struct Allergen: Identifiable {
+struct Allergen: Identifiable, Comparable {
+    static func < (lhs: Allergen, rhs: Allergen) -> Bool {
+        lhs.name == rhs.name
+    }
+    
     var id = UUID()
     var name: String
     var isSelected: Bool
