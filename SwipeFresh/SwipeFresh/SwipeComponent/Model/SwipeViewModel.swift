@@ -12,4 +12,5 @@ class SwipeViewModel: ObservableObject {
         self.recipeStack = recipeStack
     }
     @Published var recipeStack: [Recipe]
+    @Published var isShowingBottomSheet: Bool = false
 }

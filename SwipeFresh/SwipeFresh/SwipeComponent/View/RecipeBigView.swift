@@ -6,9 +6,6 @@
 //
 
 import SwiftUI
-
-struct RecipeBigView: View {
-    var body: some View {
 //        Image with url
 //        Name
 //        Ingredients
@@ -16,10 +13,90 @@ struct RecipeBigView: View {
 //        Prep time
 //        Instructions
 //        ...Time
-        Text("")
+
+struct RecipeBigView: View {
+    @ObservedObject var viewModel: SwipeViewModel
+    var index: Int
+    @State var photoSpacer: CGFloat = 700
+    var body: some View {
+        ScrollView {
+            ZStack(alignment: .top) {
+                
+                VStack {
+                    Image("Placeholder")
+                        .resizable()
+                        
+                        .scaledToFit()
+                    Spacer()
+                        .frame(height: photoSpacer)
+                }
+                
+                VStack {
+                    Spacer()
+                        .frame(minHeight: 200)
+                    ZStack(alignment: .top) {
+                        Rectangle()
+                            .foregroundColor(.white)
+                            .frame(height: 700)
+                        
+                            .cornerRadius(15)
+                        VStack(alignment: .leading) {
+                            
+                            HStack(alignment: .bottom) {
+                                Text("Recipe name")
+                                    .font(.largeTitle)
+                                    .fontWeight(.bold)
+                                Spacer()
+                                Button(action: {viewModel.isShowingBottomSheet.toggle()}, label: {
+                                    Image(systemName: "arrow.down.circle.fill")
+                                        .foregroundColor(Color("primary_dark"))
+                                        .font(.largeTitle)
+                                })
+                                
+                            }
+//                            TODO: Make an HStack that moves things in multiple rows when too many
+                            HStack {
+                                TagView()
+                                TagView()
+                                TagView()
+                                
+                            }
+                            HStack {
+                                TimeTagRecipeView()
+                                    .padding(.trailing)
+                                TimeTagRecipeView()
+                            }
+                            
+                            Spacer().frame(height: 20)
+                            Text("Ingredients")
+                                .font(.title)
+                                .fontWeight(.bold)
+                            Spacer().frame(height: 50)
+                            Text("Instructions")
+                                .font(.title)
+                                .fontWeight(.bold)
+                            Spacer()
+                        }
+                        .padding()
+                    }
+                    Spacer()
+                }
+                
+                
+            }
+            .onAppear(perform: {
+                withAnimation(Animation.easeIn(duration: 0.2)) {
+                    photoSpacer = 100
+                }
+            })
+        }
+        .ignoresSafeArea()
+        
+        
     }
 }
 
 #Preview {
-    RecipeBigView()
+    RecipeBigView(viewModel: Mock.swipeViewModel, index: 0)
 }
+
