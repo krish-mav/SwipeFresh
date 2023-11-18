@@ -16,14 +16,23 @@ struct RecipeBigView: View {
             ZStack(alignment: .top) {
                 
                 VStack {
-                    Image("Placeholder")
-                        .resizable()
-                        
+                    AsyncImage(url: URL(string: viewModel.getRecipe(index: index).image)) { image in
+                        image
+                            .resizable()
+                            
+                    } placeholder: {
+
+                        Image("Placeholder")
+                            .resizable()
+                    }
+                    
+                    
                         .scaledToFit()
+                    //for Overlaping
                     Spacer()
                         .frame(height: photoSpacer)
                 }
-                
+                //for Overlaping
                 VStack {
                     Spacer()
                         .frame(minHeight: 200)
@@ -39,6 +48,7 @@ struct RecipeBigView: View {
                                 Text(viewModel.getRecipe(index: index).name)
                                     .font(.largeTitle)
                                     .fontWeight(.bold)
+                                
                                 Spacer()
                                 Button(action: {
                                     withAnimation(Animation.linear(duration: 0.5)) {
@@ -53,12 +63,16 @@ struct RecipeBigView: View {
                                         .font(.largeTitle)
                                 })
                                 
-                            }
+                            }.padding([.top,.leading,.trailing])
                             
                             RecipeDetailedView(recipe: viewModel.getRecipe(index: index))
+                            
+                            
+                            
                             Spacer()
-                        }
-                        .padding()
+                        }.fixedSize(horizontal: false, vertical: true)
+                        
+                        
                     }
                     Spacer()
                 }
@@ -70,12 +84,16 @@ struct RecipeBigView: View {
                     photoSpacer = 100
                 }
             })
+            
+            
         }
         .ignoresSafeArea()
-        
-        
     }
+    
+    
+    
 }
+
 
 #Preview {
     RecipeBigView(viewModel: Mock.swipeViewModel, index: 0)

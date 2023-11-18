@@ -18,8 +18,15 @@ struct RecipeSmallView: View {
     var body: some View {
         VStack {
             ZStack(alignment: .leading) {
-                Image("Placeholder")
-                    .resizable()
+                AsyncImage(url: URL(string: viewModel.getRecipe(index: index).image)) { image in
+                    image
+                        .resizable()
+                        
+                } placeholder: {
+                    Image("Placeholder")
+                        .resizable()
+                }
+                
                 
                 LinearGradient(colors: [Color.black.opacity(0.5), Color.clear], startPoint: .bottom, endPoint:.top)
                 
@@ -45,7 +52,7 @@ struct RecipeSmallView: View {
                         }
                         
                     }
-                    .padding()
+                   
                     
                 }
                 .padding()

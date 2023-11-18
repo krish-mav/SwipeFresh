@@ -14,6 +14,7 @@ struct SwipeView: View {
             ZStack {
                 ForEach(0..<viewModel.recipeStack.count, content: { index in
                     if viewModel.isShowingBottomSheet {
+                        
                         Rectangle()
                             .foregroundColor(.white)
                             .ignoresSafeArea()

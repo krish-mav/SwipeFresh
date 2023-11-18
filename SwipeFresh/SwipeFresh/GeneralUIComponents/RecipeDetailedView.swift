@@ -24,7 +24,8 @@ struct RecipeDetailedView: View {
                     }
                     
                 }
-                .padding()
+                .padding([.leading, .trailing, .bottom])
+                
                 
                 Divider()
                     .background(.black)

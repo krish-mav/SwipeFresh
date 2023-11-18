@@ -17,10 +17,14 @@ struct CookingStepView: View {
                     .foregroundColor(Color(UIColor.tertiaryLabel))
                     .frame(width: 60, height: 60)
                 Text("\(number)")
-                    .foregroundColor(.primary)
+                    .foregroundColor(.white)
                     .font(.title)
                     .fontWeight(.semibold)
+                    .multilineTextAlignment(.leading)
+
+                
             }
+           
             Text(text)
                 .padding()
         }

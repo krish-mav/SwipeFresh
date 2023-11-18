@@ -22,6 +22,8 @@ struct MainView: View {
                         .tabItem {
                             Image (systemName: "list.bullet")
                         }
+            RecipeDetailedView(recipe: Mock.swipeViewModel.getRecipe(index: 0))
+                .tabItem { Image(systemName: "plus") }
 
                 }
                 .accentColor(Color("primary_darkest"))

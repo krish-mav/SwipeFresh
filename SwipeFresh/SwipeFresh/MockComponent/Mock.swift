@@ -22,7 +22,7 @@ class Mock {
     ]
     static var recipeCard: RecipeCard = RecipeCard(recipe: recipe)
     
-    static var recipeStack: [RecipeCard] = [recipeCard, recipeCard, recipeCard, recipeCard, recipeCard, recipeCard, recipeCard, recipeCard, recipeCard, recipeCard, recipeCard, recipeCard]
+    static var recipeStack: [RecipeCard] = mockRecipes.map( { RecipeCard(recipe: $0)})
 
     static var mockRecipes: [Recipe] = [
         Recipe(

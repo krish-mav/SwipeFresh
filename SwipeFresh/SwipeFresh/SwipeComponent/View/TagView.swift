@@ -14,7 +14,8 @@ struct TagView: View {
         ZStack {
             Rectangle()
                 .cornerRadius(35)
-                .foregroundColor(Color(UIColor.tertiaryLabel))
+                .foregroundColor(.gray)
+                .opacity(0.5)
             HStack {
                 
                 Text(tagText)
