@@ -11,10 +11,32 @@ struct RecipeSmallView: View {
     @State private var offset = CGSize.zero
     @State private var color: Color = .white.opacity(0)
     var body: some View {
-        ZStack {
+        ZStack(alignment: .leading) {
+                    Image("Placeholder")
+                        .resizable()
+        VStack(alignment: .leading) {
+            Spacer()
+            HStack {
+                Text("Recipe name")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                Spacer()
+                Button(action: {}, label: {
+                    Image(systemName: "info.circle.fill")
+                        .foregroundColor(Color("primary"))
+                })
+            }
+            Text("Tags")
+                
+        }
+        .padding()
+    }
+        .overlay(content: {
             Rectangle()
                 .foregroundColor(color)
-        }
+        })
+    .cornerRadius(15)
+    .padding()
         .offset(x: offset.width, y: offset.height * 0.4)
         .rotationEffect(.degrees(Double(offset.width / 40)))
         .gesture(
@@ -45,16 +67,21 @@ struct RecipeSmallView: View {
     
     func changeColor(width: CGFloat) {
         switch width {
-            case -500...(-130):
-                color = .red
-            case 130...(500):
-                color = .green
+            case -500...(-120):
+                color = .red.opacity(0.3)
+                
+            case 120...(500):
+                color = .green.opacity(0.3)
             default:
                 color = .white.opacity(0)
         }
     }
+        
 
-}
+
+        
+    }
+
 
 #Preview {
     RecipeSmallView()

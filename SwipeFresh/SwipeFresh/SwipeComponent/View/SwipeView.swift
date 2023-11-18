@@ -14,7 +14,7 @@ struct SwipeView: View {
             ZStack {
                 ForEach(0..<viewModel.recipeStack.count, content: { index in
                     RecipeSmallView()
-                        .padding(40)
+                    
                 })
             }
             SwipeButtonsView()
