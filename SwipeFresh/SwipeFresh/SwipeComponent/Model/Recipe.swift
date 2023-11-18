@@ -7,6 +7,14 @@
 
 import Foundation
 
-struct Recipe {
-    var title = "Test"
+struct Recipe: Identifiable {
+    var id = UUID()
+    var name: String
+    var ingredientItems: [IngredientItem]
+    var tags: [Tag]
+    var prepTime: TimeInterval
+    var allergens: [Allergen]
+    var instructions: [String]
+
+
 }
