@@ -14,20 +14,7 @@ struct SwipeView: View {
             RecipeSmallView()
                 .padding(40)
             SwipeButtonsView()
-            ContentView()
-                .badge(2)
-                .tabItem {
-                    Label("Received", systemImage: "tray.and.arrow.down.fill")
-                }
-            ContentView()
-                .tabItem {
-                    Label("Sent", systemImage: "tray.and.arrow.up.fill")
-                }
-            ContentView()
-                .badge("!")
-                .tabItem {
-                    Label("Account", systemImage: "person.crop.circle.fill")
-                }
+            
         }
     }
 }

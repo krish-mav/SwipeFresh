@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         SwipeView(viewModel: Mock.swipeViewModel)
+        //Text("Test")
     }
 }
 
