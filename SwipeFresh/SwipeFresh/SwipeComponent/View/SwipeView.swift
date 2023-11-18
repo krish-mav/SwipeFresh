@@ -13,11 +13,11 @@ struct SwipeView: View {
         VStack {
             ZStack {
                 ForEach(0..<viewModel.recipeStack.count, content: { index in
-                    RecipeSmallView()
+                    RecipeSmallView(viewModel: viewModel, index: index)
                     
                 })
             }
-            SwipeButtonsView()
+            SwipeButtonsView(viewModel: viewModel)
             
         }
     }

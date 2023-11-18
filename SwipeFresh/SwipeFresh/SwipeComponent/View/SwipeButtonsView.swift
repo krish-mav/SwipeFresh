@@ -8,27 +8,43 @@
 import SwiftUI
 
 struct SwipeButtonsView: View {
+    @ObservedObject var viewModel: SwipeViewModel
     var body: some View {
-        HStack (alignment: .top) {
+        HStack (alignment: .center) {
             Button(action: {}, label: {
                 Image(systemName: "arrowshape.turn.up.left.fill")
+                    .font(.system(size: 30))
+                    .foregroundColor(.yellow)
             })
+            Spacer()
             Button(action: {}, label: {
                 Image(systemName: "xmark")
-                    .imageScale(.large)
+                    .font(.system(size: 60))
+                    .bold()
+                    .foregroundColor(.red)
             })
+            Spacer()
             Button(action: {}, label: {
                 Image(systemName: "heart.fill")
-                    .imageScale(.large)
+                    .font(.system(size: 60))
+                    .bold()
+                    .foregroundColor(Color("primary_dark"))
             })
-            .imageScale(.large)
+            Spacer()
             Button(action: {}, label: {
                 Image(systemName: "bolt.heart.fill")
+                    .font(.system(size: 30))
+                    .foregroundColor(.blue)
+
             })
         }
+        .padding(.leading, 30)
+        .padding(.bottom, 30)
+        .padding(.trailing, 30)
+
     }
 }
 
 #Preview {
-    SwipeButtonsView()
+    SwipeButtonsView(viewModel: Mock.swipeViewModel)
 }
