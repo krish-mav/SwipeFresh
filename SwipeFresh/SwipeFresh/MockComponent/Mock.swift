@@ -11,7 +11,7 @@ class Mock {
     
     static var recipe: Recipe = Recipe(name: "String", image: "", ingredientItems: [], tags: [], prepTime: 1800, allergens: [], instructions: [])
     
-    static var recipeCard: RecipeCard = RecipeCard(recipe: Recipe())
+    static var recipeCard: RecipeCard = RecipeCard(recipe: recipe)
     
     static var recipeStack: [RecipeCard] = [recipeCard, recipeCard, recipeCard, recipeCard, recipeCard, recipeCard, recipeCard, recipeCard, recipeCard, recipeCard, recipeCard, recipeCard]
 }
