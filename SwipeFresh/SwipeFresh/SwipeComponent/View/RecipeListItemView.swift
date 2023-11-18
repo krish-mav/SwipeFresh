@@ -56,6 +56,7 @@ struct RecipeListItemView_Previews: PreviewProvider {
             ingredientItems: [],
             tags: [Tag(name: "Dinner")],
             prepTime: 30 * 60, // 30 minutes
+            cookTime: 20 * 60,
             allergens: [Allergen(name: "Nuts")],
             instructions: ["Step 1: Mock Step", "Step 2: Another Mock Step"]
         )

@@ -34,12 +34,12 @@ struct restrictionView: View {
                                 }
                 Section(header: Text("Allergens")) {
                     VStack {
-                        ForEach(0..<viewModel.allergens.count) { index in
+                        ForEach(0..<viewModel.allergenRestrictions.count) { index in
                             HStack {
-                                Text("\(viewModel.allergens[index].name)")
+                                Text("\(viewModel.allergenRestrictions[index].allergen.name)")
                                 Spacer()
                                 
-                                Image( viewModel.allergens[index].isSelected ? "lime" : "lime-grey")
+                                Image( viewModel.allergenRestrictions[index].isSelected ? "lime" : "lime-grey")
                                     .resizable()
                                     .frame(width: 25, height: 20)
                                 

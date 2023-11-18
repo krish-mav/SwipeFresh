@@ -7,13 +7,12 @@
 
 import Foundation
 
-struct Allergen: Identifiable {
-    var id = UUID()
-    var name: String
+struct AllergenRestriction {
+    var allergen: Allergen
     var isSelected: Bool
 
-    init(name: String, isSelected: Bool = false) {
-        self.name = name
+    init(allergen: Allergen, isSelected: Bool = false) {
+        self.allergen = allergen
         self.isSelected = isSelected
     }
 }
