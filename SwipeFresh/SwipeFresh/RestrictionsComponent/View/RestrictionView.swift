@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+
 struct RestrictionView: View {
     
     @ObservedObject var viewModel: RestrictionViewModel
@@ -19,7 +20,10 @@ struct RestrictionView: View {
         HeaderView(title: "Food Preferences")
             NavigationStack {
                 Form {
-                    Section(header: Text("Dietary Preferences")) {
+                    Section(header: Text("Dietary Preferences")
+                        .font(.title3)
+                                .foregroundColor(Color("primary_darkest"))
+                                .padding(.leading, -15)) {
                         Picker(selection: $selectedDiet, label: Text("Select Dietary Preference")) {
                             Text("None").tag("None")
                             Text("Vegan").tag("Vegan")
@@ -27,14 +31,21 @@ struct RestrictionView: View {
                         }
                         .pickerStyle(SegmentedPickerStyle())
                     }
-                    Section(header: Text("Maximum Preparation Time")) {
+                    Section(header: Text("Maximum Preparation Time")
+                        .font(.title3)
+                                .foregroundColor(Color("primary_darkest"))
+                                .padding(.leading, -15)) {
                         Picker(selection: $selectedPreparationTime, label: Text("Select Time")) {
                             ForEach(0..<61, id: \.self) { minute in
                                 Text("\(minute * 15) min").tag(minute * 15)
                             }
                         }
+                        
                     }
-                    Section(header: Text("Allergens")) {
+                    Section(header: Text("Allergens")
+                        .font(.title3)
+                                .foregroundColor(Color("primary_darkest"))
+                                .padding(.leading, -15)) {
                         VStack {
                             ForEach(0..<viewModel.allergens.count) { index in
                                 HStack {

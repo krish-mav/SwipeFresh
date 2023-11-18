@@ -70,6 +70,9 @@ struct RecipeDetailedView: View {
             Text("Cooking steps")
                 .font(.title)
                 .fontWeight(.bold)
+            ForEach(Array(zip(recipe.instructions.indices, recipe.instructions)), id: \.0) { index, instruction in
+                            CookingStepView(number: index, text: instruction)
+            }
             Spacer()
         }
         .padding()

@@ -49,7 +49,7 @@ struct RecipeBigView: View {
                                     }
                                 }, label: {
                                     Image(systemName: "arrow.down.circle.fill")
-                                        .foregroundColor(Color("primary_dark"))
+                                        .foregroundColor(Color("primary_darkest"))
                                         .font(.largeTitle)
                                 })
                                 
