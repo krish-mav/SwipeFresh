@@ -10,21 +10,22 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         TabView {
-            ContentView()
-                .badge(2)
+            restrictionView(viewModel: restrictionViewModel())
                 .tabItem {
-                    Label("Received", systemImage: "tray.and.arrow.down.fill")
+                    Image(systemName: "heart.fill")
                 }
-            ContentView()
+            SwipeView(viewModel: Mock.swipeViewModel)
                 .tabItem {
-                    Label("Sent", systemImage: "tray.and.arrow.up.fill")
+                    Image(systemName: "heart.fill")
                 }
-            ContentView()
-                .badge("!")
+            RecipeListView(savedRecipes: Mock.mockRecipes)
                 .tabItem {
-                    Label("Account", systemImage: "person.crop.circle.fill")
+                    Image (systemName: "heart.fill")
                 }
+
         }
+        .accentColor(Color("primary_dark"))
+
     }
 }
 
