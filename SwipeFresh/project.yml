@@ -1,4 +1,6 @@
 name: SwipeFresh
+settings:
+  DEVELOPMENT_TEAM: 7PLLZ436SG
 targets:
   SwipeFresh:
     type: application
@@ -8,6 +10,6 @@ targets:
     sources: [SwipeFresh]
     settings:
       TARGETED_DEVICE_FAMILY: 1
-      INFOPLIST_FILE: SwipeFresh/Supporting/Info.plist
       PRODUCT_NAME: SwipeFresh
-
+      INFOPLIST_FILE: SwipeFresh/Supporting/info.plist
+      PRODUCT_BUNDLE_IDENTIFIER: de.tum.cit.ase.university.ios23.fame
