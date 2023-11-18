@@ -13,10 +13,14 @@ struct LearningAlgorithm {
     }
     var data: [String: Double] = [:]
     var allergens: [Allergen]
+    
+    //add a new lable with a weight
     mutating func addLabel(label: String) {
         data[label] = 0
-        //add a new lable with a weight
+        
     }
+    
+    //manipulate weights according to input
     mutating func learn(card: RecipeCard) {
         var direction = card.liked
         for tag in card.recipe.tags {
@@ -26,8 +30,15 @@ struct LearningAlgorithm {
             setLabel(label: tag.name, weight: ((data[tag.name] ?? 0) + Double(direction) * 10))
             
         }
-        //manipulate weights according to input
-    }
+        for ingredientItem in card.recipe.ingredientItems {
+            if !data.keys.contains(ingredientItem.ingredient.name) {
+                setLabel(label: ingredientItem.ingredient.name, weight: 0)
+            }
+            setLabel(label: ingredientItem.ingredient.name, weight: ((data[ingredientItem.ingredient.name] ?? 0) + Double(direction) * 5))
+        }
+}
+    
+    //calculate score of a recipe
     mutating func calculate(recipe: Recipe) -> Double{
         for allergen in allergens {
             if recipe.allergens.contains(allergen) {
@@ -42,9 +53,18 @@ struct LearningAlgorithm {
                 addLabel(label: tag.name)
             }
         }
-        //calculate score of a recipe
+        
+        for ingredientItem in recipe.ingredientItems {
+            if data.keys.contains(ingredientItem.ingredient.name) {
+                score += data[ingredientItem.ingredient.name] ?? 0
+            } else {
+                addLabel(label: ingredientItem.ingredient.name)
+            }
+        }
+        
         return score
     }
+    
     //just setting the default values for allergies
     mutating func setLabel(label: String, weight: Double) {
         data[label] = weight
