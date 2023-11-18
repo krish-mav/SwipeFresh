@@ -17,7 +17,7 @@ struct SwipeView: View {
                     
                 })
             }
-            SwipeButtonsView()
+            SwipeButtonsView(viewModel: viewModel)
             
         }
     }

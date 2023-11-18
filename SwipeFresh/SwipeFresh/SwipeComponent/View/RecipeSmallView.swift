@@ -60,6 +60,7 @@ struct RecipeSmallView: View {
                 offset = CGSize(width: -500, height: 0)
             case 150...(500):
                 offset = CGSize(width: 500, height: 0)
+                
             default:
                 offset = .zero
         }
