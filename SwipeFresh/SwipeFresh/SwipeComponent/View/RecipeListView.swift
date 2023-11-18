@@ -19,19 +19,21 @@ struct RecipeListView: View {
     }
 
     var body: some View {
-
-        NavigationStack {
-            VStack {
-                SearchBar(text: $searchText)
-                List(savedRecipes) { recipe in
-                    RecipeListItemView(recipe: recipe)
-                        .contentShape(Rectangle()) // Make the entire cell tappable
-                        .padding(0) // Remove padding around the cell
-                        .listRowInsets(EdgeInsets())
-                        .listRowSeparator(.hidden)
+        VStack {
+            HeaderView(title: "Saved Recipes")
+            NavigationStack {
+                VStack {
+                    SearchBar(text: $searchText)
+                    List(savedRecipes) { recipe in
+                        RecipeListItemView(recipe: recipe)
+                            .contentShape(Rectangle()) // Make the entire cell tappable
+                            .padding(0) // Remove padding around the cell
+                            .listRowInsets(EdgeInsets())
+                            .listRowSeparator(.hidden)
+                    }
+                    .listStyle(PlainListStyle())
+                    
                 }
-                .listStyle(PlainListStyle())
-                .navigationTitle("Saved Recipes")
             }
         }
     }

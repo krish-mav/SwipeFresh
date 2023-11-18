@@ -10,7 +10,7 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         TabView {
-                    restrictionView(viewModel: restrictionViewModel())
+                    RestrictionView(viewModel: RestrictionViewModel())
                         .tabItem {
                             Image(systemName: "person.fill")
                         }
@@ -24,7 +24,7 @@ struct MainView: View {
                         }
 
                 }
-                .accentColor(Color("primary_dark"))
+                .accentColor(Color("primary_darkest"))
 
     }
 }

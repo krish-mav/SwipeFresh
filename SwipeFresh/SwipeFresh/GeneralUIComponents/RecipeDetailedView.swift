@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Foundation
 
 struct RecipeDetailedView: View {
     var recipe: Recipe
@@ -34,7 +35,7 @@ struct RecipeDetailedView: View {
                     TimeTagRecipeView(iconName: "clock", text: String(100) + " min", title: "Prep")
                             .padding(.trailing)
                 
-                    TimeTagRecipeView(iconName: "clock", text: "45 min", title: "Prep")
+                    TimeTagRecipeView(iconName: "clock", text: "45 min", title: "All")
                 Spacer()
 
             }
@@ -47,6 +48,21 @@ struct RecipeDetailedView: View {
             Text("Ingredients")
                 .font(.title)
                 .fontWeight(.bold)
+
+            ForEach(recipe.ingredientItems) { item in
+                if let unit = item.ingredient.unit {
+                    IngredientView(
+                        ingredient: item.ingredient.name,
+                        unit: unit.symbol,
+                        quantity: String(item.quantity))
+                } else {
+                    IngredientView(
+                        ingredient: item.ingredient.name,
+                        unit: "",
+                        quantity: String(item.quantity))
+                }
+                
+            }
             
             Divider()
                 .background(.black)
@@ -58,6 +74,7 @@ struct RecipeDetailedView: View {
         }
         .padding()
     }
+    
 }
 
 #Preview {

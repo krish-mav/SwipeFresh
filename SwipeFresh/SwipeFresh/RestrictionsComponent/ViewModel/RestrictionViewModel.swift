@@ -7,7 +7,7 @@
 
 import Foundation
 
-class restrictionViewModel: ObservableObject {
+class RestrictionViewModel: ObservableObject {
     init(allergens: [Allergen] = Mock.allergens) {
         self.allergens = allergens
     }
