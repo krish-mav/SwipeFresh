@@ -112,9 +112,9 @@ struct RecipeSmallView: View {
     
     func changeColor(width: CGFloat) {
         switch width {
-            case -500...(-120):
+            case -500...(-100):
                 viewModel.setRecipeCardColor(index: index, color: .red.opacity(0.3))
-            case 120...(500):
+            case 100...(500):
                 viewModel.setRecipeCardColor(index: index, color: .green.opacity(0.3))
             default:
                 viewModel.setRecipeCardColor(index: index, color: .white.opacity(0))

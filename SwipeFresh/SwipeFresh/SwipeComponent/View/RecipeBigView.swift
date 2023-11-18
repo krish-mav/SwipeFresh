@@ -47,7 +47,14 @@ struct RecipeBigView: View {
                                     .font(.largeTitle)
                                     .fontWeight(.bold)
                                 Spacer()
-                                Button(action: {viewModel.isShowingBottomSheet.toggle()}, label: {
+                                Button(action: {
+                                    withAnimation(Animation.linear(duration: 0.5)) {
+                                        photoSpacer = 700
+                                    }
+                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                        viewModel.isShowingBottomSheet.toggle()
+                                    }
+                                }, label: {
                                     Image(systemName: "arrow.down.circle.fill")
                                         .foregroundColor(Color("primary_dark"))
                                         .font(.largeTitle)
@@ -85,7 +92,7 @@ struct RecipeBigView: View {
                 
             }
             .onAppear(perform: {
-                withAnimation(Animation.easeIn(duration: 0.2)) {
+                withAnimation(Animation.linear(duration: 0.5)) {
                     photoSpacer = 100
                 }
             })
