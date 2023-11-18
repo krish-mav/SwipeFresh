@@ -12,7 +12,7 @@ struct SwipeView: View {
     var body: some View {
         VStack {
             RecipeSmallView()
-                .padding(40)
+                
             SwipeButtonsView()
             
         }
