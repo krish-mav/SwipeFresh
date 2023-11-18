@@ -10,6 +10,8 @@ import SwiftUI
 struct RecipeSmallView: View {
     @State private var offset = CGSize.zero
     @State private var color: Color = .white.opacity(0)
+    @ObservedObject var viewModel: SwipeViewModel
+    var index: Int
     var body: some View {
         ZStack(alignment: .leading) {
                     Image("Placeholder")
@@ -86,5 +88,5 @@ struct RecipeSmallView: View {
 
 
 #Preview {
-    RecipeSmallView()
+    RecipeSmallView(viewModel: Mock.swipeViewModel, index: 0)
 }
