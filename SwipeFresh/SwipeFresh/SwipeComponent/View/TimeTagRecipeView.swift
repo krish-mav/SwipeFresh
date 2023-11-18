@@ -8,16 +8,27 @@
 import SwiftUI
 
 struct TimeTagRecipeView: View {
+    var iconName: String
+    var text: String
+    var title: String
+    
     var body: some View {
+        
         ZStack {
             Rectangle()
                 .cornerRadius(15)
                 .foregroundColor(Color("primary"))
-            HStack {
-                Image(systemName: "clock")
-                Text("45 min")
+            VStack {
+                Text(title)
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+                HStack {
+                    Image(systemName: iconName)
+                    Text(text)
+                }
+                .foregroundColor(.white)
+                
             }
-            .foregroundColor(.white)
             .padding()
         }
         
@@ -26,5 +37,5 @@ struct TimeTagRecipeView: View {
 }
 
 #Preview {
-    TimeTagRecipeView()
+    TimeTagRecipeView(iconName: "clock", text: "45 min", title: "Prep")
 }

@@ -6,13 +6,6 @@
 //
 
 import SwiftUI
-//        Image with url
-//        Name
-//        Ingredients
-//        Tags
-//        Prep time
-//        Instructions
-//        ...Time
 
 struct RecipeBigView: View {
     @ObservedObject var viewModel: SwipeViewModel
@@ -43,7 +36,7 @@ struct RecipeBigView: View {
                         VStack(alignment: .leading) {
                             
                             HStack(alignment: .bottom) {
-                                Text("Recipe name")
+                                Text(viewModel.getRecipe(index: index).name)
                                     .font(.largeTitle)
                                     .fontWeight(.bold)
                                 Spacer()
@@ -61,27 +54,8 @@ struct RecipeBigView: View {
                                 })
                                 
                             }
-//                            TODO: Make an HStack that moves things in multiple rows when too many
-                            HStack {
-                                TagView()
-                                TagView()
-                                TagView()
-                                
-                            }
-                            HStack {
-                                TimeTagRecipeView()
-                                    .padding(.trailing)
-                                TimeTagRecipeView()
-                            }
                             
-                            Spacer().frame(height: 20)
-                            Text("Ingredients")
-                                .font(.title)
-                                .fontWeight(.bold)
-                            Spacer().frame(height: 50)
-                            Text("Instructions")
-                                .font(.title)
-                                .fontWeight(.bold)
+                            RecipeDetailedView(recipe: viewModel.getRecipe(index: index))
                             Spacer()
                         }
                         .padding()

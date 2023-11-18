@@ -10,21 +10,21 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         TabView {
-            restrictionView(viewModel: restrictionViewModel())
-                .tabItem {
-                    Image(systemName: "heart.fill")
-                }
-            SwipeView(viewModel: Mock.swipeViewModel)
-                .tabItem {
-                    Image(systemName: "heart.fill")
-                }
-            RecipeListView(savedRecipes: Mock.mockRecipes)
-                .tabItem {
-                    Image (systemName: "heart.fill")
-                }
+                    restrictionView(viewModel: restrictionViewModel())
+                        .tabItem {
+                            Image(systemName: "person.fill")
+                        }
+                    SwipeView(viewModel: Mock.swipeViewModel)
+                        .tabItem {
+                            Image(systemName: "heart.fill")
+                        }
+                    RecipeListView(savedRecipes: Mock.mockRecipes)
+                        .tabItem {
+                            Image (systemName: "list.bullet")
+                        }
 
-        }
-        .accentColor(Color("primary_dark"))
+                }
+                .accentColor(Color("primary_dark"))
 
     }
 }
