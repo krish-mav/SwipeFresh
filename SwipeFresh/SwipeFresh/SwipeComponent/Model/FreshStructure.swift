@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct Data {
+struct FreshStructure {
     init(learner: Binding<LearningAlgorithm>, recipes: [RecipeCard], minLength: Int) {
         self.learner = learner
         self.recipeStack = []

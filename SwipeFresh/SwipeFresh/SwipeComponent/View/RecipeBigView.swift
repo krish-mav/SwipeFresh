@@ -163,7 +163,8 @@ struct RecipeBigView: View {
     }
 }
 
-#Preview {
+/*#Preview {
     RecipeBigView(viewModel: Mock.swipeViewModel, index: 0)
 }
+ */
 

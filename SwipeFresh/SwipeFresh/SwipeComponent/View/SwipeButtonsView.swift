@@ -25,7 +25,7 @@ struct SwipeButtonsView: View {
             Spacer()
             Button(action: {
                 viewModel.dislikeRecipe(index: viewModel.currentRecipe)
-                viewModel.learner.learn(card: viewModel.getRecipeCard(index: viewModel.currentRecipe))
+                viewModel.learner.wrappedValue.learn(card: viewModel.getRecipeCard(index: viewModel.currentRecipe))
             }, label: {
                 Image(systemName: "xmark")
                     .font(.system(size: 60))
@@ -35,7 +35,7 @@ struct SwipeButtonsView: View {
             Spacer()
             Button(action: {
                 viewModel.likeRecipe(index: viewModel.currentRecipe)
-                viewModel.learner.learn(card: viewModel.getRecipeCard(index: viewModel.currentRecipe))
+                viewModel.learner.wrappedValue.learn(card: viewModel.getRecipeCard(index: viewModel.currentRecipe))
             }, label: {
                 Image(systemName: "heart.fill")
                     .font(.system(size: 60))
@@ -49,7 +49,7 @@ struct SwipeButtonsView: View {
                 }
                 DispatchQueue.main.asyncAfter(deadline: .now()) {
                     viewModel.superLikeRecipe(index: viewModel.currentRecipe)
-                    viewModel.learner.learn(card: viewModel.getRecipeCard(index: viewModel.currentRecipe))
+                    viewModel.learner.wrappedValue.learn(card: viewModel.getRecipeCard(index: viewModel.currentRecipe))
                 }
                 
             }, label: {
@@ -66,6 +66,7 @@ struct SwipeButtonsView: View {
     }
 }
 
-#Preview {
+/*#Preview {
     SwipeButtonsView(viewModel: Mock.swipeViewModel)
 }
+*/

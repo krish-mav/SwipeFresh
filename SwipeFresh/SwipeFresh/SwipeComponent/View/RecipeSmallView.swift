@@ -116,7 +116,7 @@ struct RecipeSmallView: View {
                 viewModel.lastRecipe = index
                 viewModel.currentRecipe = index + 1
                 viewModel.likeRecipe(index: index)
-                viewModel.learner.learn(card: viewModel.getRecipeCard(index: index))
+                viewModel.learner.wrappedValue.learn(card: viewModel.getRecipeCard(index: index))
             default:
                 viewModel.setRecipeCardOffset(index: index, offset: .zero)
         }
@@ -139,6 +139,7 @@ struct RecipeSmallView: View {
     }
 
 
-#Preview {
-    RecipeSmallView(viewModel: Mock.swipeViewModel, index: 0)
-}
+/*#Preview {
+ RecipeSmallView(viewModel: Mock.swipeViewModel, index: 0)
+ }
+ */

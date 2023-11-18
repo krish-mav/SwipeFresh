@@ -8,6 +8,10 @@
 import Foundation
 import SwiftUI
 class Mock {
+    @ObservedObject var viewModel: Dataloader
+    init(viewModel: Dataloader) {
+        self.viewModel = viewModel
+    }
     static var learner = LearningAlgorithm()
     
     static var learnerBinding = Binding(get: {
@@ -16,9 +20,9 @@ class Mock {
         learner = val
     })
     
-    static var swipeViewModel: SwipeViewModel = SwipeViewModel(data: Data(learner: learnerBinding, recipes: recipeStack, minLength: 5), learner: learner)
+    //static var swipeViewModel: SwipeViewModel = SwipeViewModel(recipes: FreshStructure(learner: learnerBinding, recipes: Dataloader, minLength: 5), learner: learner)
     
-    static var recipe: Recipe = Recipe(name: "String", image: "", ingredientItems: [], tags: [], prepTime: 1800, allergens: [], instructions: [])
+    static var recipe: Recipe = Recipe(score: 0, name: "String", image: "", ingredientItems: [], tags: [], prepTime: 1800, allergens: [], instructions: [])
     
     static var allergens: [Allergen] = [
         Allergen(name: "Fish", isSelected: false),
@@ -31,14 +35,14 @@ class Mock {
     ]
     static var recipeCard: RecipeCard = RecipeCard(recipe: recipe)
     
-    static var recipeStack: [RecipeCard] = mockRecipes.map( {RecipeCard(recipe: $0)})
+    //static var recipeStack: [RecipeCard] = mockRecipes.map( {RecipeCard(recipe: $0)})
 
-    static var mockRecipes: [Recipe] = [
+    /*static var mockRecipes: [Recipe] = [
         Recipe(
             name: "Mock Pasta",
             image: "https://img.hellofresh.com/w_2048,q_auto,f_auto,c_limit,fl_lossy/c_fill,f_auto,fl_lossy,h_432,q_auto/hellofresh_s3/image/63f4d66d8877805e4b01e49b-66a31f0c.jpg",
             ingredientItems: [IngredientItem(ingredient: Ingredient(name: "Carrot", unit: nil), quantity: 30), IngredientItem(ingredient: Ingredient(name: "Apple", unit: nil), quantity: 30)],
-            tags: [Tag(name: "Mock Italian")],
+            tags: [Tag(from: "Mock Italian" as! Decoder)],
             prepTime: 20 * 60, // 20 minutes
             allergens: [Allergen(name: "Mock Eggs")],
             instructions: ["Cook mock spaghetti according to package instructions.", "In a bowl, mix mock eggs and grated mock parmesan.", "Fry mock bacon until crispy.", "Toss cooked mock spaghetti with egg mixture and bacon. Serve hot."]
@@ -114,5 +118,5 @@ class Mock {
                 "Serve immediately and enjoy!"
             ]
         ),
-    ]
+    ]*/
 }

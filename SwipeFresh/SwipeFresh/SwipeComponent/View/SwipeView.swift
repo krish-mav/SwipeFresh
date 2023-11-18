@@ -37,6 +37,7 @@ struct SwipeView: View {
             .onChange(of: viewModel.currentRecipe) { oldValue, newValue in
                     print(viewModel.learner.data)
             }
+            Spacer()
             SwipeButtonsView(viewModel: viewModel)
             
         }
@@ -68,6 +69,7 @@ struct SwipeView: View {
 }
 
 
-#Preview {
-    SwipeView(viewModel: Mock.swipeViewModel)
-}
+/*#Preview {
+ SwipeView(viewModel: Mock.swipeViewModel)
+ }
+ */
