@@ -92,7 +92,7 @@ struct RecipeBigView: View {
                                 withAnimation(Animation.easeInOut(duration: 1.0)) {
                                     viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: 500, height: 0))
                                     changeColor(width: viewModel.getRecipeCard(index: index).offset.width)
-                                    viewModel.currentRecipe = index - 1
+                                    viewModel.currentRecipe = index + 1
                                     viewModel.lastRecipe = index
                                     viewModel.isShowingBottomSheet = false
                                 }
@@ -101,7 +101,7 @@ struct RecipeBigView: View {
                                 withAnimation(Animation.easeInOut(duration: 1.0)) {
                                     viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: -500, height: 0))
                                     changeColor(width: viewModel.getRecipeCard(index: index).offset.width)
-                                    viewModel.currentRecipe = index - 1
+                                    viewModel.currentRecipe = index + 1
                                     viewModel.lastRecipe = index
                                     viewModel.isShowingBottomSheet = false
                                 }

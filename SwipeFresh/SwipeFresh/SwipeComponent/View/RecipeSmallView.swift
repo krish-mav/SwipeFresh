@@ -22,7 +22,7 @@ struct RecipeSmallView: View {
                 VStack(alignment: .leading) {
                     Spacer()
                     HStack(alignment: .bottom) {
-                        Text("Recipe name")
+                        Text("Recipe name \(index)")
                             .font(.largeTitle)
                             .fontWeight(.bold)
                         Spacer()
@@ -53,7 +53,7 @@ struct RecipeSmallView: View {
                 withAnimation(Animation.easeInOut(duration: 1.0)) {
                     viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: 500, height: 0))
                     changeColor(width: viewModel.getRecipeCard(index: index).offset.width)
-                    viewModel.currentRecipe = index - 1
+                    viewModel.currentRecipe = index + 1
                     viewModel.lastRecipe = index
                 }
 
@@ -61,7 +61,7 @@ struct RecipeSmallView: View {
                 withAnimation(Animation.easeInOut(duration: 1.0)) {
                     viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: -500, height: 0))
                     changeColor(width: viewModel.getRecipeCard(index: index).offset.width)
-                    viewModel.currentRecipe = index - 1
+                    viewModel.currentRecipe = index + 1
                     viewModel.lastRecipe = index
 
                 }
@@ -98,13 +98,13 @@ struct RecipeSmallView: View {
             case -500...(-150):
                 viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: -500, height: 0))
                 viewModel.lastRecipe = index
-                viewModel.currentRecipe = index - 1
+                viewModel.currentRecipe = index + 1
                 viewModel.dislikeRecipe(index: index)
                 viewModel.learn(card: viewModel.getRecipeCard(index: index))
             case 150...(500):
                 viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: 500, height: 0))
                 viewModel.lastRecipe = index
-                viewModel.currentRecipe = index - 1
+                viewModel.currentRecipe = index + 1
                 viewModel.likeRecipe(index: index)
                 viewModel.learner.learn(card: viewModel.getRecipeCard(index: index))
             default:

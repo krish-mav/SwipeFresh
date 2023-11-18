@@ -8,6 +8,7 @@
 import Foundation
 
 struct Recipe: Identifiable {
+    var score: Double = 0
     var id = UUID()
     var name: String
     var image: String
@@ -16,6 +17,7 @@ struct Recipe: Identifiable {
     var prepTime: TimeInterval
     var allergens: [Allergen]
     var instructions: [String]
+
 
 
 }
