@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Allergen: Identifiable, Comparable {
+struct Allergen: Identifiable, Comparable, Codable {
     static func < (lhs: Allergen, rhs: Allergen) -> Bool {
         lhs.name == rhs.name
     }
@@ -20,4 +20,10 @@ struct Allergen: Identifiable, Comparable {
         self.name = name
         self.isSelected = isSelected
     }
+    
+    enum CodingKeys: String, CodingKey {
+            case id
+            case name
+            case isSelected
+        }
 }

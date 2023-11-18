@@ -8,17 +8,29 @@
 import SwiftUI
 
 struct MainView: View {
+    init(learner: LearningAlgorithm = LearningAlgorithm()) {
+        var orgLearner = learner
+        var bindlearner = Binding(get: {
+            orgLearner
+        }, set: { val in
+            orgLearner = val
+        })
+        self.viewModel = SwipeViewModel(recipes: Dataloader().recipeStack , learner: bindlearner)
+    }
+    var viewModel: SwipeViewModel
     var body: some View {
         TabView {
             restrictionView(viewModel: restrictionViewModel())
                 .tabItem {
                     Image(systemName: "heart.fill")
                 }
-            SwipeView(viewModel: Mock.swipeViewModel)
+            SwipeView(viewModel: viewModel)
                 .tabItem {
                     Image(systemName: "heart.fill")
+                }.onAppear() {
+                    Dataloader().load()
                 }
-            RecipeListView(savedRecipes: Mock.mockRecipes)
+            RecipeListView(viewModel: viewModel)
                 .tabItem {
                     Image (systemName: "heart.fill")
                 }

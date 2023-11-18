@@ -9,20 +9,22 @@ import Foundation
 import SwiftUI
 
 class SwipeViewModel: ObservableObject {
-    init(data: Data, learner: LearningAlgorithm) {
-        self.data = data
+    init(recipes: [RecipeCard], learner: Binding<LearningAlgorithm>) {
+        self.data = FreshStructure(learner: learner, recipes: recipes, minLength: 5)
         self.currentRecipe = 0
         self.learner = learner
 
     }
     @Published var isShowingBottomSheet: Bool = false
     
-    @Published var data: Data
+    @Published var data: FreshStructure
     
-    @Published var learner: LearningAlgorithm
+    @Published var learner: Binding<LearningAlgorithm>
+    
+    @Published var likedRecipes: [Recipe] = []
     
     func learn(card: RecipeCard) {
-        learner.learn(card: card)
+        learner.wrappedValue.learn(card: card)
     }
     
     func populate(amount: Int) {
@@ -48,7 +50,7 @@ class SwipeViewModel: ObservableObject {
     func score() {
         data.storageRecipes = data.storageRecipes.map( { recipe in
             var newRecipe = recipe
-            newRecipe.recipe.score = learner.calculate(recipe: recipe.recipe)
+            newRecipe.recipe.score = learner.wrappedValue.calculate(recipe: recipe.recipe)
             return newRecipe
         })
     }

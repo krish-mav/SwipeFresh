@@ -45,6 +45,7 @@ struct SwipeView: View {
 }
 
 
-#Preview {
-    SwipeView(viewModel: Mock.swipeViewModel)
-}
+/*#Preview {
+ SwipeView(viewModel: Mock.swipeViewModel)
+ }
+ */

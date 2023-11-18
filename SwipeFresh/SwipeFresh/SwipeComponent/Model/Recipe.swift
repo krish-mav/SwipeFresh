@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Recipe: Identifiable {
+struct Recipe: Identifiable, Decodable {
     var score: Double = 0
     var id = UUID()
     var name: String
@@ -17,7 +17,29 @@ struct Recipe: Identifiable {
     var prepTime: TimeInterval
     var allergens: [Allergen]
     var instructions: [String]
+    
+    init(score: Double, id: UUID = UUID(), name: String, image: String, ingredientItems: [IngredientItem], tags: [Tag], prepTime: TimeInterval, allergens: [Allergen], instructions: [String]) {
+        self.score = score
+        self.id = id
+        self.name = name
+        self.image = image
+        self.ingredientItems = ingredientItems
+        self.tags = tags
+        self.prepTime = prepTime
+        self.allergens = allergens
+        self.instructions = instructions
+    }
 
-
+    private enum CodingKeys: String, CodingKey {
+            case score
+            case id
+            case name
+            case image
+            case ingredientItems
+            case tags
+            case prepTime
+            case allergens
+            case instructions
+        }
 
 }
