@@ -9,7 +9,7 @@ import Foundation
 class Mock {
     static var swipeViewModel: SwipeViewModel = SwipeViewModel(recipeStack: recipeStack)
     
-    static var recipe: Recipe = Recipe(title: "Test")
-    
+    static var recipe: Recipe = Recipe(name: "String", image: "", ingredientItems: [], tags: [], prepTime: 1800, allergens: [], instructions: [])
+
     static var recipeStack: [Recipe] = [recipe, recipe]
 }

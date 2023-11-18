@@ -10,6 +10,7 @@ import Foundation
 struct Recipe: Identifiable {
     var id = UUID()
     var name: String
+    var image: String
     var ingredientItems: [IngredientItem]
     var tags: [Tag]
     var prepTime: TimeInterval
