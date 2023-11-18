@@ -8,9 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		09CC6749179605F4A165A9F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19D4A72267A16FE96A36AEB3 /* Assets.xcassets */; };
-		0B1D643C13A180238C9FF7B6 /* info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5CBD1FA64F102EDB253A7FDC /* info.plist */; };
 		3085729EA1AF0442785B3121 /* SwipeFreshApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6B3EDCDE0E8A8B91099083 /* SwipeFreshApp.swift */; };
 		622F58AE0E0E956D6A3310E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EC995FA6A220C4D9331658E /* Preview Assets.xcassets */; };
+		7999D40D2B08BDD50049DFEE /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999D40C2B08BDD50049DFEE /* SwipeView.swift */; };
+		7999D40F2B08C0540049DFEE /* RecipeSmallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999D40E2B08C0540049DFEE /* RecipeSmallView.swift */; };
+		7999D4112B08C0D20049DFEE /* SwipeButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999D4102B08C0D20049DFEE /* SwipeButtonsView.swift */; };
+		7999D4132B08C32A0049DFEE /* SwipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999D4122B08C32A0049DFEE /* SwipeViewModel.swift */; };
+		7999D4152B08C3730049DFEE /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999D4142B08C3730049DFEE /* Recipe.swift */; };
+		7999D4182B08C3C70049DFEE /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999D4172B08C3C70049DFEE /* Mock.swift */; };
 		7FDD6A9D67A3B0869A867CF8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B2C4C5C5F949B9B2BAE763 /* MainView.swift */; };
 		B88A590192A0DE9FBCA1C314 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFF5533FA2F676FAF48FDCE /* ContentView.swift */; };
 /* End PBXBuildFile section */
@@ -20,6 +25,12 @@
 		19D4A72267A16FE96A36AEB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EC995FA6A220C4D9331658E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5CBD1FA64F102EDB253A7FDC /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = info.plist; sourceTree = "<group>"; };
+		7999D40C2B08BDD50049DFEE /* SwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
+		7999D40E2B08C0540049DFEE /* RecipeSmallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeSmallView.swift; sourceTree = "<group>"; };
+		7999D4102B08C0D20049DFEE /* SwipeButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeButtonsView.swift; sourceTree = "<group>"; };
+		7999D4122B08C32A0049DFEE /* SwipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewModel.swift; sourceTree = "<group>"; };
+		7999D4142B08C3730049DFEE /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		7999D4172B08C3C70049DFEE /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
 		7A6B3EDCDE0E8A8B91099083 /* SwipeFreshApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeFreshApp.swift; sourceTree = "<group>"; };
 		B9B2C4C5C5F949B9B2BAE763 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		BFFF5533FA2F676FAF48FDCE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,6 +48,8 @@
 		749C18103D979720136D79F6 /* SwipeFresh */ = {
 			isa = PBXGroup;
 			children = (
+				7999D4162B08C3AE0049DFEE /* MockComponent */,
+				7999D4092B08BDAA0049DFEE /* SwipeComponent */,
 				19D4A72267A16FE96A36AEB3 /* Assets.xcassets */,
 				BFFF5533FA2F676FAF48FDCE /* ContentView.swift */,
 				B9B2C4C5C5F949B9B2BAE763 /* MainView.swift */,
@@ -45,6 +58,42 @@
 				1FC3CE7CB0AB5D147D43A4FA /* Supporting */,
 			);
 			path = SwipeFresh;
+			sourceTree = "<group>";
+		};
+		7999D4092B08BDAA0049DFEE /* SwipeComponent */ = {
+			isa = PBXGroup;
+			children = (
+				7999D40B2B08BDC50049DFEE /* Model */,
+				7999D40A2B08BDB50049DFEE /* View */,
+			);
+			path = SwipeComponent;
+			sourceTree = "<group>";
+		};
+		7999D40A2B08BDB50049DFEE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7999D40C2B08BDD50049DFEE /* SwipeView.swift */,
+				7999D40E2B08C0540049DFEE /* RecipeSmallView.swift */,
+				7999D4102B08C0D20049DFEE /* SwipeButtonsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7999D40B2B08BDC50049DFEE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7999D4122B08C32A0049DFEE /* SwipeViewModel.swift */,
+				7999D4142B08C3730049DFEE /* Recipe.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7999D4162B08C3AE0049DFEE /* MockComponent */ = {
+			isa = PBXGroup;
+			children = (
+				7999D4172B08C3C70049DFEE /* Mock.swift */,
+			);
+			path = MockComponent;
 			sourceTree = "<group>";
 		};
 		869A031EAB1DC491C552F8F9 /* Preview Content */ = {
@@ -122,7 +171,6 @@
 			files = (
 				09CC6749179605F4A165A9F2 /* Assets.xcassets in Resources */,
 				622F58AE0E0E956D6A3310E3 /* Preview Assets.xcassets in Resources */,
-				0B1D643C13A180238C9FF7B6 /* info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,9 +181,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7999D4132B08C32A0049DFEE /* SwipeViewModel.swift in Sources */,
 				B88A590192A0DE9FBCA1C314 /* ContentView.swift in Sources */,
+				7999D40F2B08C0540049DFEE /* RecipeSmallView.swift in Sources */,
+				7999D40D2B08BDD50049DFEE /* SwipeView.swift in Sources */,
+				7999D4112B08C0D20049DFEE /* SwipeButtonsView.swift in Sources */,
 				7FDD6A9D67A3B0869A867CF8 /* MainView.swift in Sources */,
 				3085729EA1AF0442785B3121 /* SwipeFreshApp.swift in Sources */,
+				7999D4152B08C3730049DFEE /* Recipe.swift in Sources */,
+				7999D4182B08C3C70049DFEE /* Mock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
