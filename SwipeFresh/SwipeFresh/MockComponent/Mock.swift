@@ -9,9 +9,7 @@ import Foundation
 class Mock {
     static var swipeViewModel: SwipeViewModel = SwipeViewModel(recipeStack: recipeStack)
     
-    static var recipe: Recipe = Recipe(title: "Test")
-    
-    static var recipeStack: [Recipe] = [recipe, recipe]
+    static var recipe: Recipe = Recipe(name: "String", image: "", ingredientItems: [], tags: [], prepTime: 1800, allergens: [], instructions: [])
     
     static var allergens: [Allergen] = [
         Allergen(name: "Fish", isSelected: false),
@@ -22,4 +20,7 @@ class Mock {
         Allergen(name: "Gluten free", isSelected: false)
         
     ]
+    static var recipeCard: RecipeCard = RecipeCard(recipe: recipe)
+    
+    static var recipeStack: [RecipeCard] = [recipeCard, recipeCard, recipeCard, recipeCard, recipeCard, recipeCard, recipeCard, recipeCard, recipeCard, recipeCard, recipeCard, recipeCard]
 }
