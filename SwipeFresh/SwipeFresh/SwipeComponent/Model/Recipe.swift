@@ -14,8 +14,7 @@ struct Recipe: Identifiable {
     var ingredientItems: [IngredientItem]
     var tags: [Tag]
     var prepTime: TimeInterval
+    var cookTime: TimeInterval
     var allergens: [Allergen]
     var instructions: [String]
-
-
 }
