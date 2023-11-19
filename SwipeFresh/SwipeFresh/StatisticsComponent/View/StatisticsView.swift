@@ -22,10 +22,9 @@ struct StatisticsView: View {
                     HStack {
                         ForEach(cuisines, id: \.self) { cuisine in
                             ZStack{
-                                Rectangle()
+                                RoundedRectangle(cornerRadius: 2)
                                     .stroke(Color.black) // Black border
                                     .background(Color.white) // White background
-                                    .cornerRadius(2)
                                     .frame(height: 25)
                                 Text("\(cuisine)")
                                     .padding(.leading, 10)
@@ -42,10 +41,9 @@ struct StatisticsView: View {
                     HStack {
                         ForEach(hatedCuisines, id: \.self) { cuisine in
                             ZStack {
-                                Rectangle()
+                                RoundedRectangle(cornerRadius: 2)
                                     .stroke(Color.black) // Black border
                                     .background(Color.white) // White background
-                                    .cornerRadius(3)
                                     .frame(height: 25)
                                 Text("\(cuisine)")
                                     .padding(.leading, 10)
@@ -61,10 +59,9 @@ struct StatisticsView: View {
                     HStack {
                         ForEach(hatedIngredients, id: \.self) { ingredient in
                             ZStack {
-                                Rectangle()
+                                RoundedRectangle(cornerRadius: 2)
                                     .stroke(Color.black) // Black border
-                                    .background(Color.white) // White background
-                                    .cornerRadius(3)
+                                    //.background(Color.white) // White background
                                     .frame(height: 25)
                                 Text("\(ingredient)")
                                     .padding(.leading, 10)
@@ -73,16 +70,29 @@ struct StatisticsView: View {
                         }
                     }
                 }
-                HStack(alignment: .top) {
-                    Text("Food match streak")
+                VStack(alignment: .leading) {
+                    Text("Swipe Stats")
                         .font(.headline)
                         .padding(.bottom, 5)
-                    Image(systemName: "star.fill")
-                    Image(systemName: "star.fill")
-                    Image(systemName: "star.fill")
-                    Image(systemName: "star.fill")
-                    Image(systemName: "star.fill")
+                    HStack(alignment: .top) {
+                        Text("Food match streak")
+                            .font(.body)
+                            .padding(.bottom, 5)
+                        Spacer()
+                        Text("\(5)")
+                        Image("lime")
+                            .resizable()
+                            .frame(width: 25, height: 20)
+                    }
+                    HStack(alignment: .top) {
+                        Text("Right-Swipe-Percentage")
+                            .font(.body)
+                            .padding(.bottom, 5)
+                        Spacer()
+                        Text("72%")
+                    }
                 }
+
             }
         }
     }
