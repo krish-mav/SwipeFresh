@@ -23,7 +23,7 @@ struct RecipeSmallView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(width: 370, height: 600)
-
+//test
                         
                 } placeholder: {
                     Color("primary_darkest") // Placeholder color
