@@ -105,8 +105,8 @@ class SwipeViewModel: ObservableObject {
     }
     
     func getRecipe(index: Int) -> Recipe {
-        if recipeStack.count > index {
-            recipeStack[index].recipe
+        if data.recipeStack.count > index {
+            data.recipeStack[index].recipe
         } else {
             RecipeCard(recipe: Mock.recipe, offset: CGSize(width: -500, height: 0)).recipe
         }

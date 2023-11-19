@@ -43,9 +43,8 @@ class Mock {
             name: "Mock Pasta",
             image: "https://img.hellofresh.com/w_2048,q_auto,f_auto,c_limit,fl_lossy/c_fill,f_auto,fl_lossy,h_432,q_auto/hellofresh_s3/image/63f4d66d8877805e4b01e49b-66a31f0c.jpg",
             ingredientItems: [IngredientItem(ingredient: Ingredient(name: "Carrot", unit: nil), quantity: 30), IngredientItem(ingredient: Ingredient(name: "Apple", unit: nil), quantity: 30)],
-            tags: [Tag(from: "Mock Italian" as! Decoder)],
+            tags: [Tag(name: "ds")],
             prepTime: 20 * 60, // 20 minutes
-            cookTime: 40 * 60,
             allergens: [Allergen(name: "Mock Eggs")],
             instructions: ["Cook mock spaghetti according to package instructions.", "In a bowl, mix mock eggs and grated mock parmesan.", "Fry mock bacon until crispy.", "Toss cooked mock spaghetti with egg mixture and bacon. Serve hot."]
         ),
@@ -55,7 +54,6 @@ class Mock {
             ingredientItems: [IngredientItem(ingredient: Ingredient(name: "Spinach", unit: nil), quantity: 30), IngredientItem(ingredient: Ingredient(name: "Apple", unit: nil), quantity: 30)],
             tags: [Tag(name: "Mock Asian")],
             prepTime: 15 * 60,
-            cookTime: 30 * 60,
             allergens: [Allergen(name: "Mock Soy")],
             instructions: ["Slice mock chicken into thin strips.", "Stir-fry mock chicken in a pan until cooked.", "Add mock broccoli and minced mock garlic, stir-fry until tender.", "Pour mock soy sauce over the mixture, stir well. Serve over mock rice."]
         ),

@@ -21,7 +21,7 @@ struct Recipe: Identifiable {
 
 
     
-    init(score: Double, id: UUID = UUID(), name: String, image: String, ingredientItems: [IngredientItem], tags: [Tag], prepTime: Int, allergens: [Allergen], instructions: [String]) {
+    init(score: Double = 0, id: UUID = UUID(), name: String, image: String, ingredientItems: [IngredientItem], tags: [Tag], prepTime: Int, allergens: [Allergen], instructions: [String]) {
         self.score = score
         self.id = id
         self.name = name

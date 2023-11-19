@@ -22,7 +22,7 @@ struct MainView: View {
     var body: some View {
 
         TabView(selection: $selection) {
-            restrictionView(viewModel: restrictionViewModel())
+            RestrictionView(viewModel: RestrictionViewModel())
                 .tabItem {
                     Image(systemName: "person.fill")
                 }
@@ -40,7 +40,7 @@ struct MainView: View {
                 }
                 .tag(3)
         }
-        .accentColor(Color("primary_dark"))
+        .accentColor(Color("primary_darkest"))
 
 
     }

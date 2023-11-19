@@ -20,15 +20,12 @@ struct RecipeBigView: View {
                     AsyncImage(url: URL(string: viewModel.getRecipe(index: index).image)) { image in
                         image
                             .resizable()
-                            
                     } placeholder: {
-
                         Image("Placeholder")
                             .resizable()
                     }
                     
-                    
-                        .scaledToFit()
+                    .scaledToFit()
                     //for Overlaping
                     Spacer()
                         .frame(height: photoSpacer)
@@ -53,18 +50,18 @@ struct RecipeBigView: View {
                                 Spacer()
                                 Button(action: {
                                     withAnimation {
-                                            self.initPadding = 10
-                                        }
-                                        withAnimation(Animation.linear(duration: 0.5)) {
-                                            photoSpacer = 700
-                                        }
-
-                                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                                            viewModel.isShowingBottomSheet.toggle()
-                                        }
+                                        self.initPadding = 10
+                                    }
+                                    withAnimation(Animation.linear(duration: 0.5)) {
+                                        photoSpacer = 700
+                                    }
+                                    
+                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                        viewModel.isShowingBottomSheet.toggle()
+                                    }
                                 }, label: {
                                     Image(systemName: "arrow.down.circle.fill")
-                                        .foregroundColor(Color("primary_darkest"))
+                                        .foregroundColor(Color("primary_dark"))
                                         .font(.largeTitle)
                                 })
                                 
@@ -72,120 +69,44 @@ struct RecipeBigView: View {
                             
                             RecipeDetailedView(recipe: viewModel.getRecipe(index: index))
                             
-                            
-                            
                             Spacer()
                         }.fixedSize(horizontal: false, vertical: true)
-                        
-                        
-        ZStack {
-            ScrollView {
-                ZStack(alignment: .top) {
-                    
-                    VStack {
-                        Image("Placeholder")
-                            .resizable()
-                            .scaledToFit()
-                        Spacer()
-                            .frame(height: photoSpacer)
-                    }
-
-                    
-                    VStack {
-                        Spacer()
-                            .frame(minHeight: 200)
-                        ZStack(alignment: .top) {
-                            Rectangle()
-                                .foregroundColor(.white)
-                                .frame(height: 700)
-                            
-                                .cornerRadius(15)
-                            VStack(alignment: .leading) {
-                                
-                                HStack(alignment: .bottom) {
-                                    Text("Recipe name")
-                                        .font(.largeTitle)
-                                        .fontWeight(.bold)
-                                    Spacer()
-                                    Button(action: {
-                                        withAnimation {
-                                            self.initPadding = 10
-                                        }
-                                        withAnimation(Animation.linear(duration: 0.5)) {
-                                            photoSpacer = 700
-                                        }
-
-                                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                                            viewModel.isShowingBottomSheet.toggle()
-                                        }
-                                    }, label: {
-                                        Image(systemName: "arrow.down.circle.fill")
-                                            .foregroundColor(Color("primary_dark"))
-                                            .font(.largeTitle)
-                                    })
+                            .onChange(of: viewModel.getRecipeCard(index: index).liked, { oldValue, newValue in
+                                if newValue == 1 {
+                                    withAnimation(Animation.easeInOut(duration: 1.0)) {
+                                        viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: 500, height: 0))
+                                        changeColor(width: viewModel.getRecipeCard(index: index).offset.width)
+                                        viewModel.currentRecipe = index + 1
+                                        viewModel.lastRecipe = index
+                                        viewModel.isShowingBottomSheet = false
+                                    }
                                     
-                                }
-                                //                            TODO: Make an HStack that moves things in multiple rows when too many
-                                HStack {
-                                    TagView()
-                                    TagView()
-                                    TagView()
+                                } else if newValue == 3 {
+                                    withAnimation(Animation.snappy(duration: 2.0)) {
+                                        viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: 0, height: -6000))
+                                        changeColor(width: viewModel.getRecipeCard(index: index).offset.width)
+                                        viewModel.currentRecipe = index + 1
+                                        viewModel.lastRecipe = index
+                                        viewModel.isShowingBottomSheet = false
+                                    }
                                     
+                                } else if newValue == -1 {
+                                    withAnimation(Animation.easeInOut(duration: 1.0)) {
+                                        viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: -500, height: 0))
+                                        changeColor(width: viewModel.getRecipeCard(index: index).offset.width)
+                                        viewModel.currentRecipe = index + 1
+                                        viewModel.lastRecipe = index
+                                        viewModel.isShowingBottomSheet = false
+                                    }
+                                } else if newValue == 0 {
+                                    withAnimation(Animation.interactiveSpring(duration: 1.0)) {
+                                        //viewModel.resetRecipe(index: index)
+                                        viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: 0, height: 0))
+                                        changeColor(width: viewModel.getRecipeCard(index: index).offset.width)
+                                        //viewModel.currentRecipe += 1
+                                    }
                                 }
-                                HStack {
-                                    TimeTagRecipeView()
-                                        .padding(.trailing)
-                                    TimeTagRecipeView()
-                                }
-                                
-                                Spacer().frame(height: 20)
-                                Text("Ingredients")
-                                    .font(.title)
-                                    .fontWeight(.bold)
-                                Spacer().frame(height: 50)
-                                Text("Instructions")
-                                    .font(.title)
-                                    .fontWeight(.bold)
-                                Spacer()
-                            }
-                            .padding()
-                        }
-                      .onChange(of: viewModel.getRecipeCard(index: index).liked, { oldValue, newValue in
-                            if newValue == 1 {
-                                withAnimation(Animation.easeInOut(duration: 1.0)) {
-                                    viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: 500, height: 0))
-                                    changeColor(width: viewModel.getRecipeCard(index: index).offset.width)
-                                    viewModel.currentRecipe = index + 1
-                                    viewModel.lastRecipe = index
-                                    viewModel.isShowingBottomSheet = false
-                                }
-
-                            } else if newValue == 3 {
-                                withAnimation(Animation.snappy(duration: 2.0)) {
-                                    viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: 0, height: -6000))
-                                    changeColor(width: viewModel.getRecipeCard(index: index).offset.width)
-                                    viewModel.currentRecipe = index + 1
-                                    viewModel.lastRecipe = index
-                                    viewModel.isShowingBottomSheet = false
-                                }
-
-                            } else if newValue == -1 {
-                                withAnimation(Animation.easeInOut(duration: 1.0)) {
-                                    viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: -500, height: 0))
-                                    changeColor(width: viewModel.getRecipeCard(index: index).offset.width)
-                                    viewModel.currentRecipe = index + 1
-                                    viewModel.lastRecipe = index
-                                    viewModel.isShowingBottomSheet = false
-                                }
-                            } else if newValue == 0 {
-                                withAnimation(Animation.interactiveSpring(duration: 1.0)) {
-                                    //viewModel.resetRecipe(index: index)
-                                    viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: 0, height: 0))
-                                    changeColor(width: viewModel.getRecipeCard(index: index).offset.width)
-                                    //viewModel.currentRecipe += 1
-                                }
-                            }
-                        })
+                            })
                         
                         Spacer()
                     }
@@ -202,21 +123,11 @@ struct RecipeBigView: View {
                         }
                     }
                 })
+                .ignoresSafeArea()
+                .offset(x: viewModel.getRecipeCard(index: index).offset.width, y: viewModel.getRecipeCard(index: index).offset.height * 0.4)
+                
             }
-            .onAppear(perform: {
-                withAnimation(Animation.linear(duration: 0.5)) {
-                    photoSpacer = 100
-                }
-            })
-            
-            
         }
-            .ignoresSafeArea()
-        }
-        .offset(x: viewModel.getRecipeCard(index: index).offset.width, y: viewModel.getRecipeCard(index: index).offset.height * 0.4)
-
-        
-        
     }
     func changeColor(width: CGFloat) {
         switch width {
@@ -230,7 +141,7 @@ struct RecipeBigView: View {
     }
 }
 
-/*#Preview {
-    RecipeBigView(viewModel: Mock.swipeViewModel, index: 0)
-}
+//#Preview {
+//    RecipeBigView(viewModel: Mock.swipeViewModel, index: 0)
+//}
 

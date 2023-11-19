@@ -50,11 +50,11 @@ struct RecipeDetailedView: View {
                 .font(.title)
                 .fontWeight(.bold)
 
-            ForEach(recipe.ingredientItems) { item in
+            ForEach(recipe.ingredientItems, id: \.self) { item in
                 if let unit = item.ingredient.unit {
                     IngredientView(
                         ingredient: item.ingredient.name,
-                        unit: unit.symbol,
+                        unit: unit,
                         quantity: String(item.quantity))
                 } else {
                     IngredientView(
@@ -81,6 +81,6 @@ struct RecipeDetailedView: View {
     
 }
 
-#Preview {
-    RecipeDetailedView(recipe: Mock.swipeViewModel.getRecipe(index: 0))
-}
+//#Preview {
+//    RecipeDetailedView(recipe: Mock.swipeViewModel.getRecipe(index: 0))
+//}
