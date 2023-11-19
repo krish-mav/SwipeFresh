@@ -12,7 +12,7 @@ struct Ingredient: Identifiable, Codable {
     var name: String
     var unit: String?
 
-    init(name: String, unit: String?) {
+    init(name: String, unit: String? = nil) {
         self.name = name
         self.unit = unit
     }
