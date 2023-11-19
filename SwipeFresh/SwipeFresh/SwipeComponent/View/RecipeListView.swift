@@ -21,6 +21,8 @@ struct RecipeListView: View {
 
     var body: some View {
 
+        VStack {
+            HeaderView(title: "Saved Recipes")
         NavigationStack {
             VStack {
                 SearchBar(text: $searchText)
@@ -30,9 +32,9 @@ struct RecipeListView: View {
                         .padding(0) // Remove padding around the cell
                         .listRowInsets(EdgeInsets())
                         .listRowSeparator(.hidden)
+                                              }
+                    .listStyle(PlainListStyle())
                 }
-                .listStyle(PlainListStyle())
-                .navigationTitle("Saved Recipes")
             }
         }
     }

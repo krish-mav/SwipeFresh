@@ -20,10 +20,11 @@ struct MainView: View {
     var viewModel: SwipeViewModel
     @State private var selection = 2
     var body: some View {
+
         TabView(selection: $selection) {
             restrictionView(viewModel: restrictionViewModel())
                 .tabItem {
-                    Image(systemName: "heart.fill")
+                    Image(systemName: "person.fill")
                 }
                 .tag(1)
             SwipeView(viewModel: viewModel)
@@ -35,11 +36,12 @@ struct MainView: View {
                 .tag(2)
             RecipeListView(viewModel: viewModel)
                 .tabItem {
-                    Image (systemName: "heart.fill")
+                    Image (systemName: "list.bullet")
                 }
                 .tag(3)
         }
         .accentColor(Color("primary_dark"))
+
 
     }
 }

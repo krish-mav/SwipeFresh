@@ -34,25 +34,11 @@ class Mock {
     ]
     static var recipeCard: RecipeCard = RecipeCard(recipe: recipe)
     
-    //static var recipeStack: [RecipeCard] = mockRecipes.map( {RecipeCard(recipe: $0)})
+    static var recipeStack: [RecipeCard] = mockRecipes.map( { RecipeCard(recipe: $0)})
 
-    /*static var mockRecipes: [Recipe] = [
-=======
-    static var mockRecipe = Recipe(
-        name: "Crispy Cajun Chicken Sandwiches",
-        image: "https://img.hellofresh.com/w_2048,q_auto,f_auto,c_limit,fl_lossy/c_fill,f_auto,fl_lossy,h_432,q_auto/hellofresh_s3/image/63d94b2977c8d43261096729-89774632.jpg",
-        ingredientItems: [
-            IngredientItem(ingredient: Ingredient(name: "Flour", unit: UnitMass.grams), quantity: 200.0),
-            IngredientItem(ingredient: Ingredient(name: "Sugar", unit: UnitVolume.cups), quantity: 1.0)
-        ],
-        tags: [Tag(name: "Dinner")],
-        prepTime: 30 * 60,
-        cookTime: 20 * 60,
-        allergens: [Allergen(name: "Nuts")],
-        instructions: ["Mock Step", "Another Mock Step"]
-    )
+
+
     static var mockRecipes: [Recipe] = [
->>>>>>> main
         Recipe(
             name: "Mock Pasta",
             image: "https://img.hellofresh.com/w_2048,q_auto,f_auto,c_limit,fl_lossy/c_fill,f_auto,fl_lossy,h_432,q_auto/hellofresh_s3/image/63f4d66d8877805e4b01e49b-66a31f0c.jpg",
@@ -135,5 +121,5 @@ class Mock {
                 "Serve immediately and enjoy!"
             ]
         ),
-    ]*/
+    ]
 }

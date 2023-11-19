@@ -6,13 +6,6 @@
 //
 
 import SwiftUI
-//        Image with url
-//        Name
-//        Ingredients
-//        Tags
-//        Prep time
-//        Instructions
-//        ...Time
 
 struct RecipeBigView: View {
     @ObservedObject var viewModel: SwipeViewModel
@@ -20,6 +13,71 @@ struct RecipeBigView: View {
     @State var photoSpacer: CGFloat = 700
     @State var initPadding: CGFloat = 10
     var body: some View {
+        ScrollView {
+            ZStack(alignment: .top) {
+                
+                VStack {
+                    AsyncImage(url: URL(string: viewModel.getRecipe(index: index).image)) { image in
+                        image
+                            .resizable()
+                            
+                    } placeholder: {
+
+                        Image("Placeholder")
+                            .resizable()
+                    }
+                    
+                    
+                        .scaledToFit()
+                    //for Overlaping
+                    Spacer()
+                        .frame(height: photoSpacer)
+                }
+                //for Overlaping
+                VStack {
+                    Spacer()
+                        .frame(minHeight: 200)
+                    ZStack(alignment: .top) {
+                        Rectangle()
+                            .foregroundColor(.white)
+                            .frame(height: 700)
+                        
+                            .cornerRadius(15)
+                        VStack(alignment: .leading) {
+                            
+                            HStack(alignment: .bottom) {
+                                Text(viewModel.getRecipe(index: index).name)
+                                    .font(.largeTitle)
+                                    .fontWeight(.bold)
+                                
+                                Spacer()
+                                Button(action: {
+                                    withAnimation {
+                                            self.initPadding = 10
+                                        }
+                                        withAnimation(Animation.linear(duration: 0.5)) {
+                                            photoSpacer = 700
+                                        }
+
+                                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                            viewModel.isShowingBottomSheet.toggle()
+                                        }
+                                }, label: {
+                                    Image(systemName: "arrow.down.circle.fill")
+                                        .foregroundColor(Color("primary_darkest"))
+                                        .font(.largeTitle)
+                                })
+                                
+                            }.padding([.top,.leading,.trailing])
+                            
+                            RecipeDetailedView(recipe: viewModel.getRecipe(index: index))
+                            
+                            
+                            
+                            Spacer()
+                        }.fixedSize(horizontal: false, vertical: true)
+                        
+                        
         ZStack {
             ScrollView {
                 ZStack(alignment: .top) {
@@ -92,7 +150,7 @@ struct RecipeBigView: View {
                             }
                             .padding()
                         }
-                        .onChange(of: viewModel.getRecipeCard(index: index).liked, { oldValue, newValue in
+                      .onChange(of: viewModel.getRecipeCard(index: index).liked, { oldValue, newValue in
                             if newValue == 1 {
                                 withAnimation(Animation.easeInOut(duration: 1.0)) {
                                     viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: 500, height: 0))
@@ -128,6 +186,7 @@ struct RecipeBigView: View {
                                 }
                             }
                         })
+                        
                         Spacer()
                     }
                     
@@ -144,6 +203,14 @@ struct RecipeBigView: View {
                     }
                 })
             }
+            .onAppear(perform: {
+                withAnimation(Animation.linear(duration: 0.5)) {
+                    photoSpacer = 100
+                }
+            })
+            
+            
+        }
             .ignoresSafeArea()
         }
         .offset(x: viewModel.getRecipeCard(index: index).offset.width, y: viewModel.getRecipeCard(index: index).offset.height * 0.4)
@@ -166,5 +233,4 @@ struct RecipeBigView: View {
 /*#Preview {
     RecipeBigView(viewModel: Mock.swipeViewModel, index: 0)
 }
- */
 

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RecipeListItemView: View {
     var recipe: Recipe
+    @State var isPresented = false
     var body: some View {
         VStack(alignment: .leading) {
             // Display the recipe image (if available)
@@ -33,17 +34,14 @@ struct RecipeListItemView: View {
                 .font(.subheadline)
                 .foregroundColor(.secondary)
         }
+        .onTapGesture {
+            isPresented = true
+        }
         .padding()
-        .background(
-            NavigationLink(
-                destination: RecipeDetailView(recipe: recipe),
-                label: {
-                    EmptyView()
-                })
-                .buttonStyle(PlainButtonStyle())
-                .frame(width: 0, height: 0)
-                .opacity(0)
-        )
+        .fullScreenCover(isPresented: $isPresented, content: {
+            RecipeDetailView(recipe: recipe, isPresented: $isPresented)
+        })
+
     }
 }
 

@@ -8,9 +8,12 @@
 import Foundation
 import SwiftUI
 
-struct restrictionView: View {
+
+
+struct RestrictionView: View {
     
-    @ObservedObject var viewModel: restrictionViewModel
+    @ObservedObject var viewModel: RestrictionViewModel
+
     @State private var selectedPreparationTime: Int = 15
     @State private var selectedDiet: String = "None"
     
@@ -68,5 +71,5 @@ struct restrictionView: View {
 
     
 #Preview {
-    restrictionView( viewModel: restrictionViewModel())
+    RestrictionView( viewModel: RestrictionViewModel())
 }

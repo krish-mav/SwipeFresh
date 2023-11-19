@@ -8,14 +8,17 @@
 import SwiftUI
 
 struct TagView: View {
+    var tagText: String
+    
     var body: some View {
         ZStack {
             Rectangle()
                 .cornerRadius(35)
-                .foregroundColor(Color(UIColor.tertiaryLabel))
+                .foregroundColor(.gray)
+                .opacity(0.5)
             HStack {
                 
-                Text("Gluten-free")
+                Text(tagText)
             }
             .foregroundColor(.white)
             .padding(7)
@@ -26,5 +29,5 @@ struct TagView: View {
 }
 
 #Preview {
-    TagView()
+    TagView(tagText: "Really long tag")
 }
