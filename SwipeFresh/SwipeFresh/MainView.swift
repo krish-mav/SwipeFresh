@@ -8,16 +8,8 @@
 import SwiftUI
 
 struct MainView: View {
-    init(learner: LearningAlgorithm = LearningAlgorithm()) {
-        var orgLearner = learner
-        var bindlearner = Binding(get: {
-            orgLearner
-        }, set: { val in
-            orgLearner = val
-        })
-        self.viewModel = SwipeViewModel(recipes: Dataloader().recipeStack , learner: bindlearner)
-    }
-    var viewModel: SwipeViewModel
+
+    @ObservedObject var viewModel: SwipeViewModel
     @State private var selection = 2
     var body: some View {
 
@@ -46,6 +38,7 @@ struct MainView: View {
     }
 }
 
-#Preview {
-    MainView()
+/*#Preview {
+    MainView(viewModel: SwipeViewModel(recipes: [], learner: <#T##Binding<LearningAlgorithm>#>))
 }
+*/
