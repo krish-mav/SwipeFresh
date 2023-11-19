@@ -39,7 +39,6 @@ struct RecipeSmallView: View {
                     }
                 }
 
-                
                 LinearGradient(colors: [Color.black.opacity(0.9), Color.clear], startPoint: .bottom, endPoint:.center)
 
                 VStack(alignment: .leading) {

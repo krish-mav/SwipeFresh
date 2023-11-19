@@ -8,35 +8,27 @@
 import SwiftUI
 
 struct MainView: View {
-    init(learner: LearningAlgorithm = LearningAlgorithm()) {
-        var orgLearner = learner
-        var bindlearner = Binding(get: {
-            orgLearner
-        }, set: { val in
-            orgLearner = val
-        })
-        self.viewModel = SwipeViewModel(recipes: Dataloader().recipeStack , learner: bindlearner)
-    }
-    var viewModel: SwipeViewModel
+
+    @ObservedObject var viewModel: SwipeViewModel
     @State private var selection = 2
     var body: some View {
 
         TabView(selection: $selection) {
             RestrictionView(viewModel: RestrictionViewModel())
                 .tabItem {
-                    Image(systemName: "person.fill")
+                    Image(systemName: "checklist")
                 }
                 .tag(1)
             SwipeView(viewModel: viewModel)
                 .tabItem {
-                    Image(systemName: "heart.fill")
+                    Image(systemName: "frying.pan")
                 }.onAppear() {
                     Dataloader().load()
                 }
                 .tag(2)
             RecipeListView(viewModel: viewModel)
                 .tabItem {
-                    Image (systemName: "list.bullet")
+                    Image (systemName: "star.fill")
                 }
                 .tag(3)
         }
@@ -46,6 +38,7 @@ struct MainView: View {
     }
 }
 
-#Preview {
-    MainView()
+/*#Preview {
+    MainView(viewModel: SwipeViewModel(recipes: [], learner: <#T##Binding<LearningAlgorithm>#>))
 }
+*/
