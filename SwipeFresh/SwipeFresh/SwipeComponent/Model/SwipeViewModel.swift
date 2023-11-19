@@ -83,12 +83,14 @@ class SwipeViewModel: ObservableObject {
     func likeRecipe(index: Int) {
         if index >= 0 && index < self.data.recipeStack.count {
             self.data.recipeStack[index].liked = 1
+            self.likedRecipes.append(self.data.recipeStack[index].recipe)
         }
     }
     
     func superLikeRecipe(index: Int) {
         if index >= 0 && index < self.data.recipeStack.count {
             self.data.recipeStack[index].liked = 3
+            self.likedRecipes.append(self.data.recipeStack[index].recipe)
         }
     }
     

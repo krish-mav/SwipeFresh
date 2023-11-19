@@ -36,7 +36,7 @@ struct RestrictionView: View {
                         .foregroundColor(Color("primary_darkest"))
                         .padding(.leading, -15)) {
                             Picker(selection: $selectedPreparationTime, label: Text("Select Time")) {
-                                ForEach(0..<61, id: \.self) { minute in
+                                ForEach(0..<9, id: \.self) { minute in
                                     Text("\(minute * 15) min").tag(minute * 15)
                                 }
                             }
