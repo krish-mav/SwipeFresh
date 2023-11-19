@@ -18,6 +18,7 @@ struct SwipePopupView: View {
     @ObservedObject var viewModel: SwipeViewModel
     @State var selectedElements: [String] = []
     var ingr: [Ingredient]
+
     var body: some View {
         ZStack {
             Rectangle()
@@ -87,6 +88,7 @@ struct SwipePopupView: View {
                         //.background(Color("primary_dark"))
                         Spacer()
                     }
+
                 }
                 .padding()
             }
@@ -104,3 +106,4 @@ struct SwipePopupView: View {
 //#Preview {
 ////    SwipePopupView()
 //}
+
