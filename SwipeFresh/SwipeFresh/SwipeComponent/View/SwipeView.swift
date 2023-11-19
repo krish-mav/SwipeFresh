@@ -27,14 +27,12 @@ struct SwipeView: View {
 
                 }
                 ForEach((0..<viewModel.data.recipeStack.count).reversed(), id: \.self) { index in
-
                         RecipeSmallView(viewModel: viewModel, index: index)
                             .foregroundColor(.white)
                             .sheet(isPresented: $viewModel.isShowingBottomSheet) {
                                 RecipeBigView(viewModel: viewModel, index: viewModel.currentRecipe)
                                     .transition(.slide)
                             }
-
                 }
                 .onChange(of: viewModel.currentRecipe) { oldValue, newValue in
                     if (viewModel.data.recipeStack.count - newValue) < 3 {
@@ -48,7 +46,6 @@ struct SwipeView: View {
             }
             Spacer()
             SwipeButtonsView(viewModel: viewModel)
-            
         }
         .onAppear(perform: {
             viewModel.populate(amount: 5)
@@ -73,15 +70,6 @@ struct SwipeView: View {
                         }
                 }
             }
-
         })
     }
-    
-
 }
-
-
-/*#Preview {
- SwipeView(viewModel: Mock.swipeViewModel)
- }
- */

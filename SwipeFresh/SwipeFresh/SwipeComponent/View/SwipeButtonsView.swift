@@ -18,7 +18,7 @@ struct SwipeButtonsView: View {
                     viewModel.lastRecipe = nil
                 }
             }, label: {
-                Image(systemName: "arrowshape.turn.up.left.fill")
+                Image(systemName: "arrowshape.turn.up.left.circle.fill")
                     .font(.system(size: 30))
                     .foregroundColor(.yellow)
             })
@@ -27,7 +27,7 @@ struct SwipeButtonsView: View {
                 viewModel.dislikeRecipe(index: viewModel.currentRecipe)
                 viewModel.learner.wrappedValue.learn(card: viewModel.getRecipeCard(index: viewModel.currentRecipe))
             }, label: {
-                Image(systemName: "xmark")
+                Image(systemName: "xmark.circle.fill")
                     .font(.system(size: 60))
                     .bold()
                     .foregroundColor(.red)
@@ -37,7 +37,7 @@ struct SwipeButtonsView: View {
                 viewModel.likeRecipe(index: viewModel.currentRecipe)
                 viewModel.learner.wrappedValue.learn(card: viewModel.getRecipeCard(index: viewModel.currentRecipe))
             }, label: {
-                Image(systemName: "heart.fill")
+                Image(systemName: "heart.circle.fill")
                     .font(.system(size: 60))
                     .bold()
                     .foregroundColor(Color("primary_darkest"))
