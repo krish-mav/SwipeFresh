@@ -40,7 +40,7 @@ struct SwipeButtonsView: View {
                 Image(systemName: "heart.fill")
                     .font(.system(size: 60))
                     .bold()
-                    .foregroundColor(Color("primary_dark"))
+                    .foregroundColor(Color("primary_darkest"))
             })
             Spacer()
             Button(action: {

@@ -18,13 +18,14 @@ struct RecipeBigView: View {
                 
                 VStack {
                     AsyncImage(url: URL(string: viewModel.getRecipe(index: index).image)) { image in
-                        image
-                            .resizable()
-                    } placeholder: {
-                        Image("Placeholder")
-                            .resizable()
-                    }
-                    
+                                            image
+                                                .resizable()
+                                                .scaledToFit()
+
+                                        } placeholder: {
+                                            Color("primary_darkest") // Placeholder color
+                                                
+                                        }
                     .scaledToFit()
                     //for Overlaping
                     Spacer()

@@ -37,9 +37,8 @@ struct RecipeDetailView: View {
                     image
                         .resizable()
                 } placeholder: {
-                    Image("Placeholder")
-                        .resizable()
-
+                    Color.gray // Placeholder color
+                        
                 }
                 .scaledToFit()
                 

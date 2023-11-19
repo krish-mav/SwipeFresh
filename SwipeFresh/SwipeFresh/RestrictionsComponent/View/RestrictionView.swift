@@ -22,7 +22,8 @@ struct RestrictionView: View {
         HeaderView(title: "Food Preferences")
             NavigationStack {
                 Form {
-                    Section(header: Text("Dietary Preferences").font(.title3)
+                    Section(header: Text("Dietary Preferences")
+                        .font(Font.custom("Agrandir-Regular", size: 20))
                         .foregroundColor(Color("primary_darkest"))
                         .padding(.leading, -15)) {
                             Picker(selection: $selectedDiet, label: Text("Select Dietary Preference")) {
@@ -32,7 +33,7 @@ struct RestrictionView: View {
                             }
                             .pickerStyle(SegmentedPickerStyle())
                         }
-                    Section(header: Text("Maximum Preparation Time").font(.title3)
+                    Section(header: Text("Maximum Preparation Time")                        .font(Font.custom("Agrandir-Regular", size: 20))
                         .foregroundColor(Color("primary_darkest"))
                         .padding(.leading, -15)) {
                             Picker(selection: $selectedPreparationTime, label: Text("Select Time")) {
@@ -41,7 +42,7 @@ struct RestrictionView: View {
                                 }
                             }
                         }
-                    Section(header: Text("Allergens").font(.title3)
+                    Section(header: Text("Allergens")                        .font(Font.custom("Agrandir-Regular", size: 20))
                         .foregroundColor(Color("primary_darkest"))
                         .padding(.leading, -15)) {
                             VStack {
