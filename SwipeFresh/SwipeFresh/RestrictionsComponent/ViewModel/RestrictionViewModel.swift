@@ -8,12 +8,13 @@
 import Foundation
 
 class RestrictionViewModel: ObservableObject {
-    init(allergens: [Allergen] = Mock.allergens) {
-        self.allergens = allergens
+    init(allergenRestrictions: [AllergenRestriction] = Mock.allergenRestrictions) {
+        self.allergenRestrictions = allergenRestrictions
     }
-    @Published var allergens: [Allergen]
+    @Published var allergenRestrictions: [AllergenRestriction]
     
     func selectAllergen(index: Int) {
-        allergens[index].isSelected.toggle()
+        allergenRestrictions[index].isSelected.toggle()
+
     }
 }

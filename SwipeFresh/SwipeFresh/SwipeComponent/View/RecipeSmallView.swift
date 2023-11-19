@@ -34,12 +34,15 @@ struct RecipeSmallView: View {
                     Spacer()
                     HStack(alignment: .bottom) {
                         Text(viewModel.getRecipe(index: index).name)
+
                             .font(.largeTitle)
                             .fontWeight(.bold)
                             .foregroundColor(.white)
                         
                         Spacer()
-                        Button(action: {viewModel.isShowingBottomSheet.toggle()}, label: {
+                        Button(action: {
+                                viewModel.isShowingBottomSheet.toggle()
+                        }, label: {
                             Image(systemName: "info.circle.fill")
                                 .foregroundColor(.white)
                                 .font(.largeTitle)
@@ -68,7 +71,15 @@ struct RecipeSmallView: View {
                 withAnimation(Animation.easeInOut(duration: 1.0)) {
                     viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: 500, height: 0))
                     changeColor(width: viewModel.getRecipeCard(index: index).offset.width)
-                    viewModel.currentRecipe = index - 1
+                    viewModel.currentRecipe = index + 1
+                    viewModel.lastRecipe = index
+                }
+
+            } else if newValue == 3 {
+                withAnimation(Animation.snappy(duration: 2.0)) {
+                    viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: 0, height: -6000))
+                    changeColor(width: viewModel.getRecipeCard(index: index).offset.width)
+                    viewModel.currentRecipe = index + 1
                     viewModel.lastRecipe = index
                 }
                 
@@ -76,7 +87,7 @@ struct RecipeSmallView: View {
                 withAnimation(Animation.easeInOut(duration: 1.0)) {
                     viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: -500, height: 0))
                     changeColor(width: viewModel.getRecipeCard(index: index).offset.width)
-                    viewModel.currentRecipe = index - 1
+                    viewModel.currentRecipe = index + 1
                     viewModel.lastRecipe = index
                     
                 }
@@ -89,10 +100,11 @@ struct RecipeSmallView: View {
                 }
             }
         })
-        .cornerRadius(15)
-        .padding()
-        .offset(x: viewModel.getRecipeCard(index: index).offset.width, y: viewModel.getRecipeCard(index: index).offset.height * 0.4)
-        .rotationEffect(.degrees(Double(viewModel.getRecipeCard(index: index).offset.width / 40)))
+
+    .cornerRadius(15)
+    .padding()
+    .offset(x: viewModel.getRecipeCard(index: index).offset.width, y: viewModel.getRecipeCard(index: index).offset.height * 0.2)
+    .rotationEffect(.degrees(Double(viewModel.getRecipeCard(index: index).offset.width / 40)))
         .gesture(
             DragGesture()
                 .onChanged({gesture in
@@ -110,18 +122,21 @@ struct RecipeSmallView: View {
     }
     func swipe(width: CGFloat) {
         switch width {
-        case -500...(-150):
-            viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: -500, height: 0))
-            viewModel.lastRecipe = index
-            viewModel.currentRecipe = index - 1
-            viewModel.dislikeRecipe(index: index)
-        case 150...(500):
-            viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: 500, height: 0))
-            viewModel.lastRecipe = index
-            viewModel.currentRecipe = index - 1
-            viewModel.likeRecipe(index: index)
-        default:
-            viewModel.setRecipeCardOffset(index: index, offset: .zero)
+
+            case -500...(-150):
+                viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: -500, height: 0))
+                viewModel.lastRecipe = index
+                viewModel.currentRecipe = index + 1
+                viewModel.dislikeRecipe(index: index)
+                viewModel.learn(card: viewModel.getRecipeCard(index: index))
+            case 150...(500):
+                viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: 500, height: 0))
+                viewModel.lastRecipe = index
+                viewModel.currentRecipe = index + 1
+                viewModel.likeRecipe(index: index)
+                viewModel.learner.wrappedValue.learn(card: viewModel.getRecipeCard(index: index))
+            default:
+                viewModel.setRecipeCardOffset(index: index, offset: .zero)
         }
     }
     
@@ -142,6 +157,7 @@ struct RecipeSmallView: View {
 }
 
 
-#Preview {
-    RecipeSmallView(viewModel: Mock.swipeViewModel, index: 0)
-}
+/*#Preview {
+ RecipeSmallView(viewModel: Mock.swipeViewModel, index: 0)
+ }
+ */

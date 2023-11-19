@@ -1,0 +1,2325 @@
+{"recipes":
+    [
+        {
+            "recipe": {
+                "active": true,
+                "allergens": [
+                    "Milk"
+                ],
+                "rating": 3.4,
+                "description": "A juicy, seared steak is a sure route to maximal flavor with minimal effort. But when chefs want to really raise the steaks, they add a not-so-secret ingredient: butter. It not only delivers rich flavor, but also helps the meat achieve a beautiful, brown crust. To that end, you\u2019ll be basting sirloin in butter, garlic, and herbs in this recipe. The sides are no slouch, either: parsnip wedges roasted until they\u2019re sweet, plus tender spinach decked out with sour cream.",
+                "favorites": 18427,
+                "imageUrl": "https://img.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_30,w_2600/hellofresh_s3//image/w09-r02-1d294a53.jpg",
+                "ingredients": [
+                    {
+                        "yield": 2,
+                        "ingredients": [
+                            {
+                                "name": "Sirloin Steak",
+                                "amount": 12,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Rosemary",
+                                "amount": 0.25,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Parsnip",
+                                "amount": 12,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Spinach",
+                                "amount": 5,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Sour Cream",
+                                "amount": 2,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Garlic",
+                                "amount": 2,
+                                "unit": "clove"
+                            },
+                            {
+                                "name": "Vegetable Oil",
+                                "amount": 2,
+                                "unit": "teaspoon"
+                            },
+                            {
+                                "name": "Butter",
+                                "amount": 2,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Salt",
+                                "amount": null,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Pepper",
+                                "amount": null,
+                                "unit": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "yield": 4,
+                        "ingredients": [
+                            {
+                                "name": "Sirloin Steak",
+                                "amount": 24,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Rosemary",
+                                "amount": 0.25,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Parsnip",
+                                "amount": 18,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Spinach",
+                                "amount": 10,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Sour Cream",
+                                "amount": 4,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Garlic",
+                                "amount": 4,
+                                "unit": "clove"
+                            },
+                            {
+                                "name": "Vegetable Oil",
+                                "amount": 4,
+                                "unit": "teaspoon"
+                            },
+                            {
+                                "name": "Butter",
+                                "amount": 4,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Salt",
+                                "amount": null,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Pepper",
+                                "amount": null,
+                                "unit": "unit"
+                            }
+                        ]
+                    }
+                ],
+                "recipe_name": "Butter-Basted Sirloin Steak",
+                "prep_time": "PT30M",
+                "instructions": [
+                    "Wash and dry all produce. Preheat oven to 425 degrees. Peel parsnips, then cut into 3-inch-long pieces. Halve each piece lengthwise, then cut into thin wedges. Strip rosemary leaves from stems. Discard stems and chop leaves. Thinly slice garlic crosswise.",
+                    "On a baking sheet, toss parsnips, a drizzle of oil, half the rosemary, and a pinch of salt and pepper. Roast in oven until lightly browned, 20-25 minutes, tossing halfway through.",
+                    "Heat a drizzle of oil in a large pan over medium-high heat. Season steak all over with salt and pepper. Add to pan and cook until it almost reaches desired doneness, 3-6 minutes per side.",
+                    "Reduce heat to low and add 2 TBSP butter, remaining rosemary, and half the garlic to pan. Tilt pan toward you to collect melted butter. Using a spoon, continuously spoon butter, garlic, and rosemary over steak until it reaches desired doneness, 1-2 minutes. Remove steak from pan and let rest 5 minutes. TIP: Loosely cover steak with aluminum foil to keep warm.",
+                    "Increase heat under same pan to medium. Add remaining garlic and cook until fragrant, 30 seconds. Add spinach and toss until wilted, 3-4 minutes. (TIP: Add a splash of water if you\u2019re having trouble getting spinach to wilt.) Remove pan from heat and let cool 1 minute. Stir in sour cream. Season with salt and pepper.",
+                    "Slice steak against the grain. Divide parsnips, steak, and spinach between plates and serve."
+                ],
+                "tags": [
+                    "Gluten-free",
+                    "American"
+                ],
+                "total_time": null
+            }
+        },
+        {
+            "recipe": {
+                "active": true,
+                "allergens": [
+                    "Soy",
+                    "Wheat"
+                ],
+                "rating": 3.3,
+                "description": "A HelloFresh classic! Tender beef and crisp, springy asparagus are quickly stir-fried with warming ginger and served over fluffy basmati rice. Hoisin sauce adds a touch of sweetness and an incredible umami depth. It\u2019s so sweet and succulent, we\u2019re sure you\u2019ll agree with us that this is a recipe worth visiting again and again.",
+                "favorites": 19201,
+                "imageUrl": "https://img.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_30,w_2600/hellofresh_s3//image/w08-r02-731bfbb1.jpg",
+                "ingredients": [
+                    {
+                        "yield": 2,
+                        "ingredients": [
+                            {
+                                "name": "Beef Sirloin Tips",
+                                "amount": 12,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Basmati Rice",
+                                "amount": 0.75,
+                                "unit": "cup"
+                            },
+                            {
+                                "name": "Asparagus",
+                                "amount": 6,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Garlic",
+                                "amount": 2,
+                                "unit": "clove"
+                            },
+                            {
+                                "name": "Ginger",
+                                "amount": 1,
+                                "unit": "thumb"
+                            },
+                            {
+                                "name": "Hoisin Sauce Jar",
+                                "amount": 1,
+                                "unit": "jar"
+                            },
+                            {
+                                "name": "Sesame Seeds",
+                                "amount": 1,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Scallions",
+                                "amount": 2,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Soy Sauce",
+                                "amount": 0.5,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Vegetable Oil",
+                                "amount": 1,
+                                "unit": "teaspoon"
+                            },
+                            {
+                                "name": "Salt",
+                                "amount": null,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Pepper",
+                                "amount": null,
+                                "unit": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "yield": 4,
+                        "ingredients": [
+                            {
+                                "name": "Beef Sirloin Tips",
+                                "amount": 24,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Basmati Rice",
+                                "amount": 1.5,
+                                "unit": "cup"
+                            },
+                            {
+                                "name": "Asparagus",
+                                "amount": 12,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Garlic",
+                                "amount": 4,
+                                "unit": "clove"
+                            },
+                            {
+                                "name": "Ginger",
+                                "amount": 2,
+                                "unit": "thumb"
+                            },
+                            {
+                                "name": "Hoisin Sauce Jar",
+                                "amount": 2,
+                                "unit": "jar"
+                            },
+                            {
+                                "name": "Sesame Seeds",
+                                "amount": 2,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Scallions",
+                                "amount": 4,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Soy Sauce",
+                                "amount": 1,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Vegetable Oil",
+                                "amount": 2,
+                                "unit": "teaspoon"
+                            },
+                            {
+                                "name": "Salt",
+                                "amount": null,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Pepper",
+                                "amount": null,
+                                "unit": "unit"
+                            }
+                        ]
+                    }
+                ],
+                "recipe_name": "Ginger Beef Stir-Fry",
+                "prep_time": "PT30M",
+                "instructions": [
+                    "Wash and dry all produce. Bring 1\u00bd cups water and a pinch of salt to a boil in a small pot. Trim and discard bottom inch from asparagus, then cut stalks into 2-inch pieces. Mince or grate garlic. Trim and thinly slice scallions. Peel and mince ginger.",
+                    "Once water is boiling, add rice to pot, cover, and reduce to a simmer. Cook until tender, 15-20 minutes. Remove from heat and keep covered.",
+                    "Meanwhile, whisk together garlic, ginger, soy sauce, 1 TBSP water, and 2 TBSP hoisin sauce (we sent more) in a small bowl.",
+                    "Heat a drizzle of oil in a large pan over medium-high heat. Pat steak tips dry with a paper towel, then season with salt and pepper. Add to pan and toss until nearly cooked to desired doneness, 2-3 minutes. Remove from pan and set aside. .",
+                    "Add asparagus and scallions to same pan over medium heat. (TIP: If veggies seem dry, add a drizzle of oil.) Cook until tender but still crunchy, 3-4 minutes, tossing occasionally. Add steak tips and sauce to pan and cook until sauce is thickened and meat reaches desired doneness, 2-3 minutes. Season with salt and pepper.",
+                    "Fluff rice with a fork. Divide between plates, then top with stir-fry and garnish with sesame seeds."
+                ],
+                "tags": [
+                    "Gluten-free",
+                    "American",
+                    "Asian",
+                    "Fusion"
+                ],
+                "total_time": null
+            }
+        },
+        {
+            "recipe": {
+                "active": true,
+                "allergens": [
+                    "Soy",
+                    "Wheat",
+                    "Eggs"
+                ],
+                "rating": 3.3,
+                "description": "One of the great things about Asian-style stir-fries is that they deliver maximum flavor in a snap. In this recipe, we\u2019re tossing the classic combo of beef and broccoli with bouncy noodles and dressing them in a savory soy and hoisin-based sauce. It comes together so swiftly in the pan, it might even be easier than picking up the phone for takeout!",
+                "favorites": 19545,
+                "imageUrl": "https://img.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_30,w_2600/hellofresh_s3//image/uk-stir-friend-chinese-beef-b5fd1d10.jpg",
+                "ingredients": [
+                    {
+                        "yield": 2,
+                        "ingredients": [
+                            {
+                                "name": "Beef Sirloin Tips",
+                                "amount": 12,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Scallions",
+                                "amount": 2,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Garlic",
+                                "amount": 2,
+                                "unit": "clove"
+                            },
+                            {
+                                "name": "Cornstarch",
+                                "amount": 1,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Ginger",
+                                "amount": 1,
+                                "unit": "thumb"
+                            },
+                            {
+                                "name": "Yakisoba Noodles",
+                                "amount": 16,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Ketchup",
+                                "amount": 1,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Soy Sauce",
+                                "amount": 4,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Hoisin Sauce Jar",
+                                "amount": 1,
+                                "unit": "jar"
+                            },
+                            {
+                                "name": "Broccoli Florets",
+                                "amount": 8,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Sesame Oil",
+                                "amount": 1,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Sriracha",
+                                "amount": 1,
+                                "unit": "teaspoon"
+                            },
+                            {
+                                "name": "Vegetable Oil",
+                                "amount": 4,
+                                "unit": "teaspoon"
+                            },
+                            {
+                                "name": "Salt",
+                                "amount": null,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Pepper",
+                                "amount": null,
+                                "unit": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "yield": 4,
+                        "ingredients": [
+                            {
+                                "name": "Beef Sirloin Tips",
+                                "amount": 24,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Scallions",
+                                "amount": 4,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Garlic",
+                                "amount": 4,
+                                "unit": "clove"
+                            },
+                            {
+                                "name": "Cornstarch",
+                                "amount": 2,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Ginger",
+                                "amount": 1,
+                                "unit": "thumb"
+                            },
+                            {
+                                "name": "Yakisoba Noodles",
+                                "amount": 16,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Ketchup",
+                                "amount": 1,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Soy Sauce",
+                                "amount": 8,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Hoisin Sauce Jar",
+                                "amount": 2,
+                                "unit": "jar"
+                            },
+                            {
+                                "name": "Broccoli Florets",
+                                "amount": 16,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Sesame Oil",
+                                "amount": 2,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Sriracha",
+                                "amount": 1,
+                                "unit": "teaspoon"
+                            },
+                            {
+                                "name": "Vegetable Oil",
+                                "amount": 8,
+                                "unit": "teaspoon"
+                            },
+                            {
+                                "name": "Salt",
+                                "amount": null,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Pepper",
+                                "amount": null,
+                                "unit": "unit"
+                            }
+                        ]
+                    }
+                ],
+                "recipe_name": "Rapid Stir-Fried Beef",
+                "prep_time": "PT20M",
+                "instructions": [
+                    "Wash and dry all produce. Bring a large pot of salted water to a boil. Trim and thinly slice scallions. Mince or grate garlic. Peel and mince ginger. Whisk together sesame oil, 1 TBSP ketchup, soy sauce, 1\u00bd TBSP hoisin sauce, and 1 TBSP water\nin a small bowl.",
+                    "Add broccoli to boiling water and cook until tender but still crisp, 3-4 minutes. Drain and rinse under cold water. Set aside.",
+                    "Toss steak tips with cornstarch in a large bowl. Season generously with salt and pepper. Heat a large drizzle of oil in a large pan over high heat. (TIP: If you have a nonstick pan, break it out.) Toss in steak tips and cook to desired doneness, 3-4 minutes. Remove and set aside.",
+                    "Heat a drizzle of oil in same pan over medium heat. Add garlic, ginger, and scallions and cook until fragrant, 1 minute, tossing. Toss in half the noodles from the package (we sent more) and a drizzle of oil. Break up noodles until they no longer stick together, using tongs or two wooden spoons.",
+                    "Pour in 1 cup water, cover, and steam until noodles are tender, 3 minutes. (TIP: If your pan doesn\u2019t have a lid, carefully cover it with aluminum foil.) Uncover, increase heat to medium-high, and toss until noodles are tender, 3-4 minutes. Add sauce and toss to coat. Cook until sauce is thickened, 1 minute.",
+                    "Toss broccoli and steak into noodles to warm through. Season with as much sriracha as you like (careful, it\u2019s spicy). Season with salt and pepper. Divide between plates and serve."
+                ],
+                "tags": [
+                    "Rapid",
+                    "Spicy",
+                    "Asian"
+                ],
+                "total_time": null
+            }
+        },
+        {
+            "recipe": {
+                "active": true,
+                "allergens": [
+                    "Wheat",
+                    "Milk"
+                ],
+                "rating": 4,
+                "description": "Although this recipe\u2019s zucchini and tomato medley is a side, it takes center stage in our eyes. It\u2019s equally as creamy as it is crispy, and the combination of panko, mozzarella, and Parmesan sprinkled on top is to thank for that. Served next to an herbed chicken breast and lemony orzo that keep things simple and satisfying, this meal keeps it light without lacking in flavor.",
+                "favorites": 21550,
+                "imageUrl": "https://img.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_30,w_2600/hellofresh_s3//image/winner-winner-chicken-orzo-dinner-20387f10.jpg",
+                "ingredients": [
+                    {
+                        "yield": 2,
+                        "ingredients": [
+                            {
+                                "name": "Zucchini",
+                                "amount": 1,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Roma Tomato",
+                                "amount": 1,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Italian Seasoning",
+                                "amount": 1,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Orzo Pasta",
+                                "amount": 3,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Chicken Breasts",
+                                "amount": 12,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Fresh Mozzarella",
+                                "amount": 4,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Lemon",
+                                "amount": 1,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Parsley",
+                                "amount": 0.25,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Panko Breadcrumbs",
+                                "amount": 0.25,
+                                "unit": "cup"
+                            },
+                            {
+                                "name": "Parmesan Cheese",
+                                "amount": 0.25,
+                                "unit": "cup"
+                            },
+                            {
+                                "name": "Olive Oil",
+                                "amount": 4,
+                                "unit": "teaspoon"
+                            },
+                            {
+                                "name": "Salt",
+                                "amount": null,
+                                "unit": null
+                            },
+                            {
+                                "name": "Pepper",
+                                "amount": null,
+                                "unit": null
+                            }
+                        ]
+                    },
+                    {
+                        "yield": 4,
+                        "ingredients": [
+                            {
+                                "name": "Zucchini",
+                                "amount": 2,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Roma Tomato",
+                                "amount": 2,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Italian Seasoning",
+                                "amount": 2,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Orzo Pasta",
+                                "amount": 6,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Chicken Breasts",
+                                "amount": 24,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Fresh Mozzarella",
+                                "amount": 8,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Lemon",
+                                "amount": 1,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Parsley",
+                                "amount": 0.25,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Panko Breadcrumbs",
+                                "amount": 0.5,
+                                "unit": "cup"
+                            },
+                            {
+                                "name": "Parmesan Cheese",
+                                "amount": 0.5,
+                                "unit": "cup"
+                            },
+                            {
+                                "name": "Olive Oil",
+                                "amount": 8,
+                                "unit": "teaspoon"
+                            },
+                            {
+                                "name": "Salt",
+                                "amount": null,
+                                "unit": null
+                            },
+                            {
+                                "name": "Pepper",
+                                "amount": null,
+                                "unit": null
+                            }
+                        ]
+                    }
+                ],
+                "recipe_name": "Winner Winner Chicken Orzo Dinner",
+                "prep_time": "PT30M",
+                "instructions": [
+                    "Wash and dry all produce. Adjust rack to upper position and preheat oven to 425 degrees. Bring a large pot of salted water to a boil. Slice zucchini into \u00bc-inch-thick rounds. Cut tomato into \u00bd-inch-thick wedges. Toss zucchini and tomato with 1 TBSP olive oil and half the Italian seasoning on a baking sheet. Season with salt and pepper.",
+                    "Roast zucchini and tomato in oven until just shy of tender, about 10 minutes. Once water is boiling, add half the orzo from package to pot (use the rest as you like). Cook, stirring occasionally, until al dente, 9-11 minutes. Drain, then return to pot.",
+                    "With your hand on top of one chicken breast, cut \u00be of the way through middle, parallel to cutting board, stopping before you slice through completely. Repeat with other chicken breast. Open each up and season all over with salt, pepper, and remaining Italian seasoning.",
+                    "Heat a drizzle of olive oil in a large pan over medium-high heat. Add chicken and cook until no longer pink in center, 3-4 minutes per side. Remove from pan and set aside on a plate. Meanwhile, cut mozzarella into \u00bd-inch cubes. Halve lemon. Roughly chop parsley.",
+                    "Once veggies have roasted 10 minutes, remove baking sheet from oven. Heat broiler to high or increase oven temperature to 500 degrees. Sprinkle veggies with panko, mozzarella, and Parmesan. Broil (or bake) until panko is golden brown, cheese is melted, and veggies are tender, 3-5 minutes.",
+                    "Add juice from one lemon half and half the parsley to pot with orzo and toss to combine. Season to taste with salt and pepper. Divide orzo between plates. Top with veggies and chicken. Drizzle with any chicken juices from plate and a squeeze of lemon. Garnish with remaining parsley and serve."
+                ],
+                "tags": [
+                    "American"
+                ],
+                "total_time": null
+            }
+        },
+        {
+            "recipe": {
+                "active": true,
+                "allergens": [
+                    "Milk",
+                    "Wheat"
+                ],
+                "rating": 3.3,
+                "description": "Think of this recipe as a new take on chicken Parmesan. Herbs, breadcrumbs, and mozzarella are heaped onto chicken to create glorious crown of a crust. In place of marinara, roasted tomatoes add a sweet and tangy punch. On the side, you\u2019ve also got some crispy potatoes because, hey, why not?",
+                "favorites": 21663,
+                "imageUrl": "https://img.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_30,w_2600/hellofresh_s3//image/de-mozzarella-crusted-chicken-w0-4336bddd.jpg",
+                "ingredients": [
+                    {
+                        "yield": 2,
+                        "ingredients": [
+                            {
+                                "name": "Chicken Breasts",
+                                "amount": 12,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Mozzarella Cheese",
+                                "amount": 0.5,
+                                "unit": "cup"
+                            },
+                            {
+                                "name": "Roma Tomato",
+                                "amount": 2,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Panko Breadcrumbs",
+                                "amount": 0.5,
+                                "unit": "cup"
+                            },
+                            {
+                                "name": "Paprika",
+                                "amount": 1,
+                                "unit": "teaspoon"
+                            },
+                            {
+                                "name": "Yukon Gold Potatoes",
+                                "amount": 12,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Dried Oregano",
+                                "amount": 1,
+                                "unit": "teaspoon"
+                            },
+                            {
+                                "name": "Olive Oil",
+                                "amount": 4,
+                                "unit": "teaspoon"
+                            },
+                            {
+                                "name": "Salt",
+                                "amount": null,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Pepper",
+                                "amount": null,
+                                "unit": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "yield": 4,
+                        "ingredients": [
+                            {
+                                "name": "Chicken Breasts",
+                                "amount": 24,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Mozzarella Cheese",
+                                "amount": 1,
+                                "unit": "cup"
+                            },
+                            {
+                                "name": "Roma Tomato",
+                                "amount": 4,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Panko Breadcrumbs",
+                                "amount": 1,
+                                "unit": "cup"
+                            },
+                            {
+                                "name": "Paprika",
+                                "amount": 2,
+                                "unit": "teaspoon"
+                            },
+                            {
+                                "name": "Yukon Gold Potatoes",
+                                "amount": 24,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Dried Oregano",
+                                "amount": 2,
+                                "unit": "teaspoon"
+                            },
+                            {
+                                "name": "Olive Oil",
+                                "amount": 8,
+                                "unit": "teaspoon"
+                            },
+                            {
+                                "name": "Salt",
+                                "amount": null,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Pepper",
+                                "amount": null,
+                                "unit": "unit"
+                            }
+                        ]
+                    }
+                ],
+                "recipe_name": "Mozzarella-Crusted Chicken",
+                "prep_time": "PT30M",
+                "instructions": [
+                    "Wash and dry all produce. Preheat oven to 425 degrees. Cut potatoes into \u00bd-inch-thick wedges, like steak fries. Core and quarter tomatoes.",
+                    "Toss potatoes on one side of a foil-lined baking sheet with a drizzle of olive oil and a pinch of salt and pepper. On other side of baking sheet, toss tomatoes with a drizzle of olive oil and a pinch of salt and pepper. Roast until potatoes are crispy and tomatoes are very soft, 25-30 minutes, tossing halfway through.",
+                    "Mix panko, oregano, paprika, mozzarella, a drizzle of olive oil, and a pinch of salt and pepper in a small bowl.",
+                    "Season chicken breasts all over with salt and pepper. Rub with a drizzle of olive oil. Place on a second baking sheet.",
+                    "Add a layer of panko crust to top of each chicken breast, gently pressing to adhere. Pile topping as high as possible (you may have some left over).",
+                    "Bake chicken until meat is cooked through and topping is golden brown, about 20 minutes. Serve with potato wedges and roasted tomatoes."
+                ],
+                "tags": [
+                    "American"
+                ],
+                "total_time": null
+            }
+        },
+        {
+            "recipe": {
+                "active": true,
+                "allergens": [
+                    "Milk"
+                ],
+                "rating": 3.6,
+                "description": "When cooking a date-night dinner for a loved one (or indulging in some personal TLC), it\u2019s best to keep it simple, cupid. You\u2019re more likely to impress by showing off your mastery of the classics than by breaking out the brulee blowtorch and nearly setting something on fire. So say \u201cI love you\u201d with a meal that never fails to please: steak and potatoes with creamed veggies and a peppercorn sauce. Call it steak au poivre if you wanna get fancy.",
+                "favorites": 25271,
+                "imageUrl": "https://img.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_30,w_2600/hellofresh_s3//image/peppercorn-steak-w06-e4014085.jpg",
+                "ingredients": [
+                    {
+                        "yield": 2,
+                        "ingredients": [
+                            {
+                                "name": "Sirloin Steak",
+                                "amount": 12,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Kale",
+                                "amount": 4,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Yukon Gold Potatoes",
+                                "amount": 12,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Shallot",
+                                "amount": 1,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Sour Cream",
+                                "amount": 4,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Black Peppercorns",
+                                "amount": 0.5,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Beef Stock Concentrate",
+                                "amount": 1,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Salt",
+                                "amount": null,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Pepper",
+                                "amount": null,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Vegetable Oil",
+                                "amount": 1,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Butter",
+                                "amount": 1,
+                                "unit": "tablespoon"
+                            }
+                        ]
+                    },
+                    {
+                        "yield": 4,
+                        "ingredients": [
+                            {
+                                "name": "Sirloin Steak",
+                                "amount": 24,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Kale",
+                                "amount": 8,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Yukon Gold Potatoes",
+                                "amount": 24,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Shallot",
+                                "amount": 2,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Sour Cream",
+                                "amount": 8,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Black Peppercorns",
+                                "amount": 0.5,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Beef Stock Concentrate",
+                                "amount": 2,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Salt",
+                                "amount": null,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Pepper",
+                                "amount": null,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Vegetable Oil",
+                                "amount": 2,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Butter",
+                                "amount": 2,
+                                "unit": "tablespoon"
+                            }
+                        ]
+                    }
+                ],
+                "recipe_name": "When Steak Met Potatoes",
+                "prep_time": "PT30M",
+                "instructions": [
+                    "Wash and dry all produce. Preheat oven to 400 degrees. Cut potatoes into \u00be-inch-thick wedges. Remove and discard stems and ribs from kale. Chop or tear leaves into 1-inch pieces. Halve, peel, and mince shallot. Use a mallet or heavy pan to pound and crush peppercorns in their bag until coarsely ground.",
+                    "Toss potatoes with a drizzle of oil and a pinch of salt and pepper on a baking sheet or baking dish. Roast in oven until tender and lightly browned, 30-35 minutes, tossing halfway through.",
+                    "Melt 1 TBSP butter in a large pan over medium heat. Add kale and a splash of water. Cook until leaves are completely wilted and very tender, 4-5 minutes. Season with salt and pepper. Remove from heat, keeping kale in pan.",
+                    "Heat a drizzle of oil in a medium pan over medium-high heat. Season steak all over with salt and pepper. Add to pan and cook to desired doneness, 4-7 minutes per side. Remove from pan and set aside to rest, 5 minutes.",
+                    "Heat another drizzle of oil in same pan. Add shallot and \u00bc tsp crushed peppercorns (more or less to taste). Cook until shallots are soft, 2-3 minutes. Add stock concentrate and \u00bd cup water. Scrape up any browned bits from pan. Bring to a simmer and let bubble until reduced by half, 2-3 minutes. Remove pan from heat, then stir in half the sour cream.",
+                    "Return pan with kale to medium heat. When just warmed, remove from heat and stir in remaining sour cream. Season with salt and pepper. Slice steak against the grain. Divide between plates and serve next to potatoes and kale. Drizzle with sauce."
+                ],
+                "tags": [
+                    "Gluten-free",
+                    "American"
+                ],
+                "total_time": null
+            }
+        },
+        {
+            "recipe": {
+                "active": true,
+                "allergens": [
+                    "Tree Nuts",
+                    "Milk"
+                ],
+                "rating": 3.4,
+                "description": "When you want to treat yourself to something luxuriantly tasty, nothing offers instant gratification better than a good steak. All it needs is a simple pan sauce to be perfectly sublime. Just make sure to pair it with some equally decadent sides: in this recipe, we\u2019ve got almond green beans and truffled mashed potatoes to help you on your way to a satisfied appetite.",
+                "favorites": 16595,
+                "imageUrl": "https://img.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_30,w_2600/hellofresh_s3//image/premium-steak-au-poivre-7a5f8bb0.jpg",
+                "ingredients": [
+                    {
+                        "yield": 2,
+                        "ingredients": [
+                            {
+                                "name": "Yukon Gold Potatoes",
+                                "amount": 16,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Green Beans",
+                                "amount": 6,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Almonds",
+                                "amount": 1,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Shallot",
+                                "amount": 1,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Sour Cream",
+                                "amount": 4,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Beef Demi-Glace",
+                                "amount": 1,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Tricolor Peppercorns",
+                                "amount": 1,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Parsley",
+                                "amount": 0.25,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Truffle Zest",
+                                "amount": 1,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "New York Strip Steak",
+                                "amount": 10,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Olive Oil",
+                                "amount": 1,
+                                "unit": "teaspoon"
+                            },
+                            {
+                                "name": "Butter",
+                                "amount": 1,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Vegetable Oil",
+                                "amount": 2,
+                                "unit": "teaspoon"
+                            },
+                            {
+                                "name": "Salt",
+                                "amount": null,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Pepper",
+                                "amount": null,
+                                "unit": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "yield": 4,
+                        "ingredients": [
+                            {
+                                "name": "Yukon Gold Potatoes",
+                                "amount": 32,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Green Beans",
+                                "amount": 12,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Almonds",
+                                "amount": 2,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Shallot",
+                                "amount": 1,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Sour Cream",
+                                "amount": 8,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Beef Demi-Glace",
+                                "amount": 2,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Tricolor Peppercorns",
+                                "amount": 1,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Parsley",
+                                "amount": 0.25,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Truffle Zest",
+                                "amount": 1,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "New York Strip Steak",
+                                "amount": 20,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Olive Oil",
+                                "amount": 2,
+                                "unit": "teaspoon"
+                            },
+                            {
+                                "name": "Butter",
+                                "amount": 2,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Vegetable Oil",
+                                "amount": 4,
+                                "unit": "teaspoon"
+                            },
+                            {
+                                "name": "Salt",
+                                "amount": null,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Pepper",
+                                "amount": null,
+                                "unit": "unit"
+                            }
+                        ]
+                    }
+                ],
+                "recipe_name": "New York Strip Steak",
+                "prep_time": "PT35M",
+                "instructions": [
+                    "Wash and dry all produce. Preheat oven to 425 degrees. Peel potatoes, then cut into \u00bd-inch cubes. Place in a medium pot with a pinch of salt and enough water to cover by 1 inch. Bring to a boil and cook until fork tender, about 15 minutes. Drain and return potatoes to empty pot.",
+                    "Meanwhile, trim any tough ends from green beans. Use a mallet or heavy pan to crush peppercorns in their bag until coarsely ground. Pick parsley leaves from stems and discard stems. Finely chop leaves. Peel and chop shallot. Toss green beans, almonds, a drizzle of olive oil, and a pinch of salt and pepper on a baking sheet. Roast in oven until tender, 12-15 minutes.",
+                    "Heat a drizzle of oil in a large pan over medium-high heat. Pat steak dry with a paper towel and season all over with salt and pepper. Add to pan and cook to desired doneness, 3-6 minutes per side. Remove from pan and set aside to rest. TIP: Loosely cover steak with aluminum foil to keep it warm.",
+                    "Reduce heat to medium-low and add a drizzle of oil to pan. Add shallots, tossing. Stir in \u00bc tsp crushed peppercorns (more or less to taste), demi-glace, and \u00bd cup water. Bring to a boil, then lower heat and simmer until reduced, 2-3 minutes. Remove from heat. Stir in 1 TBSP butter and half the sour cream until butter is melted. Season with salt and pepper.",
+                    "When potatoes are done, add remaining sour cream, and \u00bd tsp Sabatino Tartufi\u00ae Truffle Zest (more or less to taste) to pot. Mash with a fork or potato masher until smooth. Season to taste with salt and pepper. TIP: Add a splash of milk to make potatoes extra creamy",
+                    "Thinly slice steak against the grain. Divide mashed potatoes, green beans, and steak between plates. Drizzle sauce over steak and potatoes. Garnish with parsley."
+                ],
+                "tags": [
+                    "Gluten-free",
+                    "American"
+                ],
+                "total_time": null
+            }
+        },
+        {
+            "recipe": {
+                "active": true,
+                "allergens": [
+                    "Shellfish",
+                    "Eggs",
+                    "Wheat",
+                    "Milk"
+                ],
+                "rating": 3.3,
+                "description": "Pronto! Pronto! You can make this dinner recipe with the lightning speed of an Italian race car. Thanks to fresh tagliatelle, which cooks faster than the dried kind, you arrive at al dente perfection in a matter of minutes. The shrimp and heirloom tomatoes only need a quick toss in the pan, too, becoming tender on the count of uno, due, tre.",
+                "favorites": 16298,
+                "imageUrl": "https://img.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_30,w_2600/hellofresh_s3//image/5a8f0fcbae08b52f161b5832-033c9a4a.jpg",
+                "ingredients": [
+                    {
+                        "yield": 2,
+                        "ingredients": [
+                            {
+                                "name": "Garlic",
+                                "amount": 2,
+                                "unit": "clove"
+                            },
+                            {
+                                "name": "Scallions",
+                                "amount": 2,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Chili Pepper",
+                                "amount": 1,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Heirloom Grape Tomatoes",
+                                "amount": 10,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Lemon",
+                                "amount": 1,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Shrimp",
+                                "amount": 10,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Tagliatelle Pasta",
+                                "amount": 9,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Sour Cream",
+                                "amount": 4,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Olive Oil",
+                                "amount": 1,
+                                "unit": "teaspoon"
+                            },
+                            {
+                                "name": "Butter",
+                                "amount": 2,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Salt",
+                                "amount": null,
+                                "unit": null
+                            },
+                            {
+                                "name": "Pepper",
+                                "amount": null,
+                                "unit": null
+                            }
+                        ]
+                    },
+                    {
+                        "yield": 4,
+                        "ingredients": [
+                            {
+                                "name": "Garlic",
+                                "amount": 4,
+                                "unit": "clove"
+                            },
+                            {
+                                "name": "Scallions",
+                                "amount": 4,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Chili Pepper",
+                                "amount": 2,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Heirloom Grape Tomatoes",
+                                "amount": 20,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Lemon",
+                                "amount": 1,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Shrimp",
+                                "amount": 20,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Tagliatelle Pasta",
+                                "amount": 18,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Sour Cream",
+                                "amount": 8,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Olive Oil",
+                                "amount": 2,
+                                "unit": "teaspoon"
+                            },
+                            {
+                                "name": "Butter",
+                                "amount": 4,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Salt",
+                                "amount": null,
+                                "unit": null
+                            },
+                            {
+                                "name": "Pepper",
+                                "amount": null,
+                                "unit": null
+                            }
+                        ]
+                    }
+                ],
+                "recipe_name": "Creamy Shrimp Tagliatelle",
+                "prep_time": "PT20M",
+                "instructions": [
+                    "Wash and dry all produce. Bring a large pot of salted water to a boil. Mince garlic. Trim, then thinly slice scallions, keeping greens and whites separate. Finely mince chili, removing seeds and ribs for less heat. Halve tomatoes. Cut lemon into wedges. Rinse shrimp and pat dry with a paper towel.",
+                    "Heat a drizzle of olive oil in large pan over medium-high heat. Add garlic, scallion whites, and chili (to taste). Cook until fragrant, about 30 seconds. Add shrimp and cook, tossing, until starting to turn pink but not quite cooked through, 1-2 minutes. Season with salt and pepper.",
+                    "Once water is boiling, add tagliatelle to pot. (TIP: If any noodles are stuck together, separate them first.) Cook, stirring occasionally, until al dente, 4-5 minutes. Carefully scoop out and reserve \u00bc cup pasta cooking water, then drain.",
+                    "Meanwhile, add tomatoes to pan with shrimp. Cook, tossing, until wilted and juicy, 2-3 minutes. Season with salt and pepper. Remove from heat and set aside until pasta is ready. TIP: If you like it extra hot, add any remaining chili (to taste) at this point.",
+                    "Once tagliatelle is done cooking, return pan with shrimp and tomatoes to medium heat and add tagliatelle and 2 TBSP butter. Toss to combine and melt butter. Season with salt and pepper.",
+                    "Remove pan from heat and stir in sour cream, a squeeze of lemon, and as much pasta cooking water as needed to reach a saucy consistency. Season with salt and pepper. Divide between plates or bowls and garnish with scallion greens. Serve with lemon wedges on the side for squeezing over."
+                ],
+                "tags": [
+                    "Spicy",
+                    "Dinner Ideas",
+                    "American",
+                    "Italian"
+                ],
+                "total_time": null
+            }
+        },
+        {
+            "recipe": {
+                "active": true,
+                "allergens": [
+                    "Milk"
+                ],
+                "rating": 3.4,
+                "description": "In Spain, paella is something of a festive dish, made for large gatherings or celebrations and almost always cooked over a wood fire. Don't tell the Spaniards, but we think it's also a pretty great, quick and easy, one-pan stovetop recipe that can be enjoyed even in cozy and intimate settings. Filled with chicken, chorizo, and bright red peppers, our version feels like a meaty, savory, flavor-filled jubilee.",
+                "favorites": 14635,
+                "imageUrl": "https://img.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_30,w_2600/hellofresh_s3//image/spanish-one-pot-chicken-7dc5fcf4.jpg",
+                "ingredients": [
+                    {
+                        "yield": 2,
+                        "ingredients": [
+                            {
+                                "name": "Chicken Breasts",
+                                "amount": 12,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Basmati Rice",
+                                "amount": 0.5,
+                                "unit": "cup"
+                            },
+                            {
+                                "name": "Dried Chorizo",
+                                "amount": 2,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Yellow Onion",
+                                "amount": 1,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Red Bell Pepper",
+                                "amount": 1,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Parsley",
+                                "amount": 0.25,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Lemon",
+                                "amount": 1,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Garlic",
+                                "amount": 2,
+                                "unit": "clove"
+                            },
+                            {
+                                "name": "Chicken Stock Concentrate",
+                                "amount": 1,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Salt",
+                                "amount": null,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Pepper",
+                                "amount": null,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Olive Oil",
+                                "amount": 1,
+                                "unit": "teaspoon"
+                            }
+                        ]
+                    },
+                    {
+                        "yield": 4,
+                        "ingredients": [
+                            {
+                                "name": "Chicken Breasts",
+                                "amount": 24,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Basmati Rice",
+                                "amount": 1,
+                                "unit": "cup"
+                            },
+                            {
+                                "name": "Dried Chorizo",
+                                "amount": 2,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Yellow Onion",
+                                "amount": 2,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Red Bell Pepper",
+                                "amount": 2,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Parsley",
+                                "amount": 0.25,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Lemon",
+                                "amount": 1,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Garlic",
+                                "amount": 4,
+                                "unit": "clove"
+                            },
+                            {
+                                "name": "Chicken Stock Concentrate",
+                                "amount": 2,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Salt",
+                                "amount": null,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Pepper",
+                                "amount": null,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Olive Oil",
+                                "amount": 2,
+                                "unit": "teaspoon"
+                            }
+                        ]
+                    }
+                ],
+                "recipe_name": "Spanish One-Pan Chicken",
+                "prep_time": "PT35M",
+                "instructions": [
+                    "Wash and dry all produce. Core, seed, and thinly slice bell pepper. Halve, peel, and dice onion. Mince or grate garlic. Slice chorizo into 1/4-inch-thick rounds.",
+                    "Heat a large pan over medium heat. Add chorizo to pan and cook until it crisps and releases some of its oil, 1-2 minutes per side. Set aside, leaving oil in pan.",
+                    "Season chicken on all sides with salt and pepper. Heat same pan over medium heat. (TIP: If pan seems dry, add a drizzle of oil.) Add chicken and sear until browned and cooked through, 5-6 minutes per side. Remove from pan and set aside.",
+                    "Add onion, garlic, bell peppers, and a drizzle of oil to same pan over medium heat. Stir until just softened, 3-4 minutes. Add rice and stir to coat. Stir in 1 cup water, a pinch of salt, and chicken stock concentrate. Cover and reduce heat to low. Simmer until rice is tender, 15-20 minutes.",
+                    "Meanwhile, cut lemon into wedges. Finely chop parsley. TIP: While you wait for rice to finish, try practicing this Spanish phrase: Con pan y vino se anda el camino (life is better with food and wine).",
+                    "Fluff rice with a fork and season generously with salt and pepper. Place chicken on top and sprinkle with crispy chorizo. Remove pan from heat and sprinkle with parsley and a few squeezes of lemon."
+                ],
+                "tags": [
+                    "Gluten-free",
+                    "Spanish"
+                ],
+                "total_time": null
+            }
+        },
+        {
+            "recipe": {
+                "active": true,
+                "allergens": [
+                    "Shellfish",
+                    "Milk"
+                ],
+                "rating": 3.3,
+                "description": "This meal is simple enough for a weeknight but also elegant enough for a special occasion. Shrimp, lemon zest and Parmesan are tossed into a creamy risotto for a medley of sophisticated flavors. The roasted zucchini on top makes for a succulent finish.",
+                "favorites": 14685,
+                "imageUrl": "https://img.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_30,w_2600/hellofresh_s3//image/shrimp-risotto-with-zucchini-6d57daed.jpg",
+                "ingredients": [
+                    {
+                        "yield": 2,
+                        "ingredients": [
+                            {
+                                "name": "Shrimp",
+                                "amount": 10,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Arborio Rice",
+                                "amount": 0.75,
+                                "unit": "cup"
+                            },
+                            {
+                                "name": "Parmesan Cheese",
+                                "amount": 0.25,
+                                "unit": "cup"
+                            },
+                            {
+                                "name": "Chicken Stock Concentrate",
+                                "amount": 1,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Yellow Onion",
+                                "amount": 1,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Garlic",
+                                "amount": 2,
+                                "unit": "clove"
+                            },
+                            {
+                                "name": "Zucchini",
+                                "amount": 1,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Thyme",
+                                "amount": 0.25,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Lemon",
+                                "amount": 1,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Olive Oil",
+                                "amount": 1,
+                                "unit": "teaspoon"
+                            },
+                            {
+                                "name": "Butter",
+                                "amount": 1,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Salt",
+                                "amount": null,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Pepper",
+                                "amount": null,
+                                "unit": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "yield": 4,
+                        "ingredients": [
+                            {
+                                "name": "Shrimp",
+                                "amount": 20,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Arborio Rice",
+                                "amount": 1.5,
+                                "unit": "cup"
+                            },
+                            {
+                                "name": "Parmesan Cheese",
+                                "amount": 0.5,
+                                "unit": "cup"
+                            },
+                            {
+                                "name": "Chicken Stock Concentrate",
+                                "amount": 2,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Yellow Onion",
+                                "amount": 1,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Garlic",
+                                "amount": 4,
+                                "unit": "clove"
+                            },
+                            {
+                                "name": "Zucchini",
+                                "amount": 2,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Thyme",
+                                "amount": 0.25,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Lemon",
+                                "amount": 1,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Olive Oil",
+                                "amount": 2,
+                                "unit": "teaspoon"
+                            },
+                            {
+                                "name": "Butter",
+                                "amount": 2,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Salt",
+                                "amount": null,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Pepper",
+                                "amount": null,
+                                "unit": "unit"
+                            }
+                        ]
+                    }
+                ],
+                "recipe_name": "Lemony Shrimp Risotto",
+                "prep_time": "PT45M",
+                "instructions": [
+                    "Wash and dry all produce. Preheat oven to 400 degrees. In a small pot, bring stock concentrate and 4 cups water to a simmer over low heat. Halve, peel, and finely dice onion. Cut zucchini into \u00bd-inch cubes. Mince or grate garlic. Zest and halve lemon.",
+                    "Toss zucchini on a baking sheet with a drizzle of olive oil and a pinch of salt and pepper. Roast until lightly browned, about 20 minutes, tossing halfway through.",
+                    "Meanwhile, heat 1 TBSP butter in a large pan over medium heat. Add onion and garlic and cook until softened, 5-6 minutes, tossing occasionally. Season with salt and pepper. Add rice and toss until grains are translucent, 1-2 minutes. Add entire bunch of thyme to pan.",
+                    "Add stock to pan \u00bc cup at a time, stirring after each addition. Allow rice to absorb stock before adding more. Continue until rice is nearly al dente, about 25 minutes\u2014risotto should be thick but not stiff and grains should have a little bite to them. Discard thyme stems (some leaves will have fallen off).",
+                    "Stir in shrimp and Parmesan. Cook until shrimp is completely opaque, 4-5 minutes. Stir in \u00bd tsp lemon zest and a squeeze of lemon. Season with salt and pepper.",
+                    "Divide risotto between bowls and top with a mound of zucchini."
+                ],
+                "tags": [
+                    "Eat First",
+                    "Gluten-free",
+                    "Contains shellfish",
+                    "American",
+                    "Fusion",
+                    "Italian"
+                ],
+                "total_time": null
+            }
+        },
+        {
+            "recipe": {
+                "active": true,
+                "allergens": [
+                    "Soy",
+                    "Wheat"
+                ],
+                "rating": 3.7,
+                "description": "This Korean dish takes its name from the Korean word for mixing rice. Which is exactly what you\u2019re meant to do after serving it: you put your rice in a bowl, add the toppings, and mix it all together so that those flavors and textures combine in a glorious mishmash. There are plenty of flavors and textures going on here, too, like sweet carrot, juicy zucchini, and beef tossed with garlic, ginger, and soy.",
+                "favorites": 14858,
+                "imageUrl": "https://img.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_30,w_2600/hellofresh_s3//image/5ab3b883ae08b53bb4024952-cd6ea4a4.jpg",
+                "ingredients": [
+                    {
+                        "yield": 2,
+                        "ingredients": [
+                            {
+                                "name": "Zucchini",
+                                "amount": 1,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Button Mushrooms",
+                                "amount": 4,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Scallions",
+                                "amount": 2,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Carrots",
+                                "amount": 6,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Ginger",
+                                "amount": 1,
+                                "unit": "thumb"
+                            },
+                            {
+                                "name": "Garlic",
+                                "amount": 2,
+                                "unit": "clove"
+                            },
+                            {
+                                "name": "Jasmine Rice",
+                                "amount": 0.75,
+                                "unit": "cup"
+                            },
+                            {
+                                "name": "White Wine Vinegar",
+                                "amount": 5,
+                                "unit": "teaspoon"
+                            },
+                            {
+                                "name": "Sesame Oil",
+                                "amount": 1,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Sriracha",
+                                "amount": 2,
+                                "unit": "teaspoon"
+                            },
+                            {
+                                "name": "Soy Sauce",
+                                "amount": 3,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Ground Beef",
+                                "amount": 10,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Sugar",
+                                "amount": 1.5,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Vegetable Oil",
+                                "amount": 4,
+                                "unit": "teaspoon"
+                            },
+                            {
+                                "name": "Salt",
+                                "amount": null,
+                                "unit": null
+                            },
+                            {
+                                "name": "Pepper",
+                                "amount": null,
+                                "unit": null
+                            }
+                        ]
+                    },
+                    {
+                        "yield": 4,
+                        "ingredients": [
+                            {
+                                "name": "Zucchini",
+                                "amount": 2,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Button Mushrooms",
+                                "amount": 8,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Scallions",
+                                "amount": 4,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Carrots",
+                                "amount": 12,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Ginger",
+                                "amount": 2,
+                                "unit": "thumb"
+                            },
+                            {
+                                "name": "Garlic",
+                                "amount": 4,
+                                "unit": "clove"
+                            },
+                            {
+                                "name": "Jasmine Rice",
+                                "amount": 1.5,
+                                "unit": "cup"
+                            },
+                            {
+                                "name": "White Wine Vinegar",
+                                "amount": 10,
+                                "unit": "teaspoon"
+                            },
+                            {
+                                "name": "Sesame Oil",
+                                "amount": 2,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Sriracha",
+                                "amount": 4,
+                                "unit": "teaspoon"
+                            },
+                            {
+                                "name": "Soy Sauce",
+                                "amount": 6,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Ground Beef",
+                                "amount": 20,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Sugar",
+                                "amount": 3,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Vegetable Oil",
+                                "amount": 8,
+                                "unit": "teaspoon"
+                            },
+                            {
+                                "name": "Salt",
+                                "amount": null,
+                                "unit": null
+                            },
+                            {
+                                "name": "Pepper",
+                                "amount": null,
+                                "unit": null
+                            }
+                        ]
+                    }
+                ],
+                "recipe_name": "Korean Beef Bibimbap",
+                "prep_time": "PT30M",
+                "instructions": [
+                    "Wash and dry all produce. Bring 1\u00bc cups water to a boil in a small pot. Halve zucchini lengthwise; slice into thin half-moons. Trim and thinly slice mushrooms and scallions, keeping scallion greens and whites separate. Peel carrot; using a peeler, shave lengthwise into ribbons. Peel and mince ginger. Mince garlic.",
+                    "Once water is boiling, add rice and a pinch of salt to pot. Cover, lower heat, and reduce to a gentle simmer. Cook until tender, 15-20 minutes.",
+                    "Toss scallion whites with vinegar and a pinch of salt in a small bowl. Set aside to marinate. In another small bowl, stir together sesame oil, 1\u00bd TBSP sugar, up to half the sriracha, and 1\u00bd TBSP soy sauce (we\u2019ll use the rest of the sriracha and soy sauce later).",
+                    "Heat a drizzle of oil in a large pan over medium-high heat (use a nonstick pan if you have one). Add carrot; season with salt and pepper. Cook, tossing, until tender but still crisp, 3-4 minutes. Remove from pan and set aside. Add another drizzle of oil to pan and repeat with zucchini; remove from pan once cooked. Add mushrooms and another drizzle of oil to pan and cook until tender, 3-5 minutes. Season with salt and pepper. Remove from pan and set aside.",
+                    "Heat another drizzle of oil in same pan over medium-high heat. Add garlic and ginger and cook until fragrant, about 30 seconds. Add beef, breaking up meat into pieces. Cook, tossing occasionally, until no longer pink, about 4 minutes. Increase heat to high and continue cooking until browned and crisp, about 3 minutes. Pour in remaining soy sauce and cook, tossing, until mostly evaporated, 1-2 minutes. Season with salt and pepper.",
+                    "Divide rice between bowls. Arrange beef, zucchini, carrot, mushrooms, and scallion whites on top. Drizzle with sauce and remaining sriracha (to taste). Sprinkle with scallion greens and serve."
+                ],
+                "tags": [
+                    "Spicy",
+                    "American",
+                    "Fusion",
+                    "Korean"
+                ],
+                "total_time": null
+            }
+        },
+        {
+            "recipe": {
+                "active": true,
+                "allergens": [
+                    "Milk"
+                ],
+                "rating": 3.4,
+                "description": "We love a good glaze on our meat. In fact, we love it so much that sometimes we find ourselves slathering that glaze all over our veggies, too. Which is why we came up with this recipe. The chicken breasts aren\u2019t the only things getting coated in a sticky and sweet balsamic sauce. The onions and tomatoes also go for a roast in it, soaking in all that vinegar-kissed flavor as they cook in the oven.",
+                "favorites": 15438,
+                "imageUrl": "https://img.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_30,w_2600/hellofresh_s3//image/w08-r01-f1735a9f.jpg",
+                "ingredients": [
+                    {
+                        "yield": 2,
+                        "ingredients": [
+                            {
+                                "name": "Chicken Breasts",
+                                "amount": 12,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Grape Tomatoes",
+                                "amount": 4,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Yellow Onion",
+                                "amount": 1,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Garlic",
+                                "amount": 2,
+                                "unit": "clove"
+                            },
+                            {
+                                "name": "Baby Carrots",
+                                "amount": 4,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Yukon Gold Potatoes",
+                                "amount": 12,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Balsamic Vinegar",
+                                "amount": 2,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Herbes de Provence",
+                                "amount": 1,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Honey",
+                                "amount": 0.5,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Olive Oil",
+                                "amount": 1,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Butter",
+                                "amount": 1,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Salt",
+                                "amount": null,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Pepper",
+                                "amount": null,
+                                "unit": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "yield": 4,
+                        "ingredients": [
+                            {
+                                "name": "Chicken Breasts",
+                                "amount": 24,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Grape Tomatoes",
+                                "amount": 8,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Yellow Onion",
+                                "amount": 2,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Garlic",
+                                "amount": 4,
+                                "unit": "clove"
+                            },
+                            {
+                                "name": "Baby Carrots",
+                                "amount": 8,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Yukon Gold Potatoes",
+                                "amount": 24,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Balsamic Vinegar",
+                                "amount": 4,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Herbes de Provence",
+                                "amount": 2,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Honey",
+                                "amount": 1,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Olive Oil",
+                                "amount": 2,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Butter",
+                                "amount": 2,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Salt",
+                                "amount": null,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Pepper",
+                                "amount": null,
+                                "unit": "unit"
+                            }
+                        ]
+                    }
+                ],
+                "recipe_name": "Balsamic Chicken Rustico",
+                "prep_time": "PT30M",
+                "instructions": [
+                    "Wash and dry all produce. Preheat oven to 400 degrees. Cut potatoes into \u00bd-inch cubes. On a baking sheet, toss potatoes, carrots, Herbs de Provence, a drizzle of olive oil, and a pinch of salt and pepper. Roast in oven until lightly browned, 25-30 minutes, tossing halfway through.",
+                    "Peel, halve, and thinly slice onion. Mince or grate garlic. Halve grape tomatoes lengthwise.",
+                    "Heat a drizzle of olive oil in a large pan over medium-high heat. Season chicken breasts all over with salt and pepper. Sear in pan until browned and almost cooked through, 3-4 minutes per side. Remove from pan and set aside on a second baking sheet (or in a baking dish)",
+                    "Add onion and a drizzle of olive oil to same pan over medium-low heat. Cook until softened, about 5 minutes. Toss in garlic, tomatoes, balsamic vinegar, and honey. Cook until vinegar and any juices are slightly thick, about 2 minutes. Stir in 1 TBSP butter.",
+                    "Spoon glaze (including onions and tomatoes) over chicken. (TIP: It\u2019s OK if some glaze runs onto baking sheet.) Bake in oven until chicken is cooked through, 5-7 minutes",
+                    "Divide roasted veggies between plates, then add a chicken breast to each. Spoon any loose onions, tomatoes, and glaze on top."
+                ],
+                "tags": [
+                    "Gluten-free",
+                    "American"
+                ],
+                "total_time": null
+            }
+        },
+        {
+            "recipe": {
+                "active": true,
+                "allergens": [
+                    "Shellfish",
+                    "Milk"
+                ],
+                "rating": 3.4,
+                "description": "One of our favorite things about risottos is that they can breathe new life into otherwise ordinary ingredients. Like shrimp and asparagus, which in any other context might seem like the start of a crisp salad or stir-fry, but here become cozy, warm, and tender when folded into the oozy grains. To freshen things up, we\u2019re adding a dash of Meyer lemon, the hybrid citrus fruit that\u2019s part orange, part lemon, and all tangy deliciousness.",
+                "favorites": 13805,
+                "imageUrl": "https://img.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_30,w_2600/hellofresh_s3//image/w12-r4-ce722a6b.jpg",
+                "ingredients": [
+                    {
+                        "yield": 2,
+                        "ingredients": [
+                            {
+                                "name": "Shrimp",
+                                "amount": 10,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Arborio Rice",
+                                "amount": 0.75,
+                                "unit": "cup"
+                            },
+                            {
+                                "name": "Asparagus",
+                                "amount": 6,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Yellow Onion",
+                                "amount": 1,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Garlic",
+                                "amount": 2,
+                                "unit": "clove"
+                            },
+                            {
+                                "name": "Parmesan Cheese",
+                                "amount": 0.25,
+                                "unit": "cup"
+                            },
+                            {
+                                "name": "Veggie Stock Concentrate",
+                                "amount": 1,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Meyer Lemon",
+                                "amount": 1,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Butter",
+                                "amount": 1,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Olive Oil",
+                                "amount": 2,
+                                "unit": "teaspoon"
+                            },
+                            {
+                                "name": "Salt",
+                                "amount": null,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Pepper",
+                                "amount": null,
+                                "unit": "unit"
+                            }
+                        ]
+                    },
+                    {
+                        "yield": 4,
+                        "ingredients": [
+                            {
+                                "name": "Shrimp",
+                                "amount": 20,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Arborio Rice",
+                                "amount": 1.5,
+                                "unit": "cup"
+                            },
+                            {
+                                "name": "Asparagus",
+                                "amount": 12,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Yellow Onion",
+                                "amount": 1,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Garlic",
+                                "amount": 4,
+                                "unit": "clove"
+                            },
+                            {
+                                "name": "Parmesan Cheese",
+                                "amount": 0.5,
+                                "unit": "cup"
+                            },
+                            {
+                                "name": "Veggie Stock Concentrate",
+                                "amount": 2,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Meyer Lemon",
+                                "amount": 2,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Butter",
+                                "amount": 2,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Olive Oil",
+                                "amount": 4,
+                                "unit": "teaspoon"
+                            },
+                            {
+                                "name": "Salt",
+                                "amount": null,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Pepper",
+                                "amount": null,
+                                "unit": "unit"
+                            }
+                        ]
+                    }
+                ],
+                "recipe_name": "Shrimp and Asparagus Risotto",
+                "prep_time": "PT45M",
+                "instructions": [
+                    "Wash and dry all produce. Bring 4 cups water and stock concentrate to a simmer in a small pot over mediumlow heat. Meanwhile, trim and discard bottom inch from asparagus, then cut stalks into 1-inch pieces. Halve and peel onion. Finely chop one half (save other for another use). Mince garlic. Zest, then halve lemon.",
+                    "Heat a drizzle of olive oil in a large pan over medium heat. Add onion and cook, stirring, until soft, about 5 minutes. Add half the garlic and cook, stirring, until fragrant, another 30 seconds.",
+                    "While onion cooks, fill a medium bowl with ice water. Lower asparagus into simmering stock. Cook until bright green, about 1 minute. Remove with a slotted spoon (keeping stock over medium-low heat) and transfer to bowl with ice water. Let cool, then drain.",
+                    "Add rice to pan with onion. Cook, stirring, until grains are translucent. Add stock \u00bd cup at a time, stirring after each addition. Allow rice to absorb most of stock before adding more. Continue until grains are al dente and creamy, 25-30 minutes.",
+                    "Heat a drizzle of olive oil in a medium pan over medium heat. Pat shrimp dry with a paper towel. Add shrimp, remaining garlic, and asparagus. Cook, tossing, until shrimp are opaque, 3-4 minutes. Season with salt and pepper.",
+                    "When risotto is done cooking, stir in shrimp mixture, a pinch of lemon zest, half the Parmesan, and 1 TBSP butter. Season with salt, pepper, and a squeeze of lemon. Divide risotto between plates. Sprinkle with remaining Parmesan and serve."
+                ],
+                "tags": [
+                    "Eat First",
+                    "Contains shellfish",
+                    "Dinner Ideas",
+                    "American",
+                    "Fusion",
+                    "Italian"
+                ],
+                "total_time": null
+            }
+        },
+        {
+            "recipe": {
+                "active": true,
+                "allergens": [
+                    "Wheat",
+                    "Milk"
+                ],
+                "rating": 3.4,
+                "description": "Say hello to our October Meal of the Month: a lighter, brighter twist on classic chicken Parmesan. The chicken breasts are baked, not fried, and served over spinach salad with a freshly squeezed lemon dressing. It\u2019s got all of the cheesy, breaded goodness you know and love in a less over-the-top package. And if you do love it, you can order it again next week.",
+                "favorites": 13959,
+                "imageUrl": "https://img.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_30,w_2600/hellofresh_s3//image/chicken-parm-salad-2692a34d.jpg",
+                "ingredients": [
+                    {
+                        "yield": 2,
+                        "ingredients": [
+                            {
+                                "name": "Yukon Gold Potatoes",
+                                "amount": 12,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Panko Breadcrumbs",
+                                "amount": 0.25,
+                                "unit": "cup"
+                            },
+                            {
+                                "name": "Parmesan Cheese",
+                                "amount": 0.25,
+                                "unit": "cup"
+                            },
+                            {
+                                "name": "Garlic Powder",
+                                "amount": 1,
+                                "unit": "teaspoon"
+                            },
+                            {
+                                "name": "Chicken Breasts",
+                                "amount": 12,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Sour Cream",
+                                "amount": 3,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Lemon",
+                                "amount": 1,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Spinach",
+                                "amount": 5,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Olive Oil",
+                                "amount": 4,
+                                "unit": "teaspoon"
+                            },
+                            {
+                                "name": "Salt",
+                                "amount": null,
+                                "unit": null
+                            },
+                            {
+                                "name": "Pepper",
+                                "amount": null,
+                                "unit": null
+                            }
+                        ]
+                    },
+                    {
+                        "yield": 4,
+                        "ingredients": [
+                            {
+                                "name": "Yukon Gold Potatoes",
+                                "amount": 24,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Panko Breadcrumbs",
+                                "amount": 0.5,
+                                "unit": "cup"
+                            },
+                            {
+                                "name": "Parmesan Cheese",
+                                "amount": 0.5,
+                                "unit": "cup"
+                            },
+                            {
+                                "name": "Garlic Powder",
+                                "amount": 2,
+                                "unit": "teaspoon"
+                            },
+                            {
+                                "name": "Chicken Breasts",
+                                "amount": 24,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Sour Cream",
+                                "amount": 6,
+                                "unit": "tablespoon"
+                            },
+                            {
+                                "name": "Lemon",
+                                "amount": 1,
+                                "unit": "unit"
+                            },
+                            {
+                                "name": "Spinach",
+                                "amount": 10,
+                                "unit": "ounce"
+                            },
+                            {
+                                "name": "Olive Oil",
+                                "amount": 7,
+                                "unit": "teaspoon"
+                            },
+                            {
+                                "name": "Salt",
+                                "amount": null,
+                                "unit": null
+                            },
+                            {
+                                "name": "Pepper",
+                                "amount": null,
+                                "unit": null
+                            }
+                        ]
+                    }
+                ],
+                "recipe_name": "Chicken Parm Salad",
+                "prep_time": "PT30M",
+                "instructions": [
+                    "Wash and dry all produce. Preheat oven to 450 degrees. Cut potatoes into \u00be-inch cubes. Toss on a baking sheet with a drizzle of olive oil and a large pinch of salt and pepper. Roast in oven until lightly browned and tender, about 25 minutes, tossing halfway through.",
+                    "Meanwhile, combine \u00bc cup panko (we sent more), Parmesan, garlic powder, and a pinch of salt and pepper in a small bowl.",
+                    "Place a chicken breast between two pieces of plastic wrap. Pound with a rolling pin, mallet, or heavy-bottomed pan until \u00bd inch thick. Season with salt and pepper. Repeat with remaining chicken breast.",
+                    "Place chicken breasts on a lightly oiled baking sheet and brush tops with 2 TBSP sour cream (we\u2019ll be using more later). Press crust mixture into sour cream. Bake in oven until chicken is cooked through and crust is crispy, 12-15 minutes.",
+                    "Halve lemon. Cut one half into wedges. In a large bowl, combine 1 TBSP sour cream (you\u2019ll have some left over), a large drizzle of olive oil, a squeeze of lemon juice, and a pinch of salt and pepper. When potatoes are done, add to bowl along with spinach and toss to coat evenly. Season with salt and pepper.",
+                    "Divide salad between plates and top with chicken. Serve with lemon wedges on the side for squeezing over."
+                ],
+                "tags": [
+                    "American"
+                ],
+                "total_time": null
+            }
+        }
+    ]
+    }

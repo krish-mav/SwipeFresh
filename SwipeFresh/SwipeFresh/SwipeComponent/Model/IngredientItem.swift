@@ -11,6 +11,17 @@ struct IngredientItem: Hashable, Identifiable {
     var id = UUID()
     var ingredient: Ingredient
     var quantity: Double
+    
+    init(ingredient: Ingredient, quantity: Double) {
+        self.ingredient = ingredient
+        self.quantity = quantity
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.ingredient = try container.decode(Ingredient.self, forKey: .ingredient)
+        self.quantity = try container.decode(Double.self, forKey: .quantity)
+    }
 
     // Provide a hash value for instances of IngredientItem
     func hash(into hasher: inout Hasher) {
@@ -24,5 +35,10 @@ struct IngredientItem: Hashable, Identifiable {
         }
         return false
     }
+    
+    enum CodingKeys: String, CodingKey {
+            case ingredient
+            case quantity
+        }
 
 }

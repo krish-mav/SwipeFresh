@@ -45,15 +45,16 @@ struct RecipeListItemView: View {
     }
 }
 
-struct RecipeListItemView_Previews: PreviewProvider {
+/*struct RecipeListItemView_Previews: PreviewProvider {
     static var previews: some View {
         // Create a mock recipe for preview
         let mockRecipe = Recipe(
-            name: "Mock Recipe",
+            score: 28, name: "Mock Recipe",
             image: "https://img.hellofresh.com/w_2048,q_auto,f_auto,c_limit,fl_lossy/c_fill,f_auto,fl_lossy,h_432,q_auto/hellofresh_s3/image/63d94b2977c8d43261096729-89774632.jpg",
             ingredientItems: [],
-            tags: [Tag(name: "Dinner")],
+            tags: [Tag(from: "Dinner" as! Decoder)],
             prepTime: 30 * 60, // 30 minutes
+            cookTime: 20 * 60,
             allergens: [Allergen(name: "Nuts")],
             instructions: ["Step 1: Mock Step", "Step 2: Another Mock Step"]
         )
@@ -62,4 +63,4 @@ struct RecipeListItemView_Previews: PreviewProvider {
         RecipeListItemView(recipe: mockRecipe)
             .previewLayout(.sizeThatFits)
     }
-}
+}*/
