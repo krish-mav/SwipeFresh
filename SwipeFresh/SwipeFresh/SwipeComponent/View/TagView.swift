@@ -21,7 +21,7 @@ struct TagView: View {
             HStack {
                 
                 Text(tagText)
-                    .frame(width: 90)
+                    .frame(width: 80)
                     .font(.subheadline)
             }
             .foregroundColor(.white)

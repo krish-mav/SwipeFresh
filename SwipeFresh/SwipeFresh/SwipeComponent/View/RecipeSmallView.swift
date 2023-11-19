@@ -73,14 +73,11 @@ struct RecipeSmallView: View {
                 
             }
         }
-        .overlay(content: {
-            Rectangle()
-                .foregroundColor(viewModel.getRecipeCard(index: index).color)
-        })
+
         .onChange(of: viewModel.getRecipeCard(index: index).liked, { oldValue, newValue in
             if newValue == 1 {
-                withAnimation(Animation.easeInOut(duration: 1.0)) {
-                    viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: 900, height: 0))
+                withAnimation(Animation.easeInOut(duration: 2.0)) {
+                    viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: 500, height: 0))
                     changeColor(width: viewModel.getRecipeCard(index: index).offset.width)
                     viewModel.currentRecipe = index + 1
                     viewModel.lastRecipe = index
@@ -89,17 +86,18 @@ struct RecipeSmallView: View {
             } else if newValue == 3 {
                 withAnimation(Animation.snappy(duration: 2.0)) {
                     viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: 0, height: -6000))
-                    changeColor(width: viewModel.getRecipeCard(index: index).offset.width)
                     viewModel.currentRecipe = index + 1
                     viewModel.lastRecipe = index
                 }
                 
             } else if newValue == -1 {
-                withAnimation(Animation.easeInOut(duration: 1.0)) {
-                    viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: -900, height: 0))
+                withAnimation(Animation.easeInOut(duration: 2.0)) {
+                    viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: -500, height: 0))
                     changeColor(width: viewModel.getRecipeCard(index: index).offset.width)
                     viewModel.currentRecipe = index + 1
                     viewModel.lastRecipe = index
+                    changeColor(width: viewModel.getRecipeCard(index: index).offset.width)
+
                     
                 }
             } else if newValue == 0 {
@@ -111,8 +109,13 @@ struct RecipeSmallView: View {
                 }
             }
         })
+        .overlay(content: {
+            Rectangle()
+                .foregroundColor(viewModel.getRecipeCard(index: index).color)
+        })
 
-    .cornerRadius(15)
+        .cornerRadius(15)
+
     .padding()
     .offset(x: viewModel.getRecipeCard(index: index).offset.width, y: viewModel.getRecipeCard(index: index).offset.height * 0.2)
     .rotationEffect(.degrees(Double(viewModel.getRecipeCard(index: index).offset.width / 40)))
@@ -130,6 +133,7 @@ struct RecipeSmallView: View {
                     }
                 })
         )
+
     }
     func swipe(width: CGFloat) {
         switch width {
@@ -153,10 +157,10 @@ struct RecipeSmallView: View {
     
     func changeColor(width: CGFloat) {
         switch width {
-        case -500...(-100):
-            viewModel.setRecipeCardColor(index: index, color: .red.opacity(0.3))
-        case 100...(500):
-            viewModel.setRecipeCardColor(index: index, color: .green.opacity(0.3))
+        case -900...(-100):
+            viewModel.setRecipeCardColor(index: index, color: .red.opacity(0.4))
+        case 100...(900):
+            viewModel.setRecipeCardColor(index: index, color: .green.opacity(0.4))
         default:
             viewModel.setRecipeCardColor(index: index, color: .white.opacity(0))
         }
