@@ -21,6 +21,9 @@ struct RecipeSmallView: View {
                 AsyncImage(url: URL(string: viewModel.getRecipe(index: index).image)) { image in
                     image
                         .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 370, height: 600)
+
                         
                 } placeholder: {
                     Image("Placeholder")
