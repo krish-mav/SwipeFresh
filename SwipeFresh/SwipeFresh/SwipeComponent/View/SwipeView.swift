@@ -49,6 +49,9 @@ struct SwipeView: View {
             viewModel.populate(amount: 2)
         })
         .overlay(content: {
+            if viewModel.numLeft >= 2 {
+                SwipePopupView(viewModel: viewModel)
+            }
             if viewModel.isAnimating {
                 withAnimation {
                     Image("lime")
