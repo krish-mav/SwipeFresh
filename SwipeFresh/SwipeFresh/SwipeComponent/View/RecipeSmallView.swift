@@ -26,8 +26,7 @@ struct RecipeSmallView: View {
 
                         
                 } placeholder: {
-                    Image("Placeholder")
-                        .resizable()
+                    Color("primary_darkest") // Placeholder color
                 }
                 
                 
@@ -37,7 +36,7 @@ struct RecipeSmallView: View {
                     Spacer()
                     HStack(alignment: .bottom) {
                         Text(viewModel.getRecipe(index: index).name)
-
+                            .font(Font.custom("Agrandir-TextBold", size: 30))
                             .font(.largeTitle)
                             .fontWeight(.bold)
                             .foregroundColor(.white)

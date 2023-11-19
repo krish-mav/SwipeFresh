@@ -14,22 +14,13 @@ struct SwipeView: View {
         VStack {
             ZStack {
                 ForEach((0..<viewModel.data.recipeStack.count).reversed(), id: \.self) { index in
-                    if viewModel.isShowingBottomSheet {
-                        
-                        Rectangle()
-                            .foregroundColor(.white)
-                            .ignoresSafeArea()
 
-                            
-                            RecipeBigView(viewModel: viewModel, index: index)
-
-                                
-                                
-                    } else {
                         RecipeSmallView(viewModel: viewModel, index: index)
-                            //.transition(.asymmetric(insertion: .scale(scale: .infinity), removal: .opacity))
+                            .foregroundColor(.white)
+                            .sheet(isPresented: $viewModel.isShowingBottomSheet) {
+                                RecipeBigView(viewModel: viewModel, index: index - 1)
+                            }
 
-                    }
                 }
                 .onChange(of: viewModel.currentRecipe) { oldValue, newValue in
                     if (viewModel.data.recipeStack.count - newValue) < 3 {
@@ -54,9 +45,9 @@ struct SwipeView: View {
             }
             if viewModel.isAnimating {
                 withAnimation {
-                    Image("lime")
+                    Image("lime_big")
                         .font(.system(size: 100))
-                        .scaleEffect(size) // Make it larger
+                        .scaleEffect(size/10) // Make it larger
                     //.opacity(0.0)     // Make it disappear
                         .animation(.interactiveSpring(duration: 1.0))
                         .onAppear {
