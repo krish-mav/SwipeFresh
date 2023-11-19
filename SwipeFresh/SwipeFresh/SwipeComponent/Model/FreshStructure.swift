@@ -12,7 +12,7 @@ struct FreshStructure {
     init(learner: Binding<LearningAlgorithm>, recipes: [RecipeCard], minLength: Int) {
         self.learner = learner
         self.recipeStack = []
-        self.storageRecipes = recipes
+        self.storageRecipes = Array(recipes.prefix(20))
         self.minLength = minLength
     }
     //@ObservedObject var viewModel: SwipeViewModel

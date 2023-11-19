@@ -10,22 +10,32 @@ import SwiftUI
 struct RecipeListItemView: View {
     var recipe: Recipe
     @State var isPresented = false
+    
     var body: some View {
         VStack(alignment: .leading) {
             // Display the recipe image (if available)
-            AsyncImage(url: URL(string: recipe.image)) { image in
-                image
-                    .resizable()
-                    .scaledToFill()
-                    .frame(maxWidth: .infinity, maxHeight: 150)
-                    .clipped()
-                    .cornerRadius(10)
-            } placeholder: {
-                Color.gray
-                    .frame(maxWidth: .infinity, maxHeight: 150)
-                    .cornerRadius(10)
+            AsyncImage(url: URL(string: recipe.image), transaction: Transaction(animation: .spring())) { phase in
+                switch phase {
+                case .empty:
+                    Color("primary_darkest")
+                        .frame(height: 150)
+
+                case .success(let image):
+                    image
+                        .resizable()
+                        .scaledToFill()
+                        .frame(maxWidth: .infinity, maxHeight: 150)
+                        .clipped()
+
+                case .failure(_):
+                    Image(systemName: "exclamationmark.icloud")
+                        .frame(maxWidth: .infinity, maxHeight: 150)
+                        .scaledToFit()
+
+                @unknown default:
+                    Image(systemName: "exclamationmark.icloud")
+                }
             }
-            .padding(.bottom, 8)
 
             // Display the recipe name and prep time
             Text(recipe.name)

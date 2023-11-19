@@ -17,15 +17,28 @@ struct RecipeBigView: View {
             ZStack(alignment: .top) {
                 
                 VStack {
-                    AsyncImage(url: URL(string: viewModel.getRecipe(index: index).image)) { image in
-                                            image
-                                                .resizable()
-                                                .scaledToFit()
+                    AsyncImage(url: URL(string: viewModel.getRecipe(index: index).image)) { phase in
+                        switch phase {
+                        case .empty:
+                            Color("primary_darkest")
+                                .frame(height: 150)
 
-                                        } placeholder: {
-                                            Color("primary_darkest") // Placeholder color
-                                                
-                                        }
+                        case .success(let image):
+                            image
+                                .resizable()
+                                .scaledToFill()
+                                .frame(maxWidth: .infinity, maxHeight: 200)
+                                .clipped()
+
+                        case .failure(_):
+                            Image(systemName: "exclamationmark.icloud")
+                                .frame(maxWidth: .infinity, maxHeight: 200)
+                                .scaledToFit()
+
+                        @unknown default:
+                            Image(systemName: "exclamationmark.icloud")
+                        }
+                    }
                     .scaledToFit()
                     //for Overlaping
                     Spacer()
@@ -45,6 +58,7 @@ struct RecipeBigView: View {
                             
                             HStack(alignment: .bottom) {
                                 Text("\(viewModel.getRecipe(index: index).name)")
+                                    .font(Font.custom("Agrandir-Regular", size: 30))
                                     .font(.largeTitle)
                                     .fontWeight(.bold)
                                 
