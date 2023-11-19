@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MainView: View {
 
-    var viewModel: SwipeViewModel
+    @ObservedObject var viewModel: SwipeViewModel
     @State private var selection = 2
     var body: some View {
 

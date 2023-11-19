@@ -25,6 +25,8 @@ class SwipeViewModel: ObservableObject {
     
     @Published var isAnimating: Bool = false
     
+    @Published var numLeft: Int = 0
+    
     func learn(card: RecipeCard) {
         learner.wrappedValue.learn(card: card)
     }
@@ -95,6 +97,7 @@ class SwipeViewModel: ObservableObject {
     func dislikeRecipe(index: Int) {
         if index >= 0 && index < self.data.recipeStack.count {
             self.data.recipeStack[index].liked = -1
+            self.numLeft += 1
         }
     }
     

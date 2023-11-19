@@ -20,6 +20,18 @@ struct LearningAlgorithm {
         
     }
     
+    mutating func getXLowest(ingredients: [Ingredient], amount: Int) -> [Ingredient] {
+        for ingredient in ingredients {
+            if !data.keys.contains(ingredient.name) {
+                setLabel(label: ingredient.name, weight: 0)
+            }
+        }
+        var ingrNames = ingredients.map { $0.name }
+        var foundIngredients = data.filter({ ingrNames.contains($0.key)}).sorted(by: { $0.value > $1.value})
+        print(foundIngredients)
+        return foundIngredients.prefix(amount).map({ Ingredient(name: $0.key)})
+    }
+    
     //manipulate weights according to input
     mutating func learn(card: RecipeCard) {
         var direction = card.liked
