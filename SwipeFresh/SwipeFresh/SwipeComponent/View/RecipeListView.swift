@@ -26,13 +26,13 @@ struct RecipeListView: View {
         NavigationStack {
             VStack {
                 SearchBar(text: $searchText)
-                List(viewModel.likedRecipes) { recipe in
+                List(filteredRecipes) { recipe in
                     RecipeListItemView(recipe: recipe)
                         .contentShape(Rectangle()) // Make the entire cell tappable
                         .padding(0) // Remove padding around the cell
                         .listRowInsets(EdgeInsets())
                         .listRowSeparator(.hidden)
-                                              }
+                    }
                     .listStyle(PlainListStyle())
                 }
             }
