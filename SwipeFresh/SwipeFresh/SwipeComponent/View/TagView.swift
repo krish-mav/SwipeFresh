@@ -9,16 +9,19 @@ import SwiftUI
 
 struct TagView: View {
     var tagText: String
+    var selectedElements: Binding<[String]>? = nil
+    
     
     var body: some View {
         ZStack {
             Rectangle()
                 .cornerRadius(35)
-                .foregroundColor(.gray)
-                .opacity(0.5)
+                .foregroundColor((selectedElements?.wrappedValue.contains(tagText) ?? false) ? Color("primary").opacity(0.8) : .gray.opacity(0.5))
+                
             HStack {
                 
                 Text(tagText)
+                    .frame(width: 100)
             }
             .foregroundColor(.white)
             .padding(7)

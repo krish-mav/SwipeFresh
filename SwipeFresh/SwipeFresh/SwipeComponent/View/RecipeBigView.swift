@@ -18,13 +18,14 @@ struct RecipeBigView: View {
                 
                 VStack {
                     AsyncImage(url: URL(string: viewModel.getRecipe(index: index).image)) { image in
-                        image
-                            .resizable()
-                    } placeholder: {
-                        Image("Placeholder")
-                            .resizable()
-                    }
-                    
+                                            image
+                                                .resizable()
+                                                .scaledToFit()
+
+                                        } placeholder: {
+                                            Color("primary_darkest") // Placeholder color
+                                                
+                                        }
                     .scaledToFit()
                     //for Overlaping
                     Spacer()
@@ -43,7 +44,7 @@ struct RecipeBigView: View {
                         VStack(alignment: .leading) {
                             
                             HStack(alignment: .bottom) {
-                                Text(viewModel.getRecipe(index: index).name)
+                                Text("\(viewModel.getRecipe(index: index).name)")
                                     .font(.largeTitle)
                                     .fontWeight(.bold)
                                 
@@ -61,7 +62,7 @@ struct RecipeBigView: View {
                                     }
                                 }, label: {
                                     Image(systemName: "arrow.down.circle.fill")
-                                        .foregroundColor(Color("primary_dark"))
+                                        .foregroundColor(Color("primary_darkest"))
                                         .font(.largeTitle)
                                 })
                                 

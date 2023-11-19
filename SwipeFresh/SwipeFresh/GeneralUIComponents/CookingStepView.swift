@@ -18,8 +18,8 @@ struct CookingStepView: View {
                     .frame(width: 60, height: 60)
                 Text("\(number)")
                     .foregroundColor(.white)
-                    .font(.title)
-                    .fontWeight(.semibold)
+                    .font(.custom("Agrandir-TextBold", size: 30))
+
                     .multilineTextAlignment(.leading)
 
                 

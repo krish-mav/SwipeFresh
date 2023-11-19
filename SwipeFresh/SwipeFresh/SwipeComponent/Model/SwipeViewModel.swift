@@ -28,7 +28,7 @@ class SwipeViewModel: ObservableObject {
     @Published var numLeft: Int = 0
     
     func learn(card: RecipeCard) {
-        learner.wrappedValue.learn(card: card)
+        learner.wrappedValue.data = learner.wrappedValue.learn(card: card)
     }
     
     func populate(amount: Int) {

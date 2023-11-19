@@ -22,10 +22,10 @@ struct HeaderView: View {
                     .ignoresSafeArea()
                 
                 Text(title)
+                    .font(Font.custom("Agrandir-Regular", size: 20))
                     .foregroundColor(.white)
-                    .font(.title)
-                    .fontWeight(.bold)
                     .padding()
+                    .fontWeight(.bold)
             }
             .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
             
