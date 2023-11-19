@@ -17,7 +17,8 @@ struct SwipeView: View {
                         RecipeSmallView(viewModel: viewModel, index: index)
                             .foregroundColor(.white)
                             .sheet(isPresented: $viewModel.isShowingBottomSheet) {
-                                RecipeBigView(viewModel: viewModel, index: index - 1)
+                                RecipeBigView(viewModel: viewModel, index: viewModel.currentRecipe)
+                                    .transition(.slide)
                             }
                 }
                 .onChange(of: viewModel.currentRecipe) { oldValue, newValue in
@@ -28,7 +29,7 @@ struct SwipeView: View {
                 
             }
             .onChange(of: viewModel.currentRecipe) { oldValue, newValue in
-                    print(viewModel.learner.data)
+                print(viewModel.learner.wrappedValue.data)
             }
             Spacer()
             SwipeButtonsView(viewModel: viewModel)
@@ -37,6 +38,9 @@ struct SwipeView: View {
             viewModel.populate(amount: 2)
         })
         .overlay(content: {
+            if viewModel.numLeft >= 2 {
+                SwipePopupView(viewModel: viewModel)
+            }
             if viewModel.isAnimating {
                 withAnimation {
                     Image("lime_big")

@@ -12,19 +12,19 @@ struct RecipeDetailedView: View {
     var recipe: Recipe
     
     let columns = [
-               GridItem(.adaptive(minimum: 80))
+               GridItem(.adaptive(minimum: 90))
            ]
     
     var body: some View {
         VStack(alignment: .leading) {
             if (!recipe.tags.isEmpty) {
-                LazyVGrid(columns: columns, spacing: 10) {
+                LazyVGrid(columns: columns, spacing: 15) {
                     ForEach(recipe.tags) { tag in
                         TagView(tagText: tag.name)
                     }
                     
                 }
-                .padding([.leading, .trailing, .bottom])
+                .padding(5)
                 
                 
                 Divider()
@@ -32,11 +32,9 @@ struct RecipeDetailedView: View {
             }
             
             HStack {
-                Spacer()
-                    TimeTagRecipeView(iconName: "clock", text: String(100) + " min", title: "Prep")
+                TimeTagRecipeView(iconName: "clock", text: "\(recipe.prepTime) min", title: "Prep")
                             .padding(.trailing)
                 
-                    TimeTagRecipeView(iconName: "clock", text: "45 min", title: "All")
                 Spacer()
 
             }

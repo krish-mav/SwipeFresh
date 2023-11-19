@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct LearningAlgorithm {
+class LearningAlgorithm: ObservableObject {
     init(allergens: [Allergen] = Mock.allergenRestrictions.map( { $0.allergen})) {
         self.allergens = allergens
     }
@@ -15,12 +15,12 @@ struct LearningAlgorithm {
     var allergens: [Allergen]
     
     //add a new lable with a weight
-    mutating func addLabel(label: String) {
+    func addLabel(label: String) {
         data[label] = 0
         
     }
     
-    mutating func getXLowest(ingredients: [Ingredient], amount: Int) -> [Ingredient] {
+    func getXLowest(ingredients: [Ingredient], amount: Int) -> [Ingredient] {
         for ingredient in ingredients {
             if !data.keys.contains(ingredient.name) {
                 setLabel(label: ingredient.name, weight: 0)
@@ -28,12 +28,11 @@ struct LearningAlgorithm {
         }
         var ingrNames = ingredients.map { $0.name }
         var foundIngredients = data.filter({ ingrNames.contains($0.key)}).sorted(by: { $0.value > $1.value})
-        print(foundIngredients)
         return foundIngredients.prefix(amount).map({ Ingredient(name: $0.key)})
     }
     
     //manipulate weights according to input
-    mutating func learn(card: RecipeCard) {
+    func learn(card: RecipeCard) -> [String: Double] {
         var direction = card.liked
         for tag in card.recipe.tags {
             if !data.keys.contains(tag.name) {
@@ -48,10 +47,11 @@ struct LearningAlgorithm {
             }
             setLabel(label: ingredientItem.ingredient.name, weight: ((data[ingredientItem.ingredient.name] ?? 0) + Double(direction) * 5))
         }
+        return self.data
 }
     
     //calculate score of a recipe
-    mutating func calculate(recipe: Recipe) -> Double{
+    func calculate(recipe: Recipe) -> Double{
         for allergen in self.allergens {
             if recipe.allergens.contains(where: {$0.name == allergen.name}) {
                 return -1000
@@ -78,7 +78,7 @@ struct LearningAlgorithm {
     }
     
     //just setting the default values for allergies
-    mutating func setLabel(label: String, weight: Double) {
+    func setLabel(label: String, weight: Double) {
         data[label] = weight
     }
     

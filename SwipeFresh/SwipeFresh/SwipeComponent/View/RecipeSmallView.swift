@@ -10,7 +10,7 @@ import SwiftUI
 struct RecipeSmallView: View {
     @State private var offset = CGSize.zero
     let columns = [
-               GridItem(.adaptive(minimum: 80))
+               GridItem(.adaptive(minimum: 90))
            ]
     @State private var color: Color = .white.opacity(0)
     @ObservedObject var viewModel: SwipeViewModel
@@ -44,7 +44,7 @@ struct RecipeSmallView: View {
                 VStack(alignment: .leading) {
                     Spacer()
                     HStack(alignment: .bottom) {
-                        Text(viewModel.getRecipe(index: index).name)
+                        Text("\(viewModel.getRecipe(index: index).name)")
                             .font(Font.custom("Agrandir-TextBold", size: 30))
                             .font(.largeTitle)
                             .fontWeight(.bold)
@@ -60,7 +60,7 @@ struct RecipeSmallView: View {
                         })
                     }
                     
-                    LazyVGrid(columns: columns, spacing: 10) {
+                    LazyVGrid(columns: columns, spacing: 15) {
                         ForEach(viewModel.getRecipe(index: index).tags) { tag in
                             TagView(tagText: tag.name)
                         }
@@ -80,7 +80,7 @@ struct RecipeSmallView: View {
         .onChange(of: viewModel.getRecipeCard(index: index).liked, { oldValue, newValue in
             if newValue == 1 {
                 withAnimation(Animation.easeInOut(duration: 1.0)) {
-                    viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: 500, height: 0))
+                    viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: 900, height: 0))
                     changeColor(width: viewModel.getRecipeCard(index: index).offset.width)
                     viewModel.currentRecipe = index + 1
                     viewModel.lastRecipe = index
@@ -96,7 +96,7 @@ struct RecipeSmallView: View {
                 
             } else if newValue == -1 {
                 withAnimation(Animation.easeInOut(duration: 1.0)) {
-                    viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: -500, height: 0))
+                    viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: -900, height: 0))
                     changeColor(width: viewModel.getRecipeCard(index: index).offset.width)
                     viewModel.currentRecipe = index + 1
                     viewModel.lastRecipe = index
@@ -135,13 +135,13 @@ struct RecipeSmallView: View {
         switch width {
 
             case -500...(-150):
-                viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: -500, height: 0))
+                viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: -900, height: 0))
                 viewModel.lastRecipe = index
                 viewModel.currentRecipe = index + 1
                 viewModel.dislikeRecipe(index: index)
                 viewModel.learn(card: viewModel.getRecipeCard(index: index))
             case 150...(500):
-                viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: 500, height: 0))
+                viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: 900, height: 0))
                 viewModel.lastRecipe = index
                 viewModel.currentRecipe = index + 1
                 viewModel.likeRecipe(index: index)

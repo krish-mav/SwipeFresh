@@ -10,7 +10,7 @@ import SwiftUI
 struct MainView: View {
 
     @ObservedObject var viewModel: SwipeViewModel
-    @State private var selection = 2
+    @State private var selection = 3
     var body: some View {
 
         TabView(selection: $selection) {
@@ -19,18 +19,23 @@ struct MainView: View {
                     Image(systemName: "checklist")
                 }
                 .tag(1)
+            StatisticsView()
+                .tabItem {
+                    Image(systemName: "lightbulb.max.fill")
+                }
+                .tag(2)
             SwipeView(viewModel: viewModel)
                 .tabItem {
                     Image(systemName: "frying.pan")
                 }.onAppear() {
                     Dataloader().load()
                 }
-                .tag(2)
+                .tag(3)
             RecipeListView(viewModel: viewModel)
                 .tabItem {
                     Image (systemName: "star.fill")
                 }
-                .tag(3)
+                .tag(4)
         }
         .accentColor(Color("primary_darkest"))
 

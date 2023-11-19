@@ -47,6 +47,7 @@ struct RecipeDetailView: View {
             .padding()
             
             Text(recipe.name)
+                .font(Font.custom("Agrandir-Regular", size: 20))
                 .font(.largeTitle)
                 .fontWeight(.bold)
             RecipeDetailedView(recipe: recipe)
