@@ -35,7 +35,7 @@ struct RecipeSmallView: View {
                 VStack(alignment: .leading) {
                     Spacer()
                     HStack(alignment: .bottom) {
-                        Text(viewModel.getRecipe(index: index).name)
+                        Text("\(viewModel.getRecipe(index: index).name)")
                             .font(Font.custom("Agrandir-TextBold", size: 30))
                             .font(.largeTitle)
                             .fontWeight(.bold)
@@ -71,7 +71,7 @@ struct RecipeSmallView: View {
         .onChange(of: viewModel.getRecipeCard(index: index).liked, { oldValue, newValue in
             if newValue == 1 {
                 withAnimation(Animation.easeInOut(duration: 1.0)) {
-                    viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: 500, height: 0))
+                    viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: 900, height: 0))
                     changeColor(width: viewModel.getRecipeCard(index: index).offset.width)
                     viewModel.currentRecipe = index + 1
                     viewModel.lastRecipe = index
@@ -87,7 +87,7 @@ struct RecipeSmallView: View {
                 
             } else if newValue == -1 {
                 withAnimation(Animation.easeInOut(duration: 1.0)) {
-                    viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: -500, height: 0))
+                    viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: -900, height: 0))
                     changeColor(width: viewModel.getRecipeCard(index: index).offset.width)
                     viewModel.currentRecipe = index + 1
                     viewModel.lastRecipe = index
@@ -126,13 +126,13 @@ struct RecipeSmallView: View {
         switch width {
 
             case -500...(-150):
-                viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: -500, height: 0))
+                viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: -900, height: 0))
                 viewModel.lastRecipe = index
                 viewModel.currentRecipe = index + 1
                 viewModel.dislikeRecipe(index: index)
                 viewModel.learn(card: viewModel.getRecipeCard(index: index))
             case 150...(500):
-                viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: 500, height: 0))
+                viewModel.setRecipeCardOffset(index: index, offset: CGSize(width: 900, height: 0))
                 viewModel.lastRecipe = index
                 viewModel.currentRecipe = index + 1
                 viewModel.likeRecipe(index: index)

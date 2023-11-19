@@ -18,7 +18,8 @@ struct SwipeView: View {
                         RecipeSmallView(viewModel: viewModel, index: index)
                             .foregroundColor(.white)
                             .sheet(isPresented: $viewModel.isShowingBottomSheet) {
-                                RecipeBigView(viewModel: viewModel, index: index - 1)
+                                RecipeBigView(viewModel: viewModel, index: viewModel.currentRecipe)
+                                    .transition(.slide)
                             }
 
                 }
@@ -30,7 +31,7 @@ struct SwipeView: View {
                 
             }
             .onChange(of: viewModel.currentRecipe) { oldValue, newValue in
-                    print(viewModel.learner.data)
+                print(viewModel.learner.wrappedValue.data)
             }
             Spacer()
             SwipeButtonsView(viewModel: viewModel)

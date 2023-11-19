@@ -32,11 +32,9 @@ struct RecipeDetailedView: View {
             }
             
             HStack {
-                Spacer()
-                    TimeTagRecipeView(iconName: "clock", text: String(100) + " min", title: "Prep")
+                TimeTagRecipeView(iconName: "clock", text: "\(recipe.prepTime) min", title: "Prep")
                             .padding(.trailing)
                 
-                    TimeTagRecipeView(iconName: "clock", text: "45 min", title: "All")
                 Spacer()
 
             }

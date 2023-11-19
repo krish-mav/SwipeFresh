@@ -33,6 +33,8 @@ struct SwipePopupView: View {
                     Text("What didn't you like about this recipe?")
                         .font(.title2)
                         .fontWeight(.bold)
+                        .multilineTextAlignment(.center)
+                        .fixedSize(horizontal: false, vertical: true)
                     Spacer()
                     Text("Tags")
                         .fontWeight(.semibold)
@@ -42,18 +44,18 @@ struct SwipePopupView: View {
                             Button(action: {
                                 if !selectedElements.contains(tag.name) {
                                     selectedElements.append(tag.name)
-                                    print(selectedElements)
                                 } else {
                                     selectedElements = selectedElements.filter( { $0 != tag.name })
-                                    print(selectedElements)
                                 }
                             }, label: {
                                 TagView(tagText: tag.name, selectedElements: $selectedElements)
+                                    .frame()
                             })
                         }
                     }
-                    .padding(8)
-                    
+                    .padding(10)
+                    Divider()
+                        .background(.black)
                     Text("Ingredients")
                         .fontWeight(.semibold)
                     LazyVGrid(columns: columns, spacing: 10) {
@@ -62,17 +64,15 @@ struct SwipePopupView: View {
                             Button(action: {
                                 if !selectedElements.contains(ingr.name) {
                                     selectedElements.append(ingr.name)
-                                    print(selectedElements)
                                 } else {
                                     selectedElements = selectedElements.filter( { $0 != ingr.name })
-                                    print(selectedElements)
                                 }
                             }, label: {
                                 TagView(tagText: ingr.name, selectedElements: $selectedElements)
                             })
                         }
                     }
-                    .padding(8)
+                    .padding(10)
                     Spacer()
 
                     HStack {
