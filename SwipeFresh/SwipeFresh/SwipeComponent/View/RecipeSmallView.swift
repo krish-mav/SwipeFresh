@@ -10,7 +10,7 @@ import SwiftUI
 struct RecipeSmallView: View {
     @State private var offset = CGSize.zero
     let columns = [
-               GridItem(.adaptive(minimum: 80))
+               GridItem(.adaptive(minimum: 90))
            ]
     @State private var color: Color = .white.opacity(0)
     @ObservedObject var viewModel: SwipeViewModel
@@ -51,7 +51,7 @@ struct RecipeSmallView: View {
                         })
                     }
                     
-                    LazyVGrid(columns: columns, spacing: 10) {
+                    LazyVGrid(columns: columns, spacing: 15) {
                         ForEach(viewModel.getRecipe(index: index).tags) { tag in
                             TagView(tagText: tag.name)
                         }
