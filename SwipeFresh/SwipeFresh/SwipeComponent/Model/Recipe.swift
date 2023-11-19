@@ -14,14 +14,14 @@ struct Recipe: Identifiable, Decodable {
     var image: String
     var ingredientItems: [IngredientItem]
     var tags: [Tag]
-    var prepTime: TimeInterval
+    var prepTime: Int
     var allergens: [Allergen]
     var instructions: [String]
     var superLiked: Bool?
 
 
     
-    init(score: Double, id: UUID = UUID(), name: String, image: String, ingredientItems: [IngredientItem], tags: [Tag], prepTime: TimeInterval, allergens: [Allergen], instructions: [String]) {
+    init(score: Double, id: UUID = UUID(), name: String, image: String, ingredientItems: [IngredientItem], tags: [Tag], prepTime: Int, allergens: [Allergen], instructions: [String]) {
         self.score = score
         self.id = id
         self.name = name

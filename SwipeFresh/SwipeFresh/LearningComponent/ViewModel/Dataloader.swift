@@ -142,6 +142,8 @@ class Dataloader: ObservableObject {
                 let data = try Data(contentsOf: fileURL)
                 let decoder = JSONDecoder()
                 let recipeList = try decoder.decode(RecipeListWrapper.self, from: data)
+                let recipes = recipeList.convert()
+                self.recipeStack = recipes.map({ RecipeCard(recipe: $0)})
                 //let recipes = recipeList.recipes.map { $0.recipe }
                 //recipeStack = recipes.map { RecipeCard(recipe: $0) }
                 print("Data loaded successfully")

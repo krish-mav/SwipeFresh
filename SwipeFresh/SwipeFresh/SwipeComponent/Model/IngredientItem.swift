@@ -11,6 +11,11 @@ struct IngredientItem: Hashable, Codable {
     var ingredient: Ingredient
     var quantity: Double
     
+    init(ingredient: Ingredient, quantity: Double) {
+        self.ingredient = ingredient
+        self.quantity = quantity
+    }
+    
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.ingredient = try container.decode(Ingredient.self, forKey: .ingredient)
