@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct SwipePopupView: View {
+    let columns = [
+               GridItem(.adaptive(minimum: 80))
+           ]
+    
     var body: some View {
         ZStack {
             Rectangle()
@@ -26,6 +30,9 @@ struct SwipePopupView: View {
                     
                     Text("Tags")
                         .fontWeight(.semibold)
+                    LazyVGrid(columns: columns, spacing: 10) {
+                        TagView(tagText: "")
+                    }
                     
                     Text("Ingredients")
                         .fontWeight(.semibold)
