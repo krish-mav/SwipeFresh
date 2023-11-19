@@ -18,20 +18,30 @@ struct RecipeSmallView: View {
     var body: some View {
         VStack {
             ZStack(alignment: .leading) {
-                AsyncImage(url: URL(string: viewModel.getRecipe(index: index).image)) { image in
-                    image
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 370, height: 600)
-
-                        
-                } placeholder: {
-                    Color("primary_darkest") // Placeholder color
+                AsyncImage(url: URL(string: viewModel.getRecipe(index: index).image), transaction: Transaction(animation: .spring(response: 0.8, dampingFraction: 0.5, blendDuration: 0.5))) { phase in
+                    switch phase {
+                    case .empty:
+                        Color("primary_darkest")
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 370, height: 600)
+                    case .success(let image):
+                        image
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 370, height: 600)
+                    case .failure(_):
+                        Image(systemName: "exclamationmark.icloud")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 370, height: 600)
+                    @unknown default:
+                        Image(systemName: "exclamationmark.icloud")
+                    }
                 }
+
                 
-                
-                LinearGradient(colors: [Color.black.opacity(0.5), Color.clear], startPoint: .bottom, endPoint:.top)
-                
+                LinearGradient(colors: [Color.black.opacity(0.9), Color.clear], startPoint: .bottom, endPoint:.center)
+
                 VStack(alignment: .leading) {
                     Spacer()
                     HStack(alignment: .bottom) {
