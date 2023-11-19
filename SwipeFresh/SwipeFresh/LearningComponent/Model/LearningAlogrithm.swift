@@ -8,7 +8,7 @@
 import Foundation
 
 struct LearningAlgorithm {
-    init(allergens: [Allergen] = Mock.allergens) {
+    init(allergens: [Allergen] = Mock.allergenRestrictions.map( { $0.allergen})) {
         self.allergens = allergens
     }
     var data: [String: Double] = [:]
@@ -40,8 +40,8 @@ struct LearningAlgorithm {
     
     //calculate score of a recipe
     mutating func calculate(recipe: Recipe) -> Double{
-        for allergen in allergens {
-            if recipe.allergens.contains(allergen) {
+        for allergen in self.allergens {
+            if recipe.allergens.contains(where: {$0.name == allergen.name}) {
                 return -1000
             }
         }

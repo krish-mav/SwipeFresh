@@ -7,17 +7,15 @@
 
 import Foundation
 
-struct Allergen: Identifiable, Comparable, Codable {
-    static func < (lhs: Allergen, rhs: Allergen) -> Bool {
-        lhs.name == rhs.name
-    }
-    
-    var id = UUID()
-    var name: String
+struct AllergenRestriction {
+    var allergen: Allergen
     var isSelected: Bool
+    static func < (lhs: AllergenRestriction, rhs: AllergenRestriction) -> Bool {
+        lhs.allergen.name == rhs.allergen.name
+    }
 
-    init(name: String, isSelected: Bool = false) {
-        self.name = name
+    init(allergen: Allergen, isSelected: Bool = false) {
+        self.allergen = allergen
         self.isSelected = isSelected
     }
     

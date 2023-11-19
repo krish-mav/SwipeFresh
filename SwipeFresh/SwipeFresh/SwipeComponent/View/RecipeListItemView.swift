@@ -56,6 +56,7 @@ struct RecipeListItemView: View {
             ingredientItems: [],
             tags: [Tag(from: "Dinner" as! Decoder)],
             prepTime: 30 * 60, // 30 minutes
+            cookTime: 20 * 60,
             allergens: [Allergen(name: "Nuts")],
             instructions: ["Step 1: Mock Step", "Step 2: Another Mock Step"]
         )

@@ -75,6 +75,7 @@ struct RecipeDetailView: View {
 /*struct RecipeDetailView_Previews: PreviewProvider {
     static var previews: some View {
         // Create a mock recipe for preview
+<<<<<<< HEAD
         let mockRecipe = Recipe(
             score: Double, name: "Crispy Cajun Chicken Sandwiches",
             image: "https://img.hellofresh.com/w_2048,q_auto,f_auto,c_limit,fl_lossy/c_fill,f_auto,fl_lossy,h_432,q_auto/hellofresh_s3/image/63d94b2977c8d43261096729-89774632.jpg",
@@ -88,9 +89,11 @@ struct RecipeDetailView: View {
             instructions: ["Mock Step", "Another Mock Step"]
         )
 
+=======
+>>>>>>> main
         // Preview the RecipeDetailView with the mock recipe
         NavigationView {
-            RecipeDetailView(recipe: mockRecipe)
+            RecipeDetailView(recipe: Mock.mockRecipe)
         }
     }
 }*/
