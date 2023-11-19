@@ -52,7 +52,7 @@ struct RecipeDetailView: View {
                 ForEach(recipe.ingredientItems, id: \.self) { ingredientItem in
                     let formattedQuantity = String(format: "%.2f", ingredientItem.quantity)
 
-                    Text("\(formattedQuantity) \(ingredientItem.ingredient.unit?.symbol ?? "") \(ingredientItem.ingredient.name)")
+                    Text("\(formattedQuantity) \(ingredientItem.ingredient.unit ?? "") \(ingredientItem.ingredient.name)")
                         .padding(.horizontal, 16)
                 }
 
@@ -72,12 +72,28 @@ struct RecipeDetailView: View {
     }
 }
 
-struct RecipeDetailView_Previews: PreviewProvider {
+/*struct RecipeDetailView_Previews: PreviewProvider {
     static var previews: some View {
         // Create a mock recipe for preview
+<<<<<<< HEAD
+        let mockRecipe = Recipe(
+            score: Double, name: "Crispy Cajun Chicken Sandwiches",
+            image: "https://img.hellofresh.com/w_2048,q_auto,f_auto,c_limit,fl_lossy/c_fill,f_auto,fl_lossy,h_432,q_auto/hellofresh_s3/image/63d94b2977c8d43261096729-89774632.jpg",
+            ingredientItems: [
+                IngredientItem(ingredient: Ingredient(name: "Flour", unit: "grams"), quantity: 200.0),
+                IngredientItem(ingredient: Ingredient(name: "Sugar", unit: "cups"), quantity: 1.0)
+            ],
+            tags: [Tag(name: "Dinner")],
+            prepTime: 30 * 60, // 30 minutes
+            allergens: [Allergen(name: "Nuts")],
+            instructions: ["Mock Step", "Another Mock Step"]
+        )
+
+=======
+>>>>>>> main
         // Preview the RecipeDetailView with the mock recipe
         NavigationView {
             RecipeDetailView(recipe: Mock.mockRecipe)
         }
     }
-}
+}*/

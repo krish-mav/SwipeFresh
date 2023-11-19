@@ -8,21 +8,36 @@
 import SwiftUI
 
 struct MainView: View {
+    init(learner: LearningAlgorithm = LearningAlgorithm()) {
+        var orgLearner = learner
+        var bindlearner = Binding(get: {
+            orgLearner
+        }, set: { val in
+            orgLearner = val
+        })
+        self.viewModel = SwipeViewModel(recipes: Dataloader().recipeStack , learner: bindlearner)
+    }
+    var viewModel: SwipeViewModel
+    @State private var selection = 2
     var body: some View {
-        TabView {
+        TabView(selection: $selection) {
             restrictionView(viewModel: restrictionViewModel())
                 .tabItem {
                     Image(systemName: "heart.fill")
                 }
-            SwipeView(viewModel: Mock.swipeViewModel)
+                .tag(1)
+            SwipeView(viewModel: viewModel)
                 .tabItem {
                     Image(systemName: "heart.fill")
+                }.onAppear() {
+                    Dataloader().load()
                 }
-            RecipeListView(savedRecipes: Mock.mockRecipes)
+                .tag(2)
+            RecipeListView(viewModel: viewModel)
                 .tabItem {
                     Image (systemName: "heart.fill")
                 }
-
+                .tag(3)
         }
         .accentColor(Color("primary_dark"))
 
